@@ -1,0 +1,5 @@
+
+Information: Starting test design rule checking. (TEST-222)
+Error: Invalid test protocol. Create a test protocol again. (TEST-1310)
+Error: Could not run pre-dft design rule checking. (TEST-1313)
+0

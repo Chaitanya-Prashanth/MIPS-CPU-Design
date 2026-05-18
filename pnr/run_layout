@@ -1,0 +1,27 @@
+#!/bin/bash
+###################################################
+## Innovus Launch Script — Tiny MIPS CPU
+###################################################
+
+echo "Innovus Layout Control Script"
+echo ""
+
+# Create work directory if it does not exist
+mkdir -p saves
+mkdir -p ../netlists
+mkdir -p ../floorplan
+mkdir -p ../reports/mips/preCTS
+mkdir -p ../reports/mips/CTS
+mkdir -p ../reports/mips/postCTS
+mkdir -p ../reports/mips/postCTS_hold
+mkdir -p ../reports/mips/postRoute
+mkdir -p ../reports/mips/postRoute_hold
+mkdir -p ../reports/mips/final
+
+echo "   Launching Innovus with GUI"
+echo ""
+
+# Update path to your Innovus installation
+/apps/cadence/DDI251/INNOVUS251/bin/innovus
+
+echo "Innovus closed."

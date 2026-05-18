@@ -1,0 +1,376 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+CONST_ONE	src/datapath.v	/^    parameter CONST_ONE  = 8'b1;$/;"	c
+CONST_ZERO	src/datapath.v	/^    parameter CONST_ZERO = 8'b0;$/;"	c
+OP_ADDI	src/controller.v	/^    parameter OP_ADDI  = 6'b001000;$/;"	c
+OP_BEQ	src/controller.v	/^    parameter OP_BEQ   = 6'b000100;$/;"	c
+OP_J	src/controller.v	/^    parameter OP_J     = 6'b000010;$/;"	c
+OP_LB	src/controller.v	/^    parameter OP_LB    = 6'b100000;$/;"	c
+OP_RTYPE	src/controller.v	/^    parameter OP_RTYPE = 6'b000000;$/;"	c
+OP_SB	src/controller.v	/^    parameter OP_SB    = 6'b110000;$/;"	c
+OUT	src/Makefile	/^OUT  = sim_mips$/;"	m
+REGS	src/regfile.v	/^    reg [7:0] REGS [7:0];$/;"	r
+RTL	sim/Makefile	/^RTL = ..\/rtl$/;"	m
+S0	src/controller.v	/^    parameter S0  = 4'd0;$/;"	c
+S1	src/controller.v	/^    parameter S1  = 4'd1;$/;"	c
+S10	src/controller.v	/^    parameter S10 = 4'd10;$/;"	c
+S11	src/controller.v	/^    parameter S11 = 4'd11;$/;"	c
+S12	src/controller.v	/^    parameter S12 = 4'd12;$/;"	c
+S2	src/controller.v	/^    parameter S2  = 4'd2;$/;"	c
+S3	src/controller.v	/^    parameter S3  = 4'd3;$/;"	c
+S4	src/controller.v	/^    parameter S4  = 4'd4;$/;"	c
+S5	src/controller.v	/^    parameter S5  = 4'd5;$/;"	c
+S6	src/controller.v	/^    parameter S6  = 4'd6;$/;"	c
+S7	src/controller.v	/^    parameter S7  = 4'd7;$/;"	c
+S8	src/controller.v	/^    parameter S8  = 4'd8;$/;"	c
+S9	src/controller.v	/^    parameter S9  = 4'd9;$/;"	c
+SRCS	src/Makefile	/^SRCS = alu.v alucontrol.v controller.v \\$/;"	m
+TEST_PHASE	sim/tb_controller.v	/^    reg [127:0] TEST_PHASE;$/;"	r
+a	sim/tb_alu.v	/^    reg  [7:0] a, b;$/;"	r
+a	sim/tb_zerodetect.v	/^    reg  [7:0] a;$/;"	r
+a	src/alu.v	/^    input  [7:0] a, b;$/;"	p
+a	src/datapath.v	/^    wire [7:0] a;           \/\/ registered rs value$/;"	n
+a	src/zerodetect.v	/^    input  [7:0] a;$/;"	p
+actual	sim/tb_flops.v	/^        input [7:0] actual, expected;$/;"	p
+actual	sim/tb_muxes.v	/^        input [2:0] actual, expected;$/;"	p
+actual	sim/tb_muxes.v	/^        input [7:0] actual, expected;$/;"	p
+addr	sim/tb_regfile.v	/^        input [2:0] addr;$/;"	p
+adr	sim/tb_mips.v	/^    wire [7:0] adr, writedata;$/;"	n
+adr	src/datapath.v	/^    output  [7:0] adr, writedata;$/;"	p
+adr	src/mips.v	/^    output [7:0] adr, writedata;$/;"	p
+adr	src/ram.v	/^    input      [7:0] adr;$/;"	p
+adr	src/tb_mips.v	/^    wire [7:0] adr, writedata;$/;"	n
+adr	syn/mips_scan.v	/^    output [7:0] adr, writedata;$/;"	p
+adr	syn/tb_gate.v	/^    wire [7:0] adr, writedata;$/;"	n
+alu	src/alu.v	/^module alu (a, b, alucont, result);$/;"	m
+alucont	sim/tb_alu.v	/^    reg  [2:0] alucont;$/;"	r
+alucont	sim/tb_alucontrol.v	/^    wire [2:0] alucont;$/;"	n
+alucont	src/alu.v	/^    input  [2:0] alucont;$/;"	p
+alucont	src/alucontrol.v	/^    output [2:0] alucont;$/;"	p
+alucont	src/alucontrol.v	/^    reg [2:0] alucont;$/;"	r
+alucont	src/datapath.v	/^    input  [2:0] alucont;$/;"	p
+alucont	src/mips.v	/^    wire [2:0]  alucont;$/;"	n
+alucont	syn/mips_scan.v	/^    wire [2:0]  alucont;$/;"	n
+alucontrol	src/alucontrol.v	/^module alucontrol (aluop, funct, alucont);$/;"	m
+aluop	sim/tb_alucontrol.v	/^    reg  [1:0] aluop;$/;"	r
+aluop	sim/tb_controller.v	/^    wire [1:0]  pcsource, alusrcb, aluop;$/;"	n
+aluop	src/alucontrol.v	/^    input  [1:0] aluop;$/;"	p
+aluop	src/controller.v	/^    output [1:0]  aluop;$/;"	p
+aluop	src/controller.v	/^    reg [1:0]  aluop;$/;"	r
+aluop	src/mips.v	/^    wire [1:0]  aluop, pcsource, alusrcb;$/;"	n
+aluop	syn/mips_scan.v	/^    wire [1:0]  aluop, pcsource, alusrcb;$/;"	n
+aluout	src/datapath.v	/^    wire [7:0] aluresult, aluout;$/;"	n
+aluresult	src/datapath.v	/^    wire [7:0] aluresult, aluout;$/;"	n
+alusrca	sim/tb_controller.v	/^    wire        memread, memwrite, alusrca, memtoreg, iord, pcen;$/;"	n
+alusrca	src/controller.v	/^    output        alusrca;$/;"	p
+alusrca	src/controller.v	/^    reg        alusrca;$/;"	r
+alusrca	src/datapath.v	/^    input        alusrca, memtoreg, iord, pcen, regwrite, regdst;$/;"	p
+alusrca	src/mips.v	/^    wire        alusrca, memtoreg, iord, pcen, regwrite, regdst;$/;"	n
+alusrca	syn/mips_scan.v	/^    wire        alusrca, memtoreg, iord, pcen, regwrite, regdst;$/;"	n
+alusrcb	sim/tb_controller.v	/^    wire [1:0]  pcsource, alusrcb, aluop;$/;"	n
+alusrcb	src/controller.v	/^    output [1:0]  alusrcb;$/;"	p
+alusrcb	src/controller.v	/^    reg [1:0]  alusrcb;$/;"	r
+alusrcb	src/datapath.v	/^    input  [1:0] pcsource, alusrcb;$/;"	p
+alusrcb	src/mips.v	/^    wire [1:0]  aluop, pcsource, alusrcb;$/;"	n
+alusrcb	syn/mips_scan.v	/^    wire [1:0]  aluop, pcsource, alusrcb;$/;"	n
+apply_and_check_flop	sim/tb_flops.v	/^    task apply_and_check_flop;$/;"	t
+b	sim/tb_alu.v	/^    reg  [7:0] a, b;$/;"	r
+b	src/alu.v	/^    input  [7:0] a, b;$/;"	p
+b2	src/alu.v	/^    wire [7:0] b2;    \/\/ b or ~b depending on subtract\/slt$/;"	n
+branch	src/controller.v	/^    reg        branch;$/;"	r
+check	sim/tb_alu.v	/^    task check;$/;"	t
+check	sim/tb_alucontrol.v	/^    task check;$/;"	t
+check	sim/tb_zerodetect.v	/^    task check;$/;"	t
+check3	sim/tb_muxes.v	/^    task check3;$/;"	t
+check8	sim/tb_muxes.v	/^    task check8;$/;"	t
+check_rd1	sim/tb_regfile.v	/^    task check_rd1;$/;"	t
+check_rd2	sim/tb_regfile.v	/^    task check_rd2;$/;"	t
+check_regfile	src/tb_mips.v	/^    task check_regfile;$/;"	t
+check_registers	sim/tb_mips.v	/^    task check_registers;$/;"	t
+check_val	sim/tb_flops.v	/^    task check_val;$/;"	t
+chk1	sim/tb_controller.v	/^    task chk1;$/;"	t
+chk2	sim/tb_controller.v	/^    task chk2;$/;"	t
+chk4	sim/tb_controller.v	/^    task chk4;$/;"	t
+chk_state	sim/tb_controller.v	/^    task chk_state;$/;"	t
+clk	sim/tb_alucontrol.v	/^    reg clk;$/;"	r
+clk	sim/tb_controller.v	/^    reg         clk, reset, zero;$/;"	r
+clk	sim/tb_flops.v	/^    reg        clk, en, reset;$/;"	r
+clk	sim/tb_mips.v	/^    reg        clk, reset;$/;"	r
+clk	sim/tb_muxes.v	/^    reg clk;$/;"	r
+clk	sim/tb_regfile.v	/^    reg        clk, regwrite;$/;"	r
+clk	sim/tb_zerodetect.v	/^    reg clk;$/;"	r
+clk	src/controller.v	/^    input        clk, reset;$/;"	p
+clk	src/datapath.v	/^    input        clk, reset;$/;"	p
+clk	src/flop.v	/^    input            clk;$/;"	p
+clk	src/flopen.v	/^    input            clk, en;$/;"	p
+clk	src/flopenr.v	/^    input            clk, reset, en;$/;"	p
+clk	src/mips.v	/^    input        clk, reset;$/;"	p
+clk	src/ram.v	/^    input            clk;$/;"	p
+clk	src/regfile.v	/^    input            clk;$/;"	p
+clk	src/tb_mips.v	/^    reg        clk, reset;$/;"	r
+clk	syn/mips_scan.v	/^    input        clk, reset;$/;"	p
+clk	syn/tb_gate.v	/^    reg        clk, reset;$/;"	r
+constx4	src/datapath.v	/^    wire [7:0] constx4;     \/\/ jump target (instr[5:0] << 2)$/;"	n
+controller	src/controller.v	/^module controller (clk, reset, op, zero,$/;"	m
+ctrl	sim/tb_alu.v	/^        input [2:0] ctrl;$/;"	p
+cycle_count	sim/tb_mips.v	/^    integer cycle_count;$/;"	r
+cycle_count	src/tb_mips.v	/^    integer cycle_count;$/;"	r
+cycle_count	syn/tb_gate.v	/^    integer cycle_count;$/;"	r
+d	sim/tb_flops.v	/^    reg  [7:0] d;$/;"	r
+d	src/flop.v	/^    input      [7:0] d;$/;"	p
+d	src/flopen.v	/^    input      [7:0] d;$/;"	p
+d	src/flopenr.v	/^    input      [7:0] d;$/;"	p
+d0	src/mux2.v	/^    input  [7:0] d0, d1;$/;"	p
+d0	src/mux23.v	/^    input  [2:0] d0, d1;$/;"	p
+d0	src/mux4.v	/^    input  [7:0] d0, d1, d2, d3;$/;"	p
+d0_2	sim/tb_muxes.v	/^    reg  [7:0] d0_2, d1_2;$/;"	r
+d0_23	sim/tb_muxes.v	/^    reg  [2:0] d0_23, d1_23;$/;"	r
+d0_4	sim/tb_muxes.v	/^    reg  [7:0] d0_4, d1_4, d2_4, d3_4;$/;"	r
+d1	src/mux2.v	/^    input  [7:0] d0, d1;$/;"	p
+d1	src/mux23.v	/^    input  [2:0] d0, d1;$/;"	p
+d1	src/mux4.v	/^    input  [7:0] d0, d1, d2, d3;$/;"	p
+d1_2	sim/tb_muxes.v	/^    reg  [7:0] d0_2, d1_2;$/;"	r
+d1_23	sim/tb_muxes.v	/^    reg  [2:0] d0_23, d1_23;$/;"	r
+d1_4	sim/tb_muxes.v	/^    reg  [7:0] d0_4, d1_4, d2_4, d3_4;$/;"	r
+d2	src/mux4.v	/^    input  [7:0] d0, d1, d2, d3;$/;"	p
+d2_4	sim/tb_muxes.v	/^    reg  [7:0] d0_4, d1_4, d2_4, d3_4;$/;"	r
+d3	src/mux4.v	/^    input  [7:0] d0, d1, d2, d3;$/;"	p
+d3_4	sim/tb_muxes.v	/^    reg  [7:0] d0_4, d1_4, d2_4, d3_4;$/;"	r
+data	sim/tb_flops.v	/^        input [7:0] data;$/;"	p
+data	sim/tb_regfile.v	/^        input [7:0] data;$/;"	p
+datapath	src/datapath.v	/^module datapath (clk, reset, memdata,$/;"	m
+en	sim/tb_flops.v	/^    reg        clk, en, reset;$/;"	r
+en	src/flopen.v	/^    input            clk, en;$/;"	p
+en	src/flopenr.v	/^    input            clk, reset, en;$/;"	p
+errors	sim/tb_alu.v	/^    integer errors;$/;"	r
+errors	sim/tb_alucontrol.v	/^    integer errors;$/;"	r
+errors	sim/tb_flops.v	/^    integer errors;$/;"	r
+errors	sim/tb_mips.v	/^    integer errors;$/;"	r
+errors	sim/tb_muxes.v	/^    integer errors;$/;"	r
+errors	sim/tb_regfile.v	/^    integer errors;$/;"	r
+errors	sim/tb_zerodetect.v	/^    integer    errors;$/;"	r
+errors	src/tb_mips.v	/^    integer errors;$/;"	r
+errors	syn/tb_gate.v	/^    integer errors;$/;"	r
+exp	sim/tb_controller.v	/^        input         got, exp;$/;"	p
+exp	sim/tb_controller.v	/^        input [1:0]   got, exp;$/;"	p
+exp	sim/tb_controller.v	/^        input [3:0]    exp;$/;"	p
+exp	sim/tb_controller.v	/^        input [3:0]   got, exp;$/;"	p
+expected	sim/tb_alu.v	/^        input [7:0] expected;$/;"	p
+expected	sim/tb_alucontrol.v	/^        input [2:0] expected;$/;"	p
+expected	sim/tb_flops.v	/^        input [7:0] actual, expected;$/;"	p
+expected	sim/tb_flops.v	/^        input [7:0] expected;$/;"	p
+expected	sim/tb_muxes.v	/^        input [2:0] actual, expected;$/;"	p
+expected	sim/tb_muxes.v	/^        input [7:0] actual, expected;$/;"	p
+expected	sim/tb_regfile.v	/^        input [7:0] expected;$/;"	p
+expected	sim/tb_zerodetect.v	/^        input       expected;$/;"	p
+fail_count	sim/tb_controller.v	/^    integer     pass_count, fail_count;$/;"	r
+finish_test	src/tb_mips.v	/^    task finish_test;$/;"	t
+flop	src/flop.v	/^module flop (clk, d, q);$/;"	m
+flopen	src/flopen.v	/^module flopen (clk, en, d, q);$/;"	m
+flopenr	src/flopenr.v	/^module flopenr (clk, reset, en, d, q);$/;"	m
+fn	sim/tb_alucontrol.v	/^        input [5:0] fn;$/;"	p
+funct	sim/tb_alucontrol.v	/^    reg  [5:0] funct;$/;"	r
+funct	src/alucontrol.v	/^    input  [5:0] funct;$/;"	p
+got	sim/tb_controller.v	/^        input         got, exp;$/;"	p
+got	sim/tb_controller.v	/^        input [1:0]   got, exp;$/;"	p
+got	sim/tb_controller.v	/^        input [3:0]   got, exp;$/;"	p
+i	src/ram.v	/^    integer i, k;$/;"	r
+in_a	sim/tb_alu.v	/^        input [7:0] in_a, in_b;$/;"	p
+in_a	sim/tb_zerodetect.v	/^        input [7:0] in_a;$/;"	p
+in_b	sim/tb_alu.v	/^        input [7:0] in_a, in_b;$/;"	p
+instr	src/datapath.v	/^    output [31:0] instr;$/;"	p
+instr	src/mips.v	/^    wire [31:0] instr;$/;"	n
+instr	syn/mips_scan.v	/^    wire [31:0] instr;$/;"	n
+iord	sim/tb_controller.v	/^    wire        memread, memwrite, alusrca, memtoreg, iord, pcen;$/;"	n
+iord	src/controller.v	/^    output        iord;$/;"	p
+iord	src/controller.v	/^    reg        iord;$/;"	r
+iord	src/datapath.v	/^    input        alusrca, memtoreg, iord, pcen, regwrite, regdst;$/;"	p
+iord	src/mips.v	/^    wire        alusrca, memtoreg, iord, pcen, regwrite, regdst;$/;"	n
+iord	syn/mips_scan.v	/^    wire        alusrca, memtoreg, iord, pcen, regwrite, regdst;$/;"	n
+irwrite	sim/tb_controller.v	/^    wire [3:0]  irwrite;$/;"	n
+irwrite	src/controller.v	/^    output [3:0]  irwrite;$/;"	p
+irwrite	src/controller.v	/^    reg [3:0]  irwrite;$/;"	r
+irwrite	src/datapath.v	/^    input  [3:0] irwrite;$/;"	p
+irwrite	src/mips.v	/^    wire [3:0]  irwrite;$/;"	n
+irwrite	syn/mips_scan.v	/^    wire [3:0]  irwrite;$/;"	n
+k	src/ram.v	/^    integer i, k;$/;"	r
+lbl	sim/tb_controller.v	/^        input [127:0]  lbl;$/;"	p
+lbl	sim/tb_controller.v	/^        input [127:0] lbl;$/;"	p
+md	src/datapath.v	/^    wire [7:0] pc, nextpc, md;$/;"	n
+memdata	sim/tb_mips.v	/^    wire [7:0] memdata;$/;"	n
+memdata	src/datapath.v	/^    input  [7:0] memdata;$/;"	p
+memdata	src/mips.v	/^    input  [7:0] memdata;$/;"	p
+memdata	src/tb_mips.v	/^    wire [7:0] memdata;$/;"	n
+memdata	syn/mips_scan.v	/^    input  [7:0] memdata;$/;"	p
+memdata	syn/tb_gate.v	/^    wire [7:0] memdata;$/;"	n
+memread	sim/tb_controller.v	/^    wire        memread, memwrite, alusrca, memtoreg, iord, pcen;$/;"	n
+memread	sim/tb_mips.v	/^    wire       memread, memwrite;$/;"	n
+memread	src/controller.v	/^    output        memread;$/;"	p
+memread	src/controller.v	/^    reg        memread;$/;"	r
+memread	src/mips.v	/^    output       memread, memwrite;$/;"	p
+memread	src/tb_mips.v	/^    wire       memread, memwrite;$/;"	n
+memread	syn/mips_scan.v	/^    output       memread, memwrite;$/;"	p
+memread	syn/tb_gate.v	/^    wire       memread, memwrite;$/;"	n
+memtoreg	sim/tb_controller.v	/^    wire        memread, memwrite, alusrca, memtoreg, iord, pcen;$/;"	n
+memtoreg	src/controller.v	/^    output        memtoreg;$/;"	p
+memtoreg	src/controller.v	/^    reg        memtoreg;$/;"	r
+memtoreg	src/datapath.v	/^    input        alusrca, memtoreg, iord, pcen, regwrite, regdst;$/;"	p
+memtoreg	src/mips.v	/^    wire        alusrca, memtoreg, iord, pcen, regwrite, regdst;$/;"	n
+memtoreg	syn/mips_scan.v	/^    wire        alusrca, memtoreg, iord, pcen, regwrite, regdst;$/;"	n
+memwrite	sim/tb_controller.v	/^    wire        memread, memwrite, alusrca, memtoreg, iord, pcen;$/;"	n
+memwrite	sim/tb_mips.v	/^    wire       memread, memwrite;$/;"	n
+memwrite	src/controller.v	/^    output        memwrite;$/;"	p
+memwrite	src/controller.v	/^    reg        memwrite;$/;"	r
+memwrite	src/mips.v	/^    output       memread, memwrite;$/;"	p
+memwrite	src/ram.v	/^    input            memwrite;$/;"	p
+memwrite	src/tb_mips.v	/^    wire       memread, memwrite;$/;"	n
+memwrite	syn/mips_scan.v	/^    output       memread, memwrite;$/;"	p
+memwrite	syn/tb_gate.v	/^    wire       memread, memwrite;$/;"	n
+mips	src/mips.v	/^module mips (clk, reset, memdata, memread, memwrite, adr, writedata);$/;"	m
+mips	syn/mips_scan.v	/^module mips (clk, reset,$/;"	m
+mips_ram	src/ram.v	/^    reg [7:0] mips_ram [0:255];$/;"	r
+mux2	src/mux2.v	/^module mux2 (d0, d1, s, y);$/;"	m
+mux23	src/mux23.v	/^module mux23 (d0, d1, s, y);$/;"	m
+mux4	src/mux4.v	/^module mux4 (d0, d1, d2, d3, s, y);$/;"	m
+name	sim/tb_alucontrol.v	/^        input [255:0] name;$/;"	p
+name	sim/tb_flops.v	/^        input [255:0] name;$/;"	p
+name	sim/tb_muxes.v	/^        input [255:0] name;$/;"	p
+name	sim/tb_regfile.v	/^        input [255:0] name;$/;"	p
+name	sim/tb_zerodetect.v	/^        input [255:0] name;$/;"	p
+nextpc	src/datapath.v	/^    wire [7:0] pc, nextpc, md;$/;"	n
+nextstate	src/controller.v	/^    reg [3:0] state, nextstate;$/;"	r
+op	sim/tb_alucontrol.v	/^        input [1:0] op;$/;"	p
+op	sim/tb_controller.v	/^    reg  [5:0]  op;$/;"	r
+op	src/controller.v	/^    input  [5:0] op;$/;"	p
+pass_count	sim/tb_controller.v	/^    integer     pass_count, fail_count;$/;"	r
+pc	src/datapath.v	/^    wire [7:0] pc, nextpc, md;$/;"	n
+pcen	sim/tb_controller.v	/^    wire        memread, memwrite, alusrca, memtoreg, iord, pcen;$/;"	n
+pcen	src/controller.v	/^    output        pcen;$/;"	p
+pcen	src/datapath.v	/^    input        alusrca, memtoreg, iord, pcen, regwrite, regdst;$/;"	p
+pcen	src/mips.v	/^    wire        alusrca, memtoreg, iord, pcen, regwrite, regdst;$/;"	n
+pcen	syn/mips_scan.v	/^    wire        alusrca, memtoreg, iord, pcen, regwrite, regdst;$/;"	n
+pcsource	sim/tb_controller.v	/^    wire [1:0]  pcsource, alusrcb, aluop;$/;"	n
+pcsource	src/controller.v	/^    output [1:0]  pcsource;$/;"	p
+pcsource	src/controller.v	/^    reg [1:0]  pcsource;$/;"	r
+pcsource	src/datapath.v	/^    input  [1:0] pcsource, alusrcb;$/;"	p
+pcsource	src/mips.v	/^    wire [1:0]  aluop, pcsource, alusrcb;$/;"	n
+pcsource	syn/mips_scan.v	/^    wire [1:0]  aluop, pcsource, alusrcb;$/;"	n
+pcwrite	src/controller.v	/^    reg        pcwrite, pcwritecond;$/;"	r
+pcwritecond	src/controller.v	/^    reg        pcwrite, pcwritecond;$/;"	r
+print_summary	sim/tb_mips.v	/^    task print_summary;$/;"	t
+q_flop	sim/tb_flops.v	/^    wire [7:0] q_flop, q_flopen, q_flopenr;$/;"	n
+q_flopen	sim/tb_flops.v	/^    wire [7:0] q_flop, q_flopen, q_flopenr;$/;"	n
+q_flopenr	sim/tb_flops.v	/^    wire [7:0] q_flop, q_flopen, q_flopenr;$/;"	n
+ra1	sim/tb_regfile.v	/^    reg  [2:0] ra1, ra2, wa;$/;"	r
+ra1	src/datapath.v	/^    wire [2:0] ra1, ra2, wa;$/;"	n
+ra1	src/regfile.v	/^    input      [2:0] ra1, ra2, wa;$/;"	p
+ra2	sim/tb_regfile.v	/^    reg  [2:0] ra1, ra2, wa;$/;"	r
+ra2	src/datapath.v	/^    wire [2:0] ra1, ra2, wa;$/;"	n
+ra2	src/regfile.v	/^    input      [2:0] ra1, ra2, wa;$/;"	p
+ram	src/ram.v	/^module ram (memdata, memwrite, adr, writedata, clk);$/;"	m
+rd1	sim/tb_regfile.v	/^    wire [7:0] rd1, rd2;$/;"	n
+rd1	src/datapath.v	/^    wire [7:0] rd1, rd2, wd;$/;"	n
+rd1	src/regfile.v	/^    output     [7:0] rd1, rd2;$/;"	p
+rd2	sim/tb_regfile.v	/^    wire [7:0] rd1, rd2;$/;"	n
+rd2	src/datapath.v	/^    wire [7:0] rd1, rd2, wd;$/;"	n
+rd2	src/regfile.v	/^    output     [7:0] rd1, rd2;$/;"	p
+reg	src/flop.v	/^    output reg [7:0] q;$/;"	p
+reg	src/flopen.v	/^    output reg [7:0] q = 0;$/;"	p
+reg	src/flopenr.v	/^    output reg [7:0] q;$/;"	p
+reg	src/mux4.v	/^    output reg [7:0] y;$/;"	p
+reg	src/ram.v	/^    output reg [7:0] memdata;$/;"	p
+regdst	sim/tb_controller.v	/^    wire        regwrite, regdst;$/;"	n
+regdst	src/controller.v	/^    output        regdst;$/;"	p
+regdst	src/controller.v	/^    reg        regdst;$/;"	r
+regdst	src/datapath.v	/^    input        alusrca, memtoreg, iord, pcen, regwrite, regdst;$/;"	p
+regdst	src/mips.v	/^    wire        alusrca, memtoreg, iord, pcen, regwrite, regdst;$/;"	n
+regdst	syn/mips_scan.v	/^    wire        alusrca, memtoreg, iord, pcen, regwrite, regdst;$/;"	n
+regfile	src/regfile.v	/^module regfile (clk, regwrite, ra1, ra2, wa, wd, rd1, rd2);$/;"	m
+regwrite	sim/tb_controller.v	/^    wire        regwrite, regdst;$/;"	n
+regwrite	sim/tb_regfile.v	/^    reg        clk, regwrite;$/;"	r
+regwrite	src/controller.v	/^    output        regwrite;$/;"	p
+regwrite	src/controller.v	/^    reg        regwrite;$/;"	r
+regwrite	src/datapath.v	/^    input        alusrca, memtoreg, iord, pcen, regwrite, regdst;$/;"	p
+regwrite	src/mips.v	/^    wire        alusrca, memtoreg, iord, pcen, regwrite, regdst;$/;"	n
+regwrite	src/regfile.v	/^    input            regwrite;$/;"	p
+regwrite	syn/mips_scan.v	/^    wire        alusrca, memtoreg, iord, pcen, regwrite, regdst;$/;"	n
+reset	sim/tb_controller.v	/^    reg         clk, reset, zero;$/;"	r
+reset	sim/tb_flops.v	/^    reg        clk, en, reset;$/;"	r
+reset	sim/tb_mips.v	/^    reg        clk, reset;$/;"	r
+reset	src/controller.v	/^    input        clk, reset;$/;"	p
+reset	src/datapath.v	/^    input        clk, reset;$/;"	p
+reset	src/flopenr.v	/^    input            clk, reset, en;$/;"	p
+reset	src/mips.v	/^    input        clk, reset;$/;"	p
+reset	src/tb_mips.v	/^    reg        clk, reset;$/;"	r
+reset	syn/mips_scan.v	/^    input        clk, reset;$/;"	p
+reset	syn/tb_gate.v	/^    reg        clk, reset;$/;"	r
+result	sim/tb_alu.v	/^    wire [7:0] result;$/;"	n
+result	src/alu.v	/^    output [7:0] result;$/;"	p
+result	src/alu.v	/^    reg  [7:0] result;$/;"	r
+run_fetch	sim/tb_controller.v	/^    task run_fetch;$/;"	t
+s	src/mux2.v	/^    input        s;$/;"	p
+s	src/mux23.v	/^    input        s;$/;"	p
+s	src/mux4.v	/^    input  [1:0] s;$/;"	p
+s1	sim/tb_mips.v	/^        reg [7:0] s1, s2, s3;$/;"	r
+s1	src/tb_mips.v	/^        reg [7:0] s1, s2, s3;$/;"	r
+s2	sim/tb_mips.v	/^        reg [7:0] s1, s2, s3;$/;"	r
+s2	sim/tb_muxes.v	/^    reg        s2;$/;"	r
+s2	src/tb_mips.v	/^        reg [7:0] s1, s2, s3;$/;"	r
+s23	sim/tb_muxes.v	/^    reg        s23;$/;"	r
+s3	sim/tb_mips.v	/^        reg [7:0] s1, s2, s3;$/;"	r
+s3	src/tb_mips.v	/^        reg [7:0] s1, s2, s3;$/;"	r
+s4	sim/tb_muxes.v	/^    reg  [1:0] s4;$/;"	r
+scan_en	syn/mips_scan.v	/^    input        scan_en;$/;"	p
+scan_in	syn/mips_scan.v	/^    input        scan_in;$/;"	p
+scan_out	syn/mips_scan.v	/^    output       scan_out;$/;"	p
+slt	src/alu.v	/^    wire [7:0] slt;   \/\/ set-less-than result$/;"	n
+src1	src/datapath.v	/^    wire [7:0] src1, src2;$/;"	n
+src2	src/datapath.v	/^    wire [7:0] src1, src2;$/;"	n
+state	sim/tb_controller.v	/^    wire [3:0]  state = dut.state;$/;"	n
+state	src/controller.v	/^    reg [3:0] state, nextstate;$/;"	r
+sum	src/alu.v	/^    wire [7:0] sum;   \/\/ adder output$/;"	n
+tb_alu	sim/tb_alu.v	/^module tb_alu;$/;"	m
+tb_alucontrol	sim/tb_alucontrol.v	/^module tb_alucontrol;$/;"	m
+tb_controller	sim/tb_controller.v	/^module tb_controller;$/;"	m
+tb_flops	sim/tb_flops.v	/^module tb_flops;$/;"	m
+tb_gate	syn/tb_gate.v	/^module tb_gate;$/;"	m
+tb_mips	sim/tb_mips.v	/^module tb_mips;$/;"	m
+tb_mips	src/tb_mips.v	/^module tb_mips;$/;"	m
+tb_muxes	sim/tb_muxes.v	/^module tb_muxes;$/;"	m
+tb_regfile	sim/tb_regfile.v	/^module tb_regfile;$/;"	m
+tb_zerodetect	sim/tb_zerodetect.v	/^module tb_zerodetect;$/;"	m
+test_mode	syn/mips_scan.v	/^    input        test_mode;$/;"	p
+test_name	sim/tb_alu.v	/^    reg [255:0] test_name;$/;"	r
+tick	sim/tb_controller.v	/^    task tick;$/;"	t
+tname	sim/tb_alu.v	/^        input [63:0] tname;$/;"	p
+wa	sim/tb_regfile.v	/^    reg  [2:0] ra1, ra2, wa;$/;"	r
+wa	src/datapath.v	/^    wire [2:0] ra1, ra2, wa;$/;"	n
+wa	src/regfile.v	/^    input      [2:0] ra1, ra2, wa;$/;"	p
+wd	sim/tb_regfile.v	/^    reg  [7:0] wd;$/;"	r
+wd	src/datapath.v	/^    wire [7:0] rd1, rd2, wd;$/;"	n
+wd	src/regfile.v	/^    input      [7:0] wd;$/;"	p
+write_reg	sim/tb_regfile.v	/^    task write_reg;$/;"	t
+writedata	sim/tb_mips.v	/^    wire [7:0] adr, writedata;$/;"	n
+writedata	src/datapath.v	/^    output  [7:0] adr, writedata;$/;"	p
+writedata	src/mips.v	/^    output [7:0] adr, writedata;$/;"	p
+writedata	src/ram.v	/^    input      [7:0] writedata;$/;"	p
+writedata	src/tb_mips.v	/^    wire [7:0] adr, writedata;$/;"	n
+writedata	syn/mips_scan.v	/^    output [7:0] adr, writedata;$/;"	p
+writedata	syn/tb_gate.v	/^    wire [7:0] adr, writedata;$/;"	n
+y	sim/tb_zerodetect.v	/^    wire       y;$/;"	n
+y	src/mux2.v	/^    output [7:0] y;$/;"	p
+y	src/mux23.v	/^    output [2:0] y;$/;"	p
+y	src/zerodetect.v	/^    output       y;$/;"	p
+y2	sim/tb_muxes.v	/^    wire [7:0] y2;$/;"	n
+y23	sim/tb_muxes.v	/^    wire [2:0] y23;$/;"	n
+y4	sim/tb_muxes.v	/^    wire [7:0] y4;$/;"	n
+zero	sim/tb_controller.v	/^    reg         clk, reset, zero;$/;"	r
+zero	src/controller.v	/^    input        zero;$/;"	p
+zero	src/datapath.v	/^    output        zero;$/;"	p
+zero	src/mips.v	/^    wire        zero;$/;"	n
+zero	syn/mips_scan.v	/^    wire        zero;$/;"	n
+zerodetect	src/zerodetect.v	/^module zerodetect (a, y);$/;"	m

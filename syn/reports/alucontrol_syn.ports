@@ -1,0 +1,120 @@
+ 
+****************************************
+Report : port
+        -verbose
+Design : alucontrol
+Version: O-2018.06-SP1
+Date   : Thu Apr 23 17:42:33 2026
+****************************************
+
+
+                       Pin      Wire     Max     Max     Connection
+Port           Dir     Load     Load     Trans   Cap     Class      Attrs
+--------------------------------------------------------------------------------
+aluop[0]       in      0.0000   0.0000   --       0.41   --         
+aluop[1]       in      0.0000   0.0000   --       0.41   --         
+funct[0]       in      0.0000   0.0000   --       0.41   --         
+funct[1]       in      0.0000   0.0000   --       0.41   --         
+funct[2]       in      0.0000   0.0000   --       0.41   --         
+funct[3]       in      0.0000   0.0000   --       0.41   --         
+funct[4]       in      0.0000   0.0000   --       0.41   --         
+funct[5]       in      0.0000   0.0000   --       0.41   --         
+alucont[0]     out     0.1000   0.0000   --      --      --         
+alucont[1]     out     0.1000   0.0000   --      --      --         
+alucont[2]     out     0.1000   0.0000   --      --      --         
+
+
+              External  Max             Min                Min       Min
+              Number    Wireload        Wireload           Pin       Wire
+Port          Points    Model           Model              Load      Load
+--------------------------------------------------------------------------------
+aluop[0]           1      --              --              --        -- 
+aluop[1]           1      --              --              --        -- 
+funct[0]           1      --              --              --        -- 
+funct[1]           1      --              --              --        -- 
+funct[2]           1      --              --              --        -- 
+funct[3]           1      --              --              --        -- 
+funct[4]           1      --              --              --        -- 
+funct[5]           1      --              --              --        -- 
+alucont[0]         1      --              --              --        -- 
+alucont[1]         1      --              --              --        -- 
+alucont[2]         1      --              --              --        -- 
+
+                    Input Delay
+                  Min             Max       Related   Max
+Input Port    Rise    Fall    Rise    Fall   Clock  Fanout
+--------------------------------------------------------------------------------
+aluop[0]      2.00    2.00    2.00    2.00  clk       1.00  
+aluop[1]      2.00    2.00    2.00    2.00  clk       1.00  
+funct[0]      2.00    2.00    2.00    2.00  clk       1.00  
+funct[1]      2.00    2.00    2.00    2.00  clk       1.00  
+funct[2]      2.00    2.00    2.00    2.00  clk       1.00  
+funct[3]      2.00    2.00    2.00    2.00  clk       1.00  
+funct[4]      2.00    2.00    2.00    2.00  clk       1.00  
+funct[5]      2.00    2.00    2.00    2.00  clk       1.00  
+
+
+                    Driving Cell
+Input Port   Rise(min/max)      Fall(min/max)      Mult(min/max)  Attrs(min/max)
+--------------------------------------------------------------------------------
+aluop[0]     osu05_stdcells/INVX1
+                                osu05_stdcells/INVX1
+                                                     -- /  --     
+aluop[1]     osu05_stdcells/INVX1
+                                osu05_stdcells/INVX1
+                                                     -- /  --     
+funct[0]     osu05_stdcells/INVX1
+                                osu05_stdcells/INVX1
+                                                     -- /  --     
+funct[1]     osu05_stdcells/INVX1
+                                osu05_stdcells/INVX1
+                                                     -- /  --     
+funct[2]     osu05_stdcells/INVX1
+                                osu05_stdcells/INVX1
+                                                     -- /  --     
+funct[3]     osu05_stdcells/INVX1
+                                osu05_stdcells/INVX1
+                                                     -- /  --     
+funct[4]     osu05_stdcells/INVX1
+                                osu05_stdcells/INVX1
+                                                     -- /  --     
+funct[5]     osu05_stdcells/INVX1
+                                osu05_stdcells/INVX1
+                                                     -- /  --     
+
+
+               Max Drive      Min Drive      Resistance    Min    Min       Cell
+Input Port    Rise    Fall   Rise    Fall   Max     Min    Cap    Fanout    Deg
+--------------------------------------------------------------------------------
+aluop[0]      --      --     --      --     --      --     --     --        -- 
+aluop[1]      --      --     --      --     --      --     --     --        -- 
+funct[0]      --      --     --      --     --      --     --     --        -- 
+funct[1]      --      --     --      --     --      --     --     --        -- 
+funct[2]      --      --     --      --     --      --     --     --        -- 
+funct[3]      --      --     --      --     --      --     --     --        -- 
+funct[4]      --      --     --      --     --      --     --     --        -- 
+funct[5]      --      --     --      --     --      --     --     --        -- 
+
+
+               Max Tran        Min Tran
+Input Port    Rise    Fall    Rise    Fall
+--------------------------------------------------------------------------------
+aluop[0]      --      --      --      -- 
+aluop[1]      --      --      --      -- 
+funct[0]      --      --      --      -- 
+funct[1]      --      --      --      -- 
+funct[2]      --      --      --      -- 
+funct[3]      --      --      --      -- 
+funct[4]      --      --      --      -- 
+funct[5]      --      --      --      -- 
+
+
+                    Output Delay
+                  Min             Max      Related  Fanout
+Output Port   Rise    Fall    Rise    Fall  Clock     Load
+--------------------------------------------------------------------------------
+alucont[0]    1.65    1.65    1.65    1.65  clk       8.00  
+alucont[1]    1.65    1.65    1.65    1.65  clk       8.00  
+alucont[2]    1.65    1.65    1.65    1.65  clk       8.00  
+
+1

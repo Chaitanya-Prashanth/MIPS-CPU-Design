@@ -1,0 +1,358 @@
+#######################################################
+#                                                     
+#  Innovus Command Logging File                     
+#  Created on Sat May  2 16:08:40 2026                
+#                                                     
+#######################################################
+
+#@(#)CDS: Innovus v18.10-p002_1 (64bit) 05/29/2018 19:19 (Linux 2.6.18-194.el5)
+#@(#)CDS: NanoRoute 18.10-p002_1 NR180522-1057/18_10-UB (database version 2.30, 418.7.1) {superthreading v1.46}
+#@(#)CDS: AAE 18.10-p004 (64bit) 05/29/2018 (Linux 2.6.18-194.el5)
+#@(#)CDS: CTE 18.10-p003_1 () May 15 2018 10:23:07 ( )
+#@(#)CDS: SYNTECH 18.10-a012_1 () Apr 19 2018 01:27:21 ( )
+#@(#)CDS: CPE v18.10-p005
+#@(#)CDS: IQRC/TQRC 18.1.1-s118 (64bit) Fri Mar 23 17:23:45 PDT 2018 (Linux 2.6.18-194.el5)
+
+set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+suppressMessage ENCEXT-2799
+win
+restoreDesign saves/mips_place.dat mips
+fit
+fit
+displayScanChain
+displayScanChain *
+displayBufTree
+displayBufTree *
+displayBufTree -help
+restoreDesign saves/mips_final.dat mips
+restoreDesign saves/mips_place.dat mips
+setLayerPreference allM2 -isVisible 0
+setLayerPreference allM3 -isVisible 0
+setLayerPreference allM3Cont -isVisible 0
+setLayerPreference allM2Cont -isVisible 0
+fit
+fit
+fit
+selectNet vdd!
+selectNet gnd!
+selectNet clk
+setLayerPreference pgPower -isVisible 0
+setLayerPreference pgPower -isVisible 1
+setLayerPreference pgPower -isVisible 0
+setLayerPreference pgPower -isVisible 1
+setLayerPreference allM2Cont -isVisible 1
+setLayerPreference allM2 -isVisible 1
+setLayerPreference allM3Cont -isVisible 1
+setLayerPreference allM3 -isVisible 1
+setLayerPreference clock -isVisible 0
+setLayerPreference clock -isVisible 1
+setLayerPreference pgPower -isVisible 0
+setLayerPreference pgPower -isVisible 1
+setLayerPreference pgGround -isVisible 0
+setLayerPreference pgGround -isVisible 1
+setLayerPreference pgGround -isVisible 0
+setLayerPreference pgGround -isVisible 1
+setLayerPreference pgGround -isVisible 0
+setLayerPreference pgGround -isVisible 1
+setLayerPreference allM0 -isVisible 0
+setLayerPreference allM1Cont -isVisible 0
+setLayerPreference allM1 -isVisible 0
+setLayerPreference allM2Cont -isVisible 0
+setLayerPreference allM2 -isVisible 0
+setLayerPreference allM3Cont -isVisible 0
+setLayerPreference allM3 -isVisible 0
+setLayerPreference allM3 -isVisible 1
+fit
+fit
+setLayerPreference allM0 -isVisible 1
+setLayerPreference allM1Cont -isVisible 1
+setLayerPreference allM2Cont -isVisible 1
+setLayerPreference allM1 -isVisible 1
+setLayerPreference allM2 -isVisible 1
+setLayerPreference allM3Cont -isVisible 1
+setLayerPreference node_gird -isVisible 1
+setLayerPreference node_gird -isVisible 0
+selectNet VDD
+selectNet GND
+setLayerPreference allM2Cont -isVisible 0
+setLayerPreference allM2 -isVisible 0
+setLayerPreference allM3Cont -isVisible 0
+setLayerPreference allM3 -isVisible 0
+setLayerPreference allM1 -isVisible 0
+setLayerPreference allM1 -isVisible 1
+set sprCreateIeRingOffset 1.0
+set sprCreateIeRingThreshold 1.0
+set sprCreateIeRingJogDistance 1.0
+set sprCreateIeRingLayers {}
+set sprCreateIeRingOffset 1.0
+set sprCreateIeRingThreshold 1.0
+set sprCreateIeRingJogDistance 1.0
+set sprCreateIeRingLayers {}
+set sprCreateIeStripeWidth 10.0
+set sprCreateIeStripeThreshold 1.0
+set sprCreateIeStripeWidth 10.0
+set sprCreateIeStripeThreshold 1.0
+set sprCreateIeRingOffset 1.0
+set sprCreateIeRingThreshold 1.0
+set sprCreateIeRingJogDistance 1.0
+set sprCreateIeRingLayers {}
+set sprCreateIeStripeWidth 10.0
+set sprCreateIeStripeThreshold 1.0
+setAddStripeMode -ignore_block_check false -break_at none -route_over_rows_only false -rows_without_stripes_only false -extend_to_closest_target none -stop_at_last_wire_for_area false -partial_set_thru_domain false -ignore_nondefault_domains false -trim_antenna_back_to_shape none -spacing_type edge_to_edge -spacing_from_block 0 -stripe_min_length stripe_width -stacked_via_top_layer metal3 -stacked_via_bottom_layer metal1 -via_using_exact_crossover_size false -split_vias false -orthogonal_only true -allow_jog { padcore_ring  block_ring } -skip_via_on_pin {  standardcell } -skip_via_on_wire_shape {  noshape   }
+addStripe -nets {} -layer metal1 -direction vertical -width 4.8 -spacing 1.8 -set_to_set_distance 99 -start_from left -switch_layer_over_obs false -max_same_layer_jog_length 2 -padcore_ring_top_layer_limit metal3 -padcore_ring_bottom_layer_limit metal1 -block_ring_top_layer_limit metal3 -block_ring_bottom_layer_limit metal1 -use_wire_group 0 -snap_wire_center_to_grid Grid
+setLayerPreference allM2Cont -isVisible 1
+setLayerPreference allM2 -isVisible 1
+setLayerPreference allM1 -isVisible 0
+setLayerPreference allM1 -isVisible 1
+setLayerPreference allM1 -isVisible 0
+setLayerPreference allM1 -isVisible 1
+setLayerPreference allM3 -isVisible 1
+setLayerPreference allM3Cont -isVisible 1
+restoreDesign saves/mips_final.dat mips
+selectNet vdd!
+selectNet gnd!
+setLayerPreference allM2Cont -isVisible 0
+setLayerPreference allM2 -isVisible 0
+setLayerPreference allM3Cont -isVisible 0
+setLayerPreference allM3 -isVisible 0
+setLayerPreference node_bump -isVisible 0
+fit
+fit
+displayScanChain *
+deselectAll
+fit
+setLayerPreference pgPower -isVisible 0
+setLayerPreference pgGround -isVisible 0
+setLayerPreference clock -isVisible 0
+setLayerPreference clock -isVisible 1
+setLayerPreference pgGround -isVisible 1
+setLayerPreference pgPower -isVisible 1
+setLayerPreference allM3 -isVisible 1
+setLayerPreference allM3Cont -isVisible 1
+setLayerPreference allM2 -isVisible 1
+setLayerPreference allM2Cont -isVisible 1
+setLayerPreference node_power -isVisible 1
+setLayerPreference node_power -isVisible 0
+setLayerPreference node_power -isVisible 1
+setLayerPreference pgPower -isVisible 0
+setLayerPreference pgPower -isVisible 1
+setLayerPreference pgGround -isVisible 0
+setLayerPreference pgGround -isVisible 1
+setLayerPreference clock -isVisible 0
+setLayerPreference clock -isVisible 1
+setLayerPreference clock -isVisible 0
+setLayerPreference clock -isVisible 1
+setLayerPreference pgGround -isVisible 0
+setLayerPreference pgGround -isVisible 1
+setLayerPreference pgGround -isVisible 0
+setLayerPreference pgGround -isVisible 1
+setLayerPreference pgGround -isVisible 0
+setLayerPreference pgGround -isVisible 1
+setLayerPreference node_power -isVisible 0
+setLayerPreference node_power -isVisible 1
+setLayerPreference node_floorplan -isVisible 1
+setLayerPreference node_floorplan -isVisible 0
+setLayerPreference node_floorplan -isVisible 1
+setLayerPreference node_partition -isVisible 0
+setLayerPreference node_partition -isVisible 1
+setLayerPreference node_cell -isVisible 1
+setLayerPreference node_cell -isVisible 0
+setLayerPreference node_cell -isVisible 1
+setLayerPreference node_cell -isVisible 0
+setLayerPreference node_module -isVisible 0
+setLayerPreference node_module -isVisible 1
+fit
+selectNet -clock clk
+ctd_win -id ctd_window
+selectInst cont_state_reg_1_
+zoomSelected
+deselectInst cont_state_reg_1_
+selectInst cont_state_reg_0_
+zoomSelected
+deselectInst cont_state_reg_0_
+selectInst cont_state_reg_2_
+zoomSelected
+deselectInst cont_state_reg_2_
+selectInst cont_state_reg_3_
+zoomSelected
+deselectInst cont_state_reg_3_
+selectInst cont_state_reg_0_
+zoomSelected
+deselectInst cont_state_reg_0_
+selectInst cont_state_reg_1_
+zoomSelected
+deselectInst cont_state_reg_1_
+selectInst cont_state_reg_1_
+zoomSelected
+deselectInst cont_state_reg_1_
+selectInst cont_state_reg_1_
+zoomSelected
+ctd_win -id ctd_window -unit_delay
+deselectInst cont_state_reg_1_
+selectObject IO_Pin clk
+zoomSelected
+selectObject IO_Pin clk
+zoomSelected
+selectObject IO_Pin clk
+zoomSelected
+selectObject IO_Pin clk
+zoomSelected
+selectObject IO_Pin clk
+zoomSelected
+selectObject IO_Pin clk
+zoomSelected
+selectObject IO_Pin clk
+zoomSelected
+selectObject IO_Pin clk
+zoomSelected
+selectObject IO_Pin clk
+zoomSelected
+selectObject IO_Pin clk
+zoomSelected
+selectObject IO_Pin clk
+zoomSelected
+selectObject IO_Pin clk
+zoomSelected
+selectObject IO_Pin clk
+zoomSelected
+selectObject IO_Pin clk
+zoomSelected
+selectObject IO_Pin clk
+zoomSelected
+selectObject IO_Pin clk
+zoomSelected
+selectObject IO_Pin clk
+zoomSelected
+selectObject IO_Pin clk
+zoomSelected
+selectObject IO_Pin clk
+zoomSelected
+selectObject IO_Pin clk
+zoomSelected
+selectObject IO_Pin clk
+zoomSelected
+selectObject IO_Pin clk
+zoomSelected
+selectObject IO_Pin clk
+zoomSelected
+selectObject IO_Pin clk
+zoomSelected
+selectObject IO_Pin clk
+zoomSelected
+selectObject IO_Pin clk
+zoomSelected
+selectObject IO_Pin clk
+zoomSelected
+selectObject IO_Pin clk
+zoomSelected
+selectObject IO_Pin clk
+zoomSelected
+selectObject IO_Pin clk
+zoomSelected
+selectObject IO_Pin clk
+zoomSelected
+selectObject IO_Pin clk
+zoomSelected
+selectObject IO_Pin clk
+zoomSelected
+selectObject IO_Pin clk
+zoomSelected
+selectObject IO_Pin clk
+zoomSelected
+selectObject IO_Pin clk
+zoomSelected
+selectObject IO_Pin clk
+zoomSelected
+selectObject IO_Pin clk
+zoomSelected
+selectObject IO_Pin clk
+zoomSelected
+selectObject IO_Pin clk
+zoomSelected
+selectObject IO_Pin clk
+zoomSelected
+selectObject IO_Pin clk
+zoomSelected
+selectObject IO_Pin clk
+zoomSelected
+selectObject IO_Pin clk
+zoomSelected
+selectObject IO_Pin clk
+zoomSelected
+selectObject IO_Pin clk
+zoomSelected
+selectObject IO_Pin clk
+zoomSelected
+selectObject IO_Pin clk
+zoomSelected
+selectObject IO_Pin clk
+zoomSelected
+selectObject IO_Pin clk
+zoomSelected
+selectObject IO_Pin clk
+zoomSelected
+selectObject IO_Pin clk
+zoomSelected
+selectInst cont_state_reg_0_
+zoomSelected
+selectNet -clock clk
+selectNet clk
+deselectAll
+selectInst U93
+fit
+deselectAll
+ccopt_design
+report_power -outfile reports/mips/final/power.rpt
+fit
+fit
+set sprCreateIeRingOffset 1.0
+set sprCreateIeRingThreshold 1.0
+set sprCreateIeRingJogDistance 1.0
+set sprCreateIeRingLayers {}
+set sprCreateIeRingOffset 1.0
+set sprCreateIeRingThreshold 1.0
+set sprCreateIeRingJogDistance 1.0
+set sprCreateIeRingLayers {}
+set sprCreateIeStripeWidth 10.0
+set sprCreateIeStripeThreshold 1.0
+set sprCreateIeStripeWidth 10.0
+set sprCreateIeStripeThreshold 1.0
+set sprCreateIeRingOffset 1.0
+set sprCreateIeRingThreshold 1.0
+set sprCreateIeRingJogDistance 1.0
+set sprCreateIeRingLayers {}
+set sprCreateIeStripeWidth 10.0
+set sprCreateIeStripeThreshold 1.0
+setAddRingMode -ring_target default -extend_over_row 0 -ignore_rows 0 -avoid_short 0 -skip_crossing_trunks none -stacked_via_top_layer metal3 -stacked_via_bottom_layer metal1 -via_using_exact_crossover_size 1 -orthogonal_only true -skip_via_on_pin {  standardcell } -skip_via_on_wire_shape {  noshape }
+addRing -nets {vdd! gnd!} -type core_rings -follow core -layer {top metal1 bottom metal1 left metal2 right metal2} -width {top 9.9 bottom 9.9 left 9.9 right 9.9} -spacing {top 1.8 bottom 1.8 left 1.8 right 1.8} -offset {top 1.8 bottom 1.8 left 1.8 right 1.8} -center 1 -extend_corner {} -threshold 0 -jog_distance 0 -snap_wire_center_to_grid None
+setAddRingMode -ring_target default -extend_over_row 0 -ignore_rows 0 -avoid_short 0 -skip_crossing_trunks none -stacked_via_top_layer metal3 -stacked_via_bottom_layer metal1 -via_using_exact_crossover_size 1 -orthogonal_only true -skip_via_on_pin {  standardcell } -skip_via_on_wire_shape {  noshape }
+addRing -nets {vdd! gnd!} -type core_rings -follow core -layer {top metal1 bottom metal1 left metal2 right metal2} -width {top 9.9 bottom 9.9 left 9.9 right 9.9} -spacing {top 1.8 bottom 1.8 left 1.8 right 1.8} -offset {top 1.8 bottom 1.8 left 1.8 right 1.8} -center 1 -extend_corner {} -threshold 0 -jog_distance 0 -snap_wire_center_to_grid None
+setAddRingMode -ring_target default -extend_over_row 0 -ignore_rows 0 -avoid_short 0 -skip_crossing_trunks none -stacked_via_top_layer metal3 -stacked_via_bottom_layer metal1 -via_using_exact_crossover_size 1 -orthogonal_only true -skip_via_on_pin {  standardcell } -skip_via_on_wire_shape {  noshape }
+addRing -nets {vdd! gnd!} -type core_rings -follow core -layer {top metal1 bottom metal1 left metal2 right metal2} -width {top 9.9 bottom 9.9 left 9.9 right 9.9} -spacing {top 1.8 bottom 1.8 left 1.8 right 1.8} -offset {top 1.8 bottom 1.8 left 1.8 right 1.8} -center 1 -extend_corner {} -threshold 0 -jog_distance 0 -snap_wire_center_to_grid None
+setAddRingMode -ring_target default -extend_over_row 0 -ignore_rows 0 -avoid_short 0 -skip_crossing_trunks none -stacked_via_top_layer metal3 -stacked_via_bottom_layer metal1 -via_using_exact_crossover_size 1 -orthogonal_only true -skip_via_on_pin {  standardcell } -skip_via_on_wire_shape {  noshape }
+addRing -nets {vdd! gnd!} -type core_rings -follow core -layer {top metal1 bottom metal1 left metal2 right metal2} -width {top 9.9 bottom 9.9 left 9.9 right 9.9} -spacing {top 1.8 bottom 1.8 left 1.8 right 1.8} -offset {top 1.8 bottom 1.8 left 1.8 right 1.8} -center 1 -extend_corner {} -threshold 0 -jog_distance 0 -snap_wire_center_to_grid None
+setAddRingMode -ring_target default -extend_over_row 0 -ignore_rows 0 -avoid_short 0 -skip_crossing_trunks none -stacked_via_top_layer metal3 -stacked_via_bottom_layer metal1 -via_using_exact_crossover_size 1 -orthogonal_only true -skip_via_on_pin {  standardcell } -skip_via_on_wire_shape {  noshape }
+addRing -nets {vdd! gnd!} -type core_rings -follow core -layer {top metal1 bottom metal1 left metal2 right metal2} -width {top 9.9 bottom 9.9 left 9.9 right 9.9} -spacing {top 1.8 bottom 1.8 left 1.8 right 1.8} -offset {top 1.8 bottom 1.8 left 1.8 right 1.8} -center 1 -extend_corner {} -threshold 0 -jog_distance 0 -snap_wire_center_to_grid None
+setAddRingMode -ring_target default -extend_over_row 0 -ignore_rows 0 -avoid_short 0 -skip_crossing_trunks none -stacked_via_top_layer metal3 -stacked_via_bottom_layer metal1 -via_using_exact_crossover_size 1 -orthogonal_only true -skip_via_on_pin {  standardcell } -skip_via_on_wire_shape {  noshape }
+addRing -nets {vdd! gnd!} -type core_rings -follow core -layer {top metal1 bottom metal1 left metal2 right metal2} -width {top 9.9 bottom 9.9 left 9.9 right 9.9} -spacing {top 1.8 bottom 1.8 left 1.8 right 1.8} -offset {top 1.8 bottom 1.8 left 1.8 right 1.8} -center 1 -extend_corner {} -threshold 0 -jog_distance 0 -snap_wire_center_to_grid None
+setAddRingMode -ring_target default -extend_over_row 0 -ignore_rows 0 -avoid_short 0 -skip_crossing_trunks none -stacked_via_top_layer metal3 -stacked_via_bottom_layer metal1 -via_using_exact_crossover_size 1 -orthogonal_only true -skip_via_on_pin {  standardcell } -skip_via_on_wire_shape {  noshape }
+addRing -nets {vdd! gnd!} -type core_rings -follow core -layer {top metal1 bottom metal1 left metal2 right metal2} -width {top 9.9 bottom 9.9 left 9.9 right 9.9} -spacing {top 1.8 bottom 1.8 left 1.8 right 1.8} -offset {top 1.8 bottom 1.8 left 1.8 right 1.8} -center 1 -extend_corner {} -threshold 0 -jog_distance 0 -snap_wire_center_to_grid None
+fit
+addIoFiller
+getFillerMode -quiet
+addFiller -cell FILL -prefix FILLER
+addFiller -cell FILL -prefix FILLER
+setAddRingMode -ring_target default -extend_over_row 0 -ignore_rows 0 -avoid_short 0 -skip_crossing_trunks none -stacked_via_top_layer metal3 -stacked_via_bottom_layer metal1 -via_using_exact_crossover_size 1 -orthogonal_only true -skip_via_on_pin {  standardcell } -skip_via_on_wire_shape {  noshape }
+addRing -nets {vdd! gnd!} -type core_rings -follow core -layer {top metal1 bottom metal1 left metal2 right metal2} -width {top 9.9 bottom 9.9 left 9.9 right 9.9} -spacing {top 1.8 bottom 1.8 left 1.8 right 1.8} -offset {top 1.8 bottom 1.8 left 1.8 right 1.8} -center 1 -extend_corner {} -threshold 0 -jog_distance 0 -snap_wire_center_to_grid None
+setAddRingMode -ring_target default -extend_over_row 0 -ignore_rows 0 -avoid_short 0 -skip_crossing_trunks none -stacked_via_top_layer metal3 -stacked_via_bottom_layer metal1 -via_using_exact_crossover_size 1 -orthogonal_only true -skip_via_on_pin {  standardcell } -skip_via_on_wire_shape {  noshape }
+addRing -nets {vdd! gnd!} -type core_rings -follow core -layer {top metal1 bottom metal1 left metal2 right metal2} -width {top 9.9 bottom 9.9 left 9.9 right 9.9} -spacing {top 1.8 bottom 1.8 left 1.8 right 1.8} -offset {top 1.8 bottom 1.8 left 1.8 right 1.8} -center 1 -extend_corner {} -threshold 0 -jog_distance 0 -snap_wire_center_to_grid None
+setAddRingMode -ring_target default -extend_over_row 0 -ignore_rows 0 -avoid_short 0 -skip_crossing_trunks none -stacked_via_top_layer metal3 -stacked_via_bottom_layer metal1 -via_using_exact_crossover_size 1 -orthogonal_only true -skip_via_on_pin {  standardcell } -skip_via_on_wire_shape {  noshape }
+addRing -nets {vdd! gnd!} -type core_rings -follow core -layer {top metal1 bottom metal1 left metal2 right metal2} -width {top 9.9 bottom 9.9 left 9.9 right 9.9} -spacing {top 1.8 bottom 1.8 left 1.8 right 1.8} -offset {top 1.8 bottom 1.8 left 1.8 right 1.8} -center 1 -extend_corner {} -threshold 0 -jog_distance 0 -snap_wire_center_to_grid None
+fit
+selectInst U373
+fit
+fit
+deselectAll
+selectInst FILLER_789
+fit
+addRing

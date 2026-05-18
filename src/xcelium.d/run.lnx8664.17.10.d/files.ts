@@ -1,0 +1,16 @@
+1184253611 /apps/design_kits/ncsu-cdk-1.6.0.beta/cdssetup/cds.lib
+1775689444 /home/ead/G44010997/ece6250/project/src/mips.v
+1776890947 /home/ead/G44010997/ece6250/project/src/tb_mips.v
+1775689443 /home/ead/G44010997/ece6250/project/src/flop.v
+1776113625 /home/ead/G44010997/ece6250/project/src/flopen.v
+1776114153 /home/ead/G44010997/ece6250/project/src/flopenr.v
+1775689444 /home/ead/G44010997/ece6250/project/src/mux2.v
+1775689444 /home/ead/G44010997/ece6250/project/src/mux4.v
+1775689444 /home/ead/G44010997/ece6250/project/src/mux23.v
+1775689444 /home/ead/G44010997/ece6250/project/src/zerodetect.v
+1775689443 /home/ead/G44010997/ece6250/project/src/alu.v
+1775689443 /home/ead/G44010997/ece6250/project/src/alucontrol.v
+1775689444 /home/ead/G44010997/ece6250/project/src/regfile.v
+1776883905 /home/ead/G44010997/ece6250/project/src/datapath.v
+1776823168 /home/ead/G44010997/ece6250/project/src/controller.v
+1775689444 /home/ead/G44010997/ece6250/project/src/ram.v

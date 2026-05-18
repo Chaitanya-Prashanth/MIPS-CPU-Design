@@ -1,0 +1,324 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -nworst 5
+        -max_paths 5
+        -sort_by group
+Design : alucontrol
+Version: O-2018.06-SP1
+Date   : Thu Apr 23 17:42:33 2026
+****************************************
+
+Operating Conditions: typical   Library: osu05_stdcells
+Wire Load Model Mode: top
+
+  Startpoint: funct[4] (input port clocked by clk)
+  Endpoint: alucont[0] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.30       0.30
+  input external delay                     2.00       2.30 r
+  funct[4] (in)                            0.06       2.36 r
+  U29/Y (INVX2)                            0.10       2.46 f
+  U30/Y (INVX2)                            0.09       2.55 r
+  U20/Y (NOR2X1)                           0.16       2.71 f
+  U19/Y (NAND3X1)                          0.14       2.85 r
+  U17/Y (OR2X1)                            0.39       3.24 r
+  U13/Y (OAI22X1)                          0.25       3.49 f
+  alucont[0] (out)                         0.00       3.49 f
+  data arrival time                                   3.49
+
+  clock clk (rise edge)                   10.00      10.00
+  clock network delay (ideal)              0.30      10.30
+  output external delay                   -1.65       8.65
+  data required time                                  8.65
+  -----------------------------------------------------------
+  data required time                                  8.65
+  data arrival time                                  -3.49
+  -----------------------------------------------------------
+  slack (MET)                                         5.16
+
+
+  Startpoint: funct[4] (input port clocked by clk)
+  Endpoint: alucont[0] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.30       0.30
+  input external delay                     2.00       2.30 f
+  funct[4] (in)                            0.07       2.37 f
+  U29/Y (INVX2)                            0.10       2.47 r
+  U30/Y (INVX2)                            0.09       2.57 f
+  U20/Y (NOR2X1)                           0.10       2.67 r
+  U19/Y (NAND3X1)                          0.07       2.74 f
+  U17/Y (OR2X1)                            0.42       3.16 f
+  U13/Y (OAI22X1)                          0.31       3.46 r
+  alucont[0] (out)                         0.00       3.46 r
+  data arrival time                                   3.46
+
+  clock clk (rise edge)                   10.00      10.00
+  clock network delay (ideal)              0.30      10.30
+  output external delay                   -1.65       8.65
+  data required time                                  8.65
+  -----------------------------------------------------------
+  data required time                                  8.65
+  data arrival time                                  -3.46
+  -----------------------------------------------------------
+  slack (MET)                                         5.19
+
+
+  Startpoint: funct[3] (input port clocked by clk)
+  Endpoint: alucont[0] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.30       0.30
+  input external delay                     2.00       2.30 f
+  funct[3] (in)                            0.07       2.37 f
+  U23/Y (INVX2)                            0.08       2.45 r
+  U24/Y (INVX2)                            0.08       2.53 f
+  U20/Y (NOR2X1)                           0.09       2.63 r
+  U19/Y (NAND3X1)                          0.07       2.70 f
+  U17/Y (OR2X1)                            0.42       3.11 f
+  U13/Y (OAI22X1)                          0.31       3.42 r
+  alucont[0] (out)                         0.00       3.42 r
+  data arrival time                                   3.42
+
+  clock clk (rise edge)                   10.00      10.00
+  clock network delay (ideal)              0.30      10.30
+  output external delay                   -1.65       8.65
+  data required time                                  8.65
+  -----------------------------------------------------------
+  data required time                                  8.65
+  data arrival time                                  -3.42
+  -----------------------------------------------------------
+  slack (MET)                                         5.23
+
+
+  Startpoint: funct[3] (input port clocked by clk)
+  Endpoint: alucont[0] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.30       0.30
+  input external delay                     2.00       2.30 r
+  funct[3] (in)                            0.06       2.36 r
+  U23/Y (INVX2)                            0.07       2.43 f
+  U24/Y (INVX2)                            0.08       2.51 r
+  U20/Y (NOR2X1)                           0.13       2.63 f
+  U19/Y (NAND3X1)                          0.14       2.77 r
+  U17/Y (OR2X1)                            0.39       3.16 r
+  U13/Y (OAI22X1)                          0.25       3.41 f
+  alucont[0] (out)                         0.00       3.41 f
+  data arrival time                                   3.41
+
+  clock clk (rise edge)                   10.00      10.00
+  clock network delay (ideal)              0.30      10.30
+  output external delay                   -1.65       8.65
+  data required time                                  8.65
+  -----------------------------------------------------------
+  data required time                                  8.65
+  data arrival time                                  -3.41
+  -----------------------------------------------------------
+  slack (MET)                                         5.24
+
+
+  Startpoint: aluop[1] (input port clocked by clk)
+  Endpoint: alucont[0] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.30       0.30
+  input external delay                     2.00       2.30 f
+  aluop[1] (in)                            0.07       2.37 f
+  U31/Y (INVX2)                            0.08       2.45 r
+  U32/Y (INVX2)                            0.12       2.57 f
+  U18/Y (NAND3X1)                          0.15       2.71 r
+  U17/Y (OR2X1)                            0.44       3.15 r
+  U13/Y (OAI22X1)                          0.25       3.41 f
+  alucont[0] (out)                         0.00       3.41 f
+  data arrival time                                   3.41
+
+  clock clk (rise edge)                   10.00      10.00
+  clock network delay (ideal)              0.30      10.30
+  output external delay                   -1.65       8.65
+  data required time                                  8.65
+  -----------------------------------------------------------
+  data required time                                  8.65
+  data arrival time                                  -3.41
+  -----------------------------------------------------------
+  slack (MET)                                         5.24
+
+
+1
+ 
+****************************************
+Report : timing
+        -path full
+        -delay min
+        -nworst 5
+        -max_paths 5
+        -sort_by group
+Design : alucontrol
+Version: O-2018.06-SP1
+Date   : Thu Apr 23 17:42:33 2026
+****************************************
+
+Operating Conditions: typical   Library: osu05_stdcells
+Wire Load Model Mode: top
+
+  Startpoint: aluop[0] (input port clocked by clk)
+  Endpoint: alucont[2] (output port clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.30       0.30
+  input external delay                     2.00       2.30 f
+  aluop[0] (in)                            0.07       2.37 f
+  U5/Y (INVX2)                             0.12       2.49 r
+  U10/Y (OAI21X1)                          0.21       2.70 f
+  alucont[2] (out)                         0.00       2.70 f
+  data arrival time                                   2.70
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.30       0.30
+  output external delay                   -1.65      -1.35
+  data required time                                 -1.35
+  -----------------------------------------------------------
+  data required time                                 -1.35
+  data arrival time                                  -2.70
+  -----------------------------------------------------------
+  slack (MET)                                         4.05
+
+
+  Startpoint: funct[0] (input port clocked by clk)
+  Endpoint: alucont[0] (output port clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.30       0.30
+  input external delay                     2.00       2.30 f
+  funct[0] (in)                            0.07       2.37 f
+  U9/Y (INVX2)                             0.12       2.50 r
+  U13/Y (OAI22X1)                          0.21       2.71 f
+  alucont[0] (out)                         0.00       2.71 f
+  data arrival time                                   2.71
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.30       0.30
+  output external delay                   -1.65      -1.35
+  data required time                                 -1.35
+  -----------------------------------------------------------
+  data required time                                 -1.35
+  data arrival time                                  -2.71
+  -----------------------------------------------------------
+  slack (MET)                                         4.06
+
+
+  Startpoint: aluop[0] (input port clocked by clk)
+  Endpoint: alucont[2] (output port clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.30       0.30
+  input external delay                     2.00       2.30 r
+  aluop[0] (in)                            0.06       2.36 r
+  U5/Y (INVX2)                             0.12       2.48 f
+  U10/Y (OAI21X1)                          0.25       2.72 r
+  alucont[2] (out)                         0.00       2.72 r
+  data arrival time                                   2.72
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.30       0.30
+  output external delay                   -1.65      -1.35
+  data required time                                 -1.35
+  -----------------------------------------------------------
+  data required time                                 -1.35
+  data arrival time                                  -2.72
+  -----------------------------------------------------------
+  slack (MET)                                         4.07
+
+
+  Startpoint: funct[0] (input port clocked by clk)
+  Endpoint: alucont[0] (output port clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.30       0.30
+  input external delay                     2.00       2.30 r
+  funct[0] (in)                            0.06       2.36 r
+  U9/Y (INVX2)                             0.13       2.48 f
+  U13/Y (OAI22X1)                          0.26       2.74 r
+  alucont[0] (out)                         0.00       2.74 r
+  data arrival time                                   2.74
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.30       0.30
+  output external delay                   -1.65      -1.35
+  data required time                                 -1.35
+  -----------------------------------------------------------
+  data required time                                 -1.35
+  data arrival time                                  -2.74
+  -----------------------------------------------------------
+  slack (MET)                                         4.09
+
+
+  Startpoint: aluop[1] (input port clocked by clk)
+  Endpoint: alucont[2] (output port clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.30       0.30
+  input external delay                     2.00       2.30 r
+  aluop[1] (in)                            0.06       2.36 r
+  U31/Y (INVX2)                            0.07       2.43 f
+  U32/Y (INVX2)                            0.11       2.54 r
+  U10/Y (OAI21X1)                          0.23       2.76 f
+  alucont[2] (out)                         0.00       2.76 f
+  data arrival time                                   2.76
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.30       0.30
+  output external delay                   -1.65      -1.35
+  data required time                                 -1.35
+  -----------------------------------------------------------
+  data required time                                 -1.35
+  data arrival time                                  -2.76
+  -----------------------------------------------------------
+  slack (MET)                                         4.11
+
+
+1

@@ -1,0 +1,82 @@
+*----------------------------------------------------------------------------------------
+*	Innovus 18.10-p002_1 (64bit) 05/29/2018 19:19 (Linux 2.6.18-194.el5)
+*	
+*
+* 	Date & Time:	2026-May-02 18:42:34 (2026-May-02 22:42:34 GMT)
+*
+*----------------------------------------------------------------------------------------
+*
+*	Design: mips
+*
+*	Liberty Libraries used: 
+*	        VIEW_typ: /home/ead/G44010997/ece6250/project/pnr/saves/mips_final.dat/libs/mmmc/osu05_stdcells.lib
+*
+*	Power Domain used: 
+*
+*       Power View : VIEW_typ
+*
+*       User-Defined Activity : N.A.
+*
+*       Activity File: N.A.
+*
+*       Hierarchical Global Activity: N.A.
+*
+*       Global Activity: N.A.
+*
+*       Sequential Element Activity: 0.200000
+*
+*       Primary Input Activity: 0.200000
+*
+*       Default icg ratio: N.A.
+*
+*       Global Comb ClockGate Ratio: N.A.
+*
+*	Power Units = 1mW
+*
+*	Time Units = 1e-09 secs 
+*
+*       report_power -outfile reports/mips/final/power.rpt
+*
+-----------------------------------------------------------------------------------------
+
+
+Total Power 
+-----------------------------------------------------------------------------------------
+Total Internal Power:       13.61123867 	   46.7192%
+Total Switching Power:      15.52288429 	   53.2807%
+Total Leakage Power:         0.00004460 	    0.0002%
+Total Power:                29.13416764 
+-----------------------------------------------------------------------------------------
+
+
+Group                           Internal   Switching     Leakage       Total  Percentage 
+                                Power      Power         Power         Power  (%)        
+-----------------------------------------------------------------------------------------
+Sequential                         1.071       0.209   2.132e-06        1.28       4.395 
+Macro                                  0           0           0           0           0 
+IO                                     0           0           0           0           0 
+Combinational                      12.54       15.31   4.247e-05       27.85       95.61 
+Clock (Combinational)                  0           0           0           0           0 
+Clock (Sequential)                     0           0           0           0           0 
+-----------------------------------------------------------------------------------------
+Total                              13.61       15.52    4.46e-05       29.13         100 
+-----------------------------------------------------------------------------------------
+
+
+Rail                  Voltage   Internal   Switching     Leakage       Total  Percentage 
+                                Power      Power         Power         Power  (%)        
+-----------------------------------------------------------------------------------------
+Default                     5      13.61       15.52    4.46e-05       29.13         100 
+
+
+-----------------------------------------------------------------------------------------
+*	Power Distribution Summary: 
+*                Highest Average Power:         cont_state_reg_3_ (DFFSR):           0.3378 
+*                Highest Leakage Power:         cont_state_reg_2_ (DFFSR):         5.33e-07 
+*          Total Cap:      5.66357e-11 F
+*          Total instances in design:   622
+*          Total instances in design with no power:     0
+*          Total instances in design with no activity:     0
+*          Total Fillers and Decap:     0
+-----------------------------------------------------------------------------------------
+

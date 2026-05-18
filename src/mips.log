@@ -1,0 +1,220 @@
+xrun(64): 17.10-s001: (c) Copyright 1995-2017 Cadence Design Systems, Inc.
+TOOL:	xrun(64)	17.10-s001: Started on Apr 22, 2026 at 16:50:28 EDT
+xrun
+	-timescale 1ns/10ps
+	-access +rwc
+	./flop.v
+	./flopen.v
+	./flopenr.v
+	./mux2.v
+	./mux4.v
+	./mux23.v
+	./zerodetect.v
+	./alu.v
+	./alucontrol.v
+	./regfile.v
+	./datapath.v
+	./controller.v
+	./mips.v
+	./ram.v
+	./tb_mips.v
+	-top tb_mips
+	-log mips.log
+Recompiling... reason: file './tb_mips.v' is newer than expected.
+	expected: Wed Apr 22 15:57:11 2026
+	actual:   Wed Apr 22 16:49:07 2026
+file: ./controller.v
+//   S0–S3  : Instruction Fetch (4 bytes, one per cycle)
+       |
+xmvlog: *W,NONPRT (./controller.v,5|7): non-printable character (0xe2) ignored.
+//   S0–S3  : Instruction Fetch (4 bytes, one per cycle)
+        |
+xmvlog: *W,NONPRT (./controller.v,5|8): non-printable character (0x80) ignored.
+//   S0–S3  : Instruction Fetch (4 bytes, one per cycle)
+         |
+xmvlog: *W,NONPRT (./controller.v,5|9): non-printable character (0x93) ignored.
+file: ./tb_mips.v
+	module worklib.tb_mips:v
+		errors: 0, warnings: 0
+	Total errors/warnings found outside modules and primitives:
+		errors: 0, warnings: 3
+	Elaborating the design hierarchy:
+		Caching library 'worklib' ....... Done
+	Top level design units:
+		tb_mips
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.tb_mips:v <0x269a8398>
+			streams:  13, words: 37033
+		worklib.ram:v <0x5f54b130>
+			streams:   3, words:  4265
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                  Instances  Unique
+		Modules:                 24      15
+		Registers:               51      44
+		Scalar wires:            12       -
+		Expanded wires:          36       5
+		Vectored wires:          27       -
+		Always blocks:           26      19
+		Initial blocks:           9       6
+		Cont. assignments:       14      12
+		Pseudo assignments:       4       4
+		Simulation timescale:  10ps
+	Writing initial simulation snapshot: worklib.tb_mips:v
+Loading snapshot worklib.tb_mips:v .................... Done
+xcelium> source /apps/vlsi_2018/cadence/XCELIUM1710/tools/xcelium/files/xmsimrc
+xcelium> run
+RAM: Initialized to zero.
+RAM: Loaded ram.dat
+RAM: Contents:
+  [0] = 10000000  (0x80)
+  [1] = 00000001  (0x01)
+  [2] = 00000000  (0x00)
+  [3] = 00111100  (0x3c)
+  [4] = 10000000  (0x80)
+  [5] = 00000010  (0x02)
+  [6] = 00000000  (0x00)
+  [7] = 00111101  (0x3d)
+  [8] = 00000000  (0x00)
+  [9] = 00100010  (0x22)
+  [10] = 00011000  (0x18)
+  [11] = 00100000  (0x20)
+  [12] = 00000000  (0x00)
+  [13] = 00100010  (0x22)
+  [14] = 00100000  (0x20)
+  [15] = 00100010  (0x22)
+  [16] = 00000000  (0x00)
+  [17] = 00100010  (0x22)
+  [18] = 00101000  (0x28)
+  [19] = 00100100  (0x24)
+  [20] = 00000000  (0x00)
+  [21] = 00100010  (0x22)
+  [22] = 00110000  (0x30)
+  [23] = 00100101  (0x25)
+  [24] = 00000000  (0x00)
+  [25] = 01000001  (0x41)
+  [26] = 00111000  (0x38)
+  [27] = 00101010  (0x2a)
+  [28] = 00100000  (0x20)
+  [29] = 00100001  (0x21)
+  [30] = 00000000  (0x00)
+  [31] = 00000101  (0x05)
+
+=== Tiny MIPS Comprehensive Testbench ===
+Reset released at time 1600 ns
+[cyc 1 | t=2500] PC=0 MR=1 MW=0 WD=0 | IR=80000000 st=0
+[cyc 2 | t=3500] PC=1 MR=1 MW=0 WD=0 | IR=80000000 st=1
+[cyc 3 | t=4500] PC=2 MR=1 MW=0 WD=0 | IR=80010000 st=2
+[cyc 4 | t=5500] PC=3 MR=1 MW=0 WD=x | IR=80010000 st=3
+[cyc 5 | t=6500] PC=4 MR=0 MW=0 WD=x | IR=8001003c st=4
+[cyc 6 | t=7500] PC=4 MR=0 MW=0 WD=x | IR=8001003c st=5
+[cyc 7 | t=8500] PC=60 MR=1 MW=0 WD=x | IR=8001003c st=6
+[cyc 8 | t=9500] PC=4 MR=0 MW=0 WD=x | IR=8001003c st=7
+[TC2] lb $s0 writeback at cycle 8
+[cyc 9 | t=10500] PC=4 MR=1 MW=0 WD=x | IR=8001003c st=0
+[cyc 10 | t=11500] PC=5 MR=1 MW=0 WD=10 | IR=8001003c st=1
+[cyc 11 | t=12500] PC=6 MR=1 MW=0 WD=10 | IR=8002003c st=2
+[cyc 12 | t=13500] PC=7 MR=1 MW=0 WD=x | IR=8002003c st=3
+[cyc 13 | t=14500] PC=8 MR=0 MW=0 WD=x | IR=8002003d st=4
+[cyc 14 | t=15500] PC=8 MR=0 MW=0 WD=x | IR=8002003d st=5
+[cyc 15 | t=16500] PC=61 MR=1 MW=0 WD=x | IR=8002003d st=6
+[cyc 16 | t=17500] PC=8 MR=0 MW=0 WD=x | IR=8002003d st=7
+[TC3] lb $s1 writeback at cycle 16
+[cyc 17 | t=18500] PC=8 MR=1 MW=0 WD=x | IR=8002003d st=0
+[cyc 18 | t=19500] PC=9 MR=1 MW=0 WD=3 | IR=0002003d st=1
+[cyc 19 | t=20500] PC=10 MR=1 MW=0 WD=3 | IR=0022003d st=2
+[cyc 20 | t=21500] PC=11 MR=1 MW=0 WD=3 | IR=0022183d st=3
+[cyc 21 | t=22500] PC=12 MR=0 MW=0 WD=3 | IR=00221820 st=4
+[cyc 22 | t=23500] PC=12 MR=0 MW=0 WD=3 | IR=00221820 st=9
+[cyc 23 | t=24500] PC=12 MR=0 MW=0 WD=3 | IR=00221820 st=10
+[TC4] add at cycle 23
+[cyc 24 | t=25500] PC=12 MR=1 MW=0 WD=3 | IR=00221820 st=0
+[cyc 25 | t=26500] PC=13 MR=1 MW=0 WD=3 | IR=00221820 st=1
+[cyc 26 | t=27500] PC=14 MR=1 MW=0 WD=3 | IR=00221820 st=2
+[cyc 27 | t=28500] PC=15 MR=1 MW=0 WD=3 | IR=00222020 st=3
+[cyc 28 | t=29500] PC=16 MR=0 MW=0 WD=3 | IR=00222022 st=4
+[cyc 29 | t=30500] PC=16 MR=0 MW=0 WD=3 | IR=00222022 st=9
+[cyc 30 | t=31500] PC=16 MR=0 MW=0 WD=3 | IR=00222022 st=10
+[TC5] sub at cycle 30
+[cyc 31 | t=32500] PC=16 MR=1 MW=0 WD=3 | IR=00222022 st=0
+[cyc 32 | t=33500] PC=17 MR=1 MW=0 WD=3 | IR=00222022 st=1
+[cyc 33 | t=34500] PC=18 MR=1 MW=0 WD=3 | IR=00222022 st=2
+[cyc 34 | t=35500] PC=19 MR=1 MW=0 WD=3 | IR=00222822 st=3
+[cyc 35 | t=36500] PC=20 MR=0 MW=0 WD=3 | IR=00222824 st=4
+[cyc 36 | t=37500] PC=20 MR=0 MW=0 WD=3 | IR=00222824 st=9
+[cyc 37 | t=38500] PC=20 MR=0 MW=0 WD=3 | IR=00222824 st=10
+[TC6] and at cycle 37
+[cyc 38 | t=39500] PC=20 MR=1 MW=0 WD=3 | IR=00222824 st=0
+[cyc 39 | t=40500] PC=21 MR=1 MW=0 WD=3 | IR=00222824 st=1
+[cyc 40 | t=41500] PC=22 MR=1 MW=0 WD=3 | IR=00222824 st=2
+[cyc 41 | t=42500] PC=23 MR=1 MW=0 WD=3 | IR=00223024 st=3
+[cyc 42 | t=43500] PC=24 MR=0 MW=0 WD=3 | IR=00223025 st=4
+[cyc 43 | t=44500] PC=24 MR=0 MW=0 WD=3 | IR=00223025 st=9
+[cyc 44 | t=45500] PC=24 MR=0 MW=0 WD=3 | IR=00223025 st=10
+[TC7] or  at cycle 44
+[cyc 45 | t=46500] PC=24 MR=1 MW=0 WD=3 | IR=00223025 st=0
+[cyc 46 | t=47500] PC=25 MR=1 MW=0 WD=3 | IR=00223025 st=1
+[cyc 47 | t=48500] PC=26 MR=1 MW=0 WD=3 | IR=00413025 st=2
+[cyc 48 | t=49500] PC=27 MR=1 MW=0 WD=10 | IR=00413825 st=3
+[cyc 49 | t=50500] PC=28 MR=0 MW=0 WD=10 | IR=0041382a st=4
+[cyc 50 | t=51500] PC=28 MR=0 MW=0 WD=10 | IR=0041382a st=9
+[cyc 51 | t=52500] PC=28 MR=0 MW=0 WD=10 | IR=0041382a st=10
+[TC8] slt at cycle 51
+[cyc 52 | t=53500] PC=28 MR=1 MW=0 WD=10 | IR=0041382a st=0
+[cyc 53 | t=54500] PC=29 MR=1 MW=0 WD=10 | IR=2041382a st=1
+[cyc 54 | t=55500] PC=30 MR=1 MW=0 WD=10 | IR=2021382a st=2
+[cyc 55 | t=56500] PC=31 MR=1 MW=0 WD=10 | IR=2021002a st=3
+[cyc 56 | t=57500] PC=32 MR=0 MW=0 WD=10 | IR=20210005 st=4
+[cyc 57 | t=58500] PC=32 MR=0 MW=0 WD=10 | IR=20210005 st=9
+[cyc 58 | t=59500] PC=32 MR=0 MW=0 WD=10 | IR=20210005 st=10
+[TC9] addi at cycle 58
+[cyc 59 | t=60500] PC=32 MR=1 MW=0 WD=10 | IR=20210005 st=0
+[cyc 60 | t=61500] PC=33 MR=1 MW=0 WD=15 | IR=c0210005 st=1
+[cyc 61 | t=62500] PC=34 MR=1 MW=0 WD=15 | IR=c0030005 st=2
+[cyc 62 | t=63500] PC=35 MR=1 MW=0 WD=13 | IR=c0030005 st=3
+[cyc 63 | t=64500] PC=36 MR=0 MW=0 WD=13 | IR=c003003e st=4
+[cyc 64 | t=65500] PC=36 MR=0 MW=0 WD=13 | IR=c003003e st=5
+
+--- TC10: sb mem[62]=13 at cycle 64 ---
+PASS | TC10_SB_MEM62 | mem[62]=13 correct
+[cyc 65 | t=66500] PC=62 MR=0 MW=1 WD=13 | IR=c003003e st=8
+[cyc 66 | t=67500] PC=36 MR=1 MW=0 WD=13 | IR=c003003e st=0
+[cyc 67 | t=68500] PC=37 MR=1 MW=0 WD=13 | IR=1003003e st=1
+[cyc 68 | t=69500] PC=38 MR=1 MW=0 WD=13 | IR=1042003e st=2
+[cyc 69 | t=70500] PC=39 MR=1 MW=0 WD=3 | IR=1042003e st=3
+[cyc 70 | t=71500] PC=40 MR=0 MW=0 WD=3 | IR=10420001 st=4
+[cyc 71 | t=72500] PC=40 MR=0 MW=0 WD=3 | IR=10420001 st=11
+[TC11] beq TAKEN at cycle 71
+[cyc 72 | t=73500] PC=44 MR=1 MW=0 WD=3 | IR=10420001 st=0
+[cyc 73 | t=74500] PC=45 MR=1 MW=0 WD=3 | IR=c0420001 st=1
+[cyc 74 | t=75500] PC=46 MR=1 MW=0 WD=3 | IR=c0040001 st=2
+[cyc 75 | t=76500] PC=47 MR=1 MW=0 WD=7 | IR=c0040001 st=3
+[cyc 76 | t=77500] PC=48 MR=0 MW=0 WD=7 | IR=c004003f st=4
+[cyc 77 | t=78500] PC=48 MR=0 MW=0 WD=7 | IR=c004003f st=5
+
+--- TC13: sb mem[63]=7 at cycle 77 ---
+PASS | TC13_SB_MEM63 | mem[63]=7 correct
+
+--- TC15: Full Register and Memory Check ---
+PASS |              TC2+TC9 $s0=10+5=15 | REGS[1]=15
+PASS |                    TC3     $s1=3 | REGS[2]=3
+PASS |               TC4     $s2=add=13 | REGS[3]=13
+PASS |                TC5     $s3=sub=7 | REGS[4]=7
+PASS |                TC6     $s4=and=2 | REGS[5]=2
+PASS |                TC7     $s5=or=11 | REGS[6]=11
+PASS |                TC8     $s6=slt=1 | REGS[7]=1
+PASS | TC12_BEQ_SKIP           | $s0=15 (addi 99 skipped)
+PASS | TC11_BEQ_TAKEN          | beq taken confirmed
+PASS |                  TC10 mem[62]=13 | mem[62]=13
+PASS |                   TC13 mem[63]=7 | mem[63]=7
+
+===========================================
+ SIMULATION COMPLETE  cycles=77
+ *** ALL TESTS PASSED ***
+===========================================
+Simulation complete via $finish(1) at time 792 NS + 0
+./tb_mips.v:294             $finish;
+xcelium> exit
+TOOL:	xrun(64)	17.10-s001: Exiting on Apr 22, 2026 at 16:50:30 EDT  (total: 00:00:02)

@@ -1,0 +1,2213 @@
+
+Cadence Innovus(TM) Implementation System.
+Copyright 2018 Cadence Design Systems, Inc. All rights reserved worldwide.
+
+Version:	v18.10-p002_1, built Tue May 29 19:19:55 PDT 2018
+Options:	
+Date:		Sat May  2 16:08:26 2026
+Host:		vlsi.seas.gwu.edu (x86_64 w/Linux 2.6.32-754.15.3.el6.x86_64) (12cores*48cpus*Intel(R) Xeon(R) CPU E5-2690 v3 @ 2.60GHz 30720KB)
+OS:		CentOS release 6.10 (Final)
+
+License:
+		invs	Innovus Implementation System	18.1	checkout succeeded
+		8 CPU jobs allowed with the current license(s). Use setMultiCpuUsage to set your required CPU count.
+Change the soft stacksize limit to 0.2%RAM (516 mbytes). Set global soft_stack_size_limit to change the value.
+
+**INFO:  MMMC transition support version v31-84 
+
+<CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+<CMD> suppressMessage ENCEXT-2799
+<CMD> win
+<CMD> restoreDesign saves/mips_place.dat mips
+#% Begin load design ... (date=05/02 16:09:04, mem=470.3M)
+Set Default Input Pin Transition as 0.1 ps.
+Loading design 'mips' saved by 'Innovus' '18.10-p002_1' on 'Thu Apr 30 12:06:29 2026'.
+% Begin Load MMMC data ... (date=05/02 16:09:04, mem=471.6M)
+% End Load MMMC data ... (date=05/02 16:09:04, total cpu=0:00:00.0, real=0:00:00.0, peak res=471.9M, current mem=471.7M)
+RC_typ
+
+Loading LEF file /home/ead/G44010997/ece6250/project/pnr/saves/mips_place.dat/libs/lef/osu05_stdcells.lef ...
+**WARN: (IMPLF-108):	There is no overlap layer defined in any LEF file
+so you are unable to create rectilinear partition in a hierarchical flow.
+Set DBUPerIGU to M2 pitch 2400.
+
+viaInitial starts at Sat May  2 16:09:04 2026
+**WARN: (IMPPP-556):	A SAMENET rule between different layers for a 4 layer technology is probably a mistake. Stacked vias will be difficult to create and probably will not be what expected. Check if this rule can be removed from the technology file: SAMENET cc via 0.150 ;
+**WARN: (IMPPP-556):	A SAMENET rule between different layers for a 4 layer technology is probably a mistake. Stacked vias will be difficult to create and probably will not be what expected. Check if this rule can be removed from the technology file: SAMENET via via2 0.150 ;
+**WARN: (IMPPP-557):	A single-layer VIARULE GENERATE for turn-vias is obsolete and is being ignored. Remove this statement from the technology file: VIARULE TURN1 GENERATE.
+Type 'man IMPPP-557' for more detail.
+**WARN: (IMPPP-557):	A single-layer VIARULE GENERATE for turn-vias is obsolete and is being ignored. Remove this statement from the technology file: VIARULE TURN2 GENERATE.
+Type 'man IMPPP-557' for more detail.
+**WARN: (IMPPP-557):	A single-layer VIARULE GENERATE for turn-vias is obsolete and is being ignored. Remove this statement from the technology file: VIARULE TURN3 GENERATE.
+Type 'man IMPPP-557' for more detail.
+viaInitial ends at Sat May  2 16:09:04 2026
+Loading view definition file from saves/mips_place.dat/viewDefinition.tcl
+Reading LIB_typ timing library '/apps/design_kits/osu_stdcells_v2p7/cadence/lib/ami05/signalstorm/osu05_stdcells.lib' ...
+**WARN: (TECHLIB-436):	Attribute 'fanout_load' on 'input/inout' pin 'A' of cell 'AND2X1' is not defined in the library. (File /apps/design_kits/osu_stdcells_v2p7/cadence/lib/ami05/signalstorm/osu05_stdcells.lib)
+**WARN: (TECHLIB-436):	Attribute 'fanout_load' on 'input/inout' pin 'B' of cell 'AND2X1' is not defined in the library. (File /apps/design_kits/osu_stdcells_v2p7/cadence/lib/ami05/signalstorm/osu05_stdcells.lib)
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Y' of cell 'AND2X1' is not defined in the library. (File /apps/design_kits/osu_stdcells_v2p7/cadence/lib/ami05/signalstorm/osu05_stdcells.lib)
+**WARN: (TECHLIB-436):	Attribute 'fanout_load' on 'input/inout' pin 'A' of cell 'AND2X2' is not defined in the library. (File /apps/design_kits/osu_stdcells_v2p7/cadence/lib/ami05/signalstorm/osu05_stdcells.lib)
+**WARN: (TECHLIB-436):	Attribute 'fanout_load' on 'input/inout' pin 'B' of cell 'AND2X2' is not defined in the library. (File /apps/design_kits/osu_stdcells_v2p7/cadence/lib/ami05/signalstorm/osu05_stdcells.lib)
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Y' of cell 'AND2X2' is not defined in the library. (File /apps/design_kits/osu_stdcells_v2p7/cadence/lib/ami05/signalstorm/osu05_stdcells.lib)
+**WARN: (TECHLIB-436):	Attribute 'fanout_load' on 'input/inout' pin 'A' of cell 'AOI21X1' is not defined in the library. (File /apps/design_kits/osu_stdcells_v2p7/cadence/lib/ami05/signalstorm/osu05_stdcells.lib)
+**WARN: (TECHLIB-436):	Attribute 'fanout_load' on 'input/inout' pin 'B' of cell 'AOI21X1' is not defined in the library. (File /apps/design_kits/osu_stdcells_v2p7/cadence/lib/ami05/signalstorm/osu05_stdcells.lib)
+**WARN: (TECHLIB-436):	Attribute 'fanout_load' on 'input/inout' pin 'C' of cell 'AOI21X1' is not defined in the library. (File /apps/design_kits/osu_stdcells_v2p7/cadence/lib/ami05/signalstorm/osu05_stdcells.lib)
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Y' of cell 'AOI21X1' is not defined in the library. (File /apps/design_kits/osu_stdcells_v2p7/cadence/lib/ami05/signalstorm/osu05_stdcells.lib)
+**WARN: (TECHLIB-436):	Attribute 'fanout_load' on 'input/inout' pin 'A' of cell 'AOI22X1' is not defined in the library. (File /apps/design_kits/osu_stdcells_v2p7/cadence/lib/ami05/signalstorm/osu05_stdcells.lib)
+**WARN: (TECHLIB-436):	Attribute 'fanout_load' on 'input/inout' pin 'B' of cell 'AOI22X1' is not defined in the library. (File /apps/design_kits/osu_stdcells_v2p7/cadence/lib/ami05/signalstorm/osu05_stdcells.lib)
+**WARN: (TECHLIB-436):	Attribute 'fanout_load' on 'input/inout' pin 'C' of cell 'AOI22X1' is not defined in the library. (File /apps/design_kits/osu_stdcells_v2p7/cadence/lib/ami05/signalstorm/osu05_stdcells.lib)
+**WARN: (TECHLIB-436):	Attribute 'fanout_load' on 'input/inout' pin 'D' of cell 'AOI22X1' is not defined in the library. (File /apps/design_kits/osu_stdcells_v2p7/cadence/lib/ami05/signalstorm/osu05_stdcells.lib)
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Y' of cell 'AOI22X1' is not defined in the library. (File /apps/design_kits/osu_stdcells_v2p7/cadence/lib/ami05/signalstorm/osu05_stdcells.lib)
+**WARN: (TECHLIB-436):	Attribute 'fanout_load' on 'input/inout' pin 'A' of cell 'BUFX2' is not defined in the library. (File /apps/design_kits/osu_stdcells_v2p7/cadence/lib/ami05/signalstorm/osu05_stdcells.lib)
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Y' of cell 'BUFX2' is not defined in the library. (File /apps/design_kits/osu_stdcells_v2p7/cadence/lib/ami05/signalstorm/osu05_stdcells.lib)
+**WARN: (TECHLIB-436):	Attribute 'fanout_load' on 'input/inout' pin 'A' of cell 'BUFX4' is not defined in the library. (File /apps/design_kits/osu_stdcells_v2p7/cadence/lib/ami05/signalstorm/osu05_stdcells.lib)
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Y' of cell 'BUFX4' is not defined in the library. (File /apps/design_kits/osu_stdcells_v2p7/cadence/lib/ami05/signalstorm/osu05_stdcells.lib)
+**WARN: (TECHLIB-436):	Attribute 'fanout_load' on 'input/inout' pin 'A' of cell 'CLKBUF1' is not defined in the library. (File /apps/design_kits/osu_stdcells_v2p7/cadence/lib/ami05/signalstorm/osu05_stdcells.lib)
+Message <TECHLIB-436> has exceeded the message display limit of '20'. Use 'set_message -no_limit -id list_of_msgIDs' to reset the message limit.
+Read 39 cells in library 'osu05_stdcells' 
+*** End library_loading (cpu=0.00min, real=0.00min, mem=21.9M, fe_cpu=0.22min, fe_real=0.63min, fe_mem=614.4M) ***
+% Begin Load netlist data ... (date=05/02 16:09:04, mem=482.4M)
+*** Begin netlist parsing (mem=614.4M) ***
+**WARN: (IMPVL-159):	Pin 'YPAD' of cell 'PADGND' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'gnd' of cell 'PADGND' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'YPAD' of cell 'PADVDD' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'vdd' of cell 'PADVDD' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'gnd' of cell 'XOR2X1' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'vdd' of cell 'XOR2X1' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'gnd' of cell 'XNOR2X1' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'vdd' of cell 'XNOR2X1' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'gnd' of cell 'TBUFX2' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'vdd' of cell 'TBUFX2' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'gnd' of cell 'TBUFX1' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'vdd' of cell 'TBUFX1' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'gnd' of cell 'OR2X2' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'vdd' of cell 'OR2X2' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'gnd' of cell 'OR2X1' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'vdd' of cell 'OR2X1' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'gnd' of cell 'OAI22X1' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'vdd' of cell 'OAI22X1' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'gnd' of cell 'OAI21X1' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'vdd' of cell 'OAI21X1' is defined in LEF but not in the timing library.
+**WARN: (EMS-27):	Message (IMPVL-159) has exceeded the current message display limit of 20.
+To increase the message display limit, refer to the product command reference manual.
+Created 39 new cells from 1 timing libraries.
+Reading netlist ...
+Backslashed names will retain backslash and a trailing blank character.
+Reading verilogBinary netlist '/home/ead/G44010997/ece6250/project/pnr/saves/mips_place.dat/mips.v.bin'
+Reading binary database version 1
+
+*** Memory Usage v#1 (Current mem = 619.375M, initial mem = 260.398M) ***
+*** End netlist parsing (cpu=0:00:00.0, real=0:00:01.0, mem=619.4M) ***
+% End Load netlist data ... (date=05/02 16:09:05, total cpu=0:00:00.0, real=0:00:01.0, peak res=485.6M, current mem=485.6M)
+Set top cell to mips.
+**WARN: (IMPTS-124):	Timing library description of pin 'YPAD' is missing from cell 'PADGND' in timing library 'osu05_stdcells'.
+**WARN: (IMPTS-124):	Timing library description of pin 'YPAD' is missing from cell 'PADVDD' in timing library 'osu05_stdcells'.
+Hooked 39 DB cells to tlib cells.
+1 empty module found.
+Starting recursive module instantiation check.
+No recursion found.
+Building hierarchical netlist for Cell mips ...
+*** Netlist is unique.
+** info: there are 42 modules.
+** info: there are 603 stdCell insts.
+
+*** Memory Usage v#1 (Current mem = 646.797M, initial mem = 260.398M) ***
+*info: set bottom ioPad orient R0
+**WARN: (IMPFP-3961):	The techSite 'IO' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+**WARN: (IMPFP-3961):	The techSite 'corner' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+Horizontal Layer M1 offset = 1500 (derived)
+Vertical Layer M2 offset = 1200 (derived)
+Set Default Net Delay as 1000 ps.
+Set Default Net Load as 0.5 pF. 
+Set Default Input Pin Transition as 0.1 ps.
+Loading preference file saves/mips_place.dat/gui.pref.tcl ...
+Applying the recommended capacitance filtering threshold values for 180nm process node: total_c_th=5, relative_c_th=0.03 and coupling_c_th=3.
+	These values will be used by all post-route extraction engines, including TQuantus, IQuantus and Quantus QRC extraction.
+	For postRoute effortLevel low extraction, the coupling_c_th value will be used only when the -capFilterMode parameter of the setExtractRCMode command is set to relAndCoup or relOrCoup. Default value of -capFilterMode parameter in postRoute extraction effortLevel low is relOnly.
+	The accuracy mode for postRoute effortLevel low extraction will be set to 'standard'.
+	Default value for EffortLevel(-effortLevel option of the setExtractRCMode) in postRoute extraction mode is 'low'.
+Updating process node dependent CCOpt properties for the 180nm process node.
+*Info: initialize multi-corner CTS.
+Reading timing constraints file '/home/ead/G44010997/ece6250/project/pnr/saves/mips_place.dat/libs/mmmc/mips_scan.sdc' ...
+Current (total cpu=0:00:13.8, real=0:00:39.0, peak res=622.5M, current mem=622.5M)
+**WARN: (TCLCMD-1461):	Skipped unsupported command: set_units (File /home/ead/G44010997/ece6250/project/pnr/saves/mips_place.dat/libs/mmmc/mips_scan.sdc, Line 8).
+
+**WARN: (TCLNL-330):	set_input_delay on clock root 'clk' is not supported. You should use the -source option to set_clock_latency to provide this offset. You can also use the global timing_allow_input_delay_on_clock_source to allow set_input_delay assertion to have an effect on clock source paths beginning at this clock root. (File /home/ead/G44010997/ece6250/project/pnr/saves/mips_place.dat/libs/mmmc/mips_scan.sdc, Line 76).
+
+INFO (CTE): Reading of timing constraints file /home/ead/G44010997/ece6250/project/pnr/saves/mips_place.dat/libs/mmmc/mips_scan.sdc completed, with 2 WARNING
+Ending "Constraint file reading stats" (total cpu=0:00:00.0, real=0:00:00.0, peak res=639.4M, current mem=639.4M)
+Current (total cpu=0:00:13.9, real=0:00:39.0, peak res=639.4M, current mem=639.4M)
+Total number of combinational cells: 26
+Total number of sequential cells: 4
+Total number of tristate cells: 2
+Total number of level shifter cells: 0
+Total number of power gating cells: 0
+Total number of isolation cells: 0
+Total number of power switch cells: 0
+Total number of pulse generator cells: 0
+Total number of always on buffers: 0
+Total number of retention cells: 0
+List of usable buffers: BUFX2 BUFX4 CLKBUF1
+Total number of usable buffers: 3
+List of unusable buffers:
+Total number of unusable buffers: 0
+List of usable inverters: INVX2 INVX1 INVX4 INVX8
+Total number of usable inverters: 4
+List of unusable inverters:
+Total number of unusable inverters: 0
+List of identified usable delay cells: CLKBUF2 CLKBUF3
+Total number of identified usable delay cells: 2
+List of identified unusable delay cells:
+Total number of identified unusable delay cells: 0
+Reading floorplan file - saves/mips_place.dat/mips.fp.gz (mem = 829.9M).
+% Begin Load floorplan data ... (date=05/02 16:09:05, mem=660.4M)
+*info: reset 765 existing net BottomPreferredLayer and AvoidDetour
+net ignore based on current view = 0
+Deleting old partition specification.
+Set FPlanBox to (0 0 578400 540000)
+Horizontal Layer M1 offset = 1500 (derived)
+Vertical Layer M2 offset = 1200 (derived)
+ ... processed partition successfully.
+Reading binary special route file saves/mips_place.dat/mips.fp.spr.gz (Created by Innovus v18.10-p002_1 on Thu Apr 30 12:06:29 2026, version: 1)
+Extracting standard cell pins and blockage ...... 
+Pin and blockage extraction finished
+% End Load floorplan data ... (date=05/02 16:09:05, total cpu=0:00:00.0, real=0:00:00.0, peak res=661.1M, current mem=661.1M)
+Reading congestion map file saves/mips_place.dat/mips.route.congmap.gz ...
+% Begin Load SymbolTable ... (date=05/02 16:09:05, mem=661.4M)
+Suppress "**WARN ..." messages.
+Un-suppress "**WARN ..." messages.
+% End Load SymbolTable ... (date=05/02 16:09:05, total cpu=0:00:00.0, real=0:00:00.0, peak res=661.7M, current mem=661.7M)
+Loading place ...
+% Begin Load placement data ... (date=05/02 16:09:05, mem=661.7M)
+Reading placement file - saves/mips_place.dat/mips.place.gz.
+** Reading stdCellPlacement_binary (Created by Innovus v18.10-p002_1 on Thu Apr 30 12:06:29 2026, version# 2) ...
+*** Completed restorePlace (cpu=0:00:00.0 real=0:00:00.0 mem=829.9M) ***
+Total net length = 6.188e+04 (2.911e+04 3.276e+04) (ext = 5.298e+03)
+% End Load placement data ... (date=05/02 16:09:05, total cpu=0:00:00.0, real=0:00:00.0, peak res=662.5M, current mem=662.5M)
+% Begin Load routing data ... (date=05/02 16:09:05, mem=662.5M)
+Reading routing file - saves/mips_place.dat/mips.route.gz.
+Reading Innovus routing data (Created by Innovus v18.10-p002_1 on Thu Apr 30 12:06:29 2026 Format: 18.1) ...
+*** Total 736 nets are successfully restored.
+*** Completed restoreRoute (cpu=0:00:00.0 real=0:00:00.0 mem=829.9M) ***
+% End Load routing data ... (date=05/02 16:09:05, total cpu=0:00:00.0, real=0:00:00.0, peak res=664.4M, current mem=664.4M)
+TAT_INFO: restoreCongMap REAL = 0 : CPU = 0 : MEM = 0.
+Reading property file saves/mips_place.dat/mips.prop
+*** Completed restoreProperty (cpu=0:00:00.0 real=0:00:00.0 mem=829.9M) ***
+Set Default Input Pin Transition as 0.1 ps.
+Extraction setup Started 
+Initializing multi-corner RC extraction with 1 active RC Corners ...
+**WARN: (IMPEXT-2773):	The via resistance between layers M0 and M1 could not be determined from the LEF technology file because the via resistance specification is missing. A default of 4 Ohms will be used as via resistance between these layers.
+Type 'man IMPEXT-2773' for more detail.
+**WARN: (IMPEXT-2773):	The via resistance between layers M1 and M2 could not be determined from the LEF technology file because the via resistance specification is missing. A default of 4 Ohms will be used as via resistance between these layers.
+Type 'man IMPEXT-2773' for more detail.
+**WARN: (IMPEXT-2773):	The via resistance between layers M2 and M3 could not be determined from the LEF technology file because the via resistance specification is missing. A default of 4 Ohms will be used as via resistance between these layers.
+Type 'man IMPEXT-2773' for more detail.
+**WARN: (IMPEXT-2766):	The sheet resistance for layer M1 is not defined in the cap table. Therefore, the LEF value 0.09 will be used instead. To avoid this message, update the relevant cap table to include the sheet resistance for the specified layer and read it back in.
+**WARN: (IMPEXT-2766):	The sheet resistance for layer M2 is not defined in the cap table. Therefore, the LEF value 0.09 will be used instead. To avoid this message, update the relevant cap table to include the sheet resistance for the specified layer and read it back in.
+**WARN: (IMPEXT-2766):	The sheet resistance for layer M3 is not defined in the cap table. Therefore, the LEF value 0.05 will be used instead. To avoid this message, update the relevant cap table to include the sheet resistance for the specified layer and read it back in.
+Summary of Active RC-Corners : 
+ 
+ Analysis View: VIEW_typ
+    RC-Corner Name        : RC_typ
+    RC-Corner Index       : 0
+    RC-Corner Temperature : 25 Celsius
+    RC-Corner Cap Table   : ''
+    RC-Corner PreRoute Res Factor         : 1
+    RC-Corner PreRoute Cap Factor         : 1
+    RC-Corner PostRoute Res Factor        : 1 {1 1 1}
+    RC-Corner PostRoute Cap Factor        : 1 {1 1 1}
+    RC-Corner PostRoute XCap Factor       : 1 {1 1 1}
+    RC-Corner PreRoute Clock Res Factor   : 1	[Derived from Cap Table]
+    RC-Corner PreRoute Clock Cap Factor   : 1	[Derived from Cap Table]
+    RC-Corner PostRoute Clock Cap Factor  : 1 {1 1 1} 	[Derived from postRoute_cap (effortLevel low)]
+    RC-Corner PostRoute Clock Res Factor  : 1 {1 1 1} 	[Derived from postRoute_res (effortLevel low)]
+Updating RC grid for preRoute extraction ...
+Initializing multi-corner resistance tables ...
+% Begin Load power constraints ... (date=05/02 16:09:06, mem=666.3M)
+% End Load power constraints ... (date=05/02 16:09:06, total cpu=0:00:00.0, real=0:00:00.0, peak res=666.3M, current mem=666.3M)
+Start generating vias ...
+#Skip building auto via since it is not turned on.
+Via generation completed.
+% Begin load AAE data ... (date=05/02 16:09:06, mem=667.6M)
+AAE DB initialization (MEM=846.336 CPU=0:00:00.1 REAL=0:00:00.0) 
+% End load AAE data ... (date=05/02 16:09:06, total cpu=0:00:00.2, real=0:00:00.0, peak res=674.1M, current mem=674.1M)
+Total number of combinational cells: 26
+Total number of sequential cells: 4
+Total number of tristate cells: 2
+Total number of level shifter cells: 0
+Total number of power gating cells: 0
+Total number of isolation cells: 0
+Total number of power switch cells: 0
+Total number of pulse generator cells: 0
+Total number of always on buffers: 0
+Total number of retention cells: 0
+List of usable buffers: BUFX2 BUFX4 CLKBUF1
+Total number of usable buffers: 3
+List of unusable buffers:
+Total number of unusable buffers: 0
+List of usable inverters: INVX2 INVX1 INVX4 INVX8
+Total number of usable inverters: 4
+List of unusable inverters:
+Total number of unusable inverters: 0
+List of identified usable delay cells: CLKBUF2 CLKBUF3
+Total number of identified usable delay cells: 2
+List of identified unusable delay cells:
+Total number of identified unusable delay cells: 0
+**WARN: (IMPCTE-107):	The following globals have been obsoleted since version 18.10-p002_1. They will be removed in the next release. 
+timing_enable_default_delay_arc
+#% End load design ... (date=05/02 16:09:06, total cpu=0:00:01.1, real=0:00:02.0, peak res=674.2M, current mem=674.1M)
+
+*** Summary of all messages that are not suppressed in this session:
+Severity  ID               Count  Summary                                  
+WARNING   IMPLF-108            1  There is no overlap layer defined in any...
+WARNING   IMPFP-3961           2  The techSite '%s' has no related standar...
+WARNING   IMPTS-124            2  Timing library description of pin '%s' i...
+WARNING   IMPEXT-2766          3  The sheet resistance for layer %s is not...
+WARNING   IMPEXT-2773          3  The via resistance between layers %s and...
+WARNING   IMPVL-159           68  Pin '%s' of cell '%s' is defined in LEF ...
+WARNING   IMPPP-556            2  A SAMENET rule between different layers ...
+WARNING   IMPPP-557            3  A single-layer VIARULE GENERATE for turn...
+WARNING   IMPCTE-107           1  The following globals have been obsolete...
+WARNING   TCLCMD-1461          1  Skipped unsupported command: %s          
+WARNING   TCLNL-330            1  set_input_delay on clock root '%s' is no...
+WARNING   TECHLIB-436         20  Attribute '%s' on '%s' pin '%s' of cell ...
+*** Message Summary: 107 warning(s), 0 error(s)
+
+<CMD> fit
+<CMD> fit
+<CMD> displayScanChain
+**WARN: (IMPSP-9025):	No scan chain specified/traced.
+Type 'man IMPSP-9025' for more detail.
+<CMD> displayScanChain *
+**WARN: (IMPSP-9025):	No scan chain specified/traced.
+Type 'man IMPSP-9025' for more detail.
+<CMD> displayBufTree
+
+Usage: displayBufTree [-help] -net <net name> [-outfile <file name>]
+
+**ERROR: (IMPTCM-46):	Argument "-net" is required for command "displayBufTree", either this option is not specified or an option prior to it is not specified correctly.
+
+<CMD> displayBufTree *
+
+Usage: displayBufTree [-help] -net <net name> [-outfile <file name>]
+
+**ERROR: (IMPTCM-48):	"*" is not a legal option for command "displayBufTree". Either the current option or an option prior to it is not specified correctly.
+
+<CMD> displayBufTree -help
+
+Usage: displayBufTree [-help] -net <net name> [-outfile <file name>]
+
+-help                    # Prints out the command usage
+-net <net name>          # Specifies the name of the net for which you want to display the buffer tree (string, required)
+-outfile <file name>     # Specifies the text file in which output would be generated (string, optional)
+
+
+<CMD> restoreDesign saves/mips_final.dat mips
+#% Begin load design ... (date=05/02 16:13:38, mem=780.5M)
+Resetting process node dependent CCOpt properties.
+Reset to color id 0 for dp_ir0_q_reg_7_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_ir0_q_reg_2_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_ir0_q_reg_3_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_ir0_q_reg_4_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_ir0_q_reg_5_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_ir0_q_reg_6_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_ir3_q_reg_0_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_ir3_q_reg_1_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_ir3_q_reg_2_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_ir3_q_reg_3_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_ir3_q_reg_4_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_ir3_q_reg_5_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_ir3_q_reg_6_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_ir3_q_reg_7_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_ir2_q_reg_3_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_ir2_q_reg_4_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_ir2_q_reg_5_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_ir1_q_reg_0_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_ir1_q_reg_1_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_ir1_q_reg_2_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_ir1_q_reg_5_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_ir1_q_reg_6_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_ir1_q_reg_7_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_mdr_q_reg_0_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_mdr_q_reg_1_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_mdr_q_reg_2_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_mdr_q_reg_3_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_mdr_q_reg_4_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_mdr_q_reg_5_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_mdr_q_reg_6_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_mdr_q_reg_7_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_areg_q_reg_7_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_res_q_reg_7_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_rf_REGS_reg_7__7_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_rf_REGS_reg_6__7_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_rf_REGS_reg_5__7_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_rf_REGS_reg_4__7_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_rf_REGS_reg_3__7_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_rf_REGS_reg_2__7_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_rf_REGS_reg_1__7_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_wrd_q_reg_7_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_pcreg_q_reg_0_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_res_q_reg_0_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_rf_REGS_reg_7__0_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_rf_REGS_reg_6__0_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_rf_REGS_reg_5__0_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_rf_REGS_reg_4__0_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_rf_REGS_reg_3__0_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_rf_REGS_reg_2__0_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_rf_REGS_reg_1__0_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_wrd_q_reg_0_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_areg_q_reg_0_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_pcreg_q_reg_1_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_res_q_reg_1_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_rf_REGS_reg_7__1_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_rf_REGS_reg_6__1_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_rf_REGS_reg_5__1_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_rf_REGS_reg_4__1_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_rf_REGS_reg_3__1_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_rf_REGS_reg_2__1_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_rf_REGS_reg_1__1_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_wrd_q_reg_1_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_areg_q_reg_1_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_pcreg_q_reg_2_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_res_q_reg_2_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_rf_REGS_reg_7__2_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_rf_REGS_reg_6__2_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_rf_REGS_reg_5__2_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_rf_REGS_reg_4__2_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_rf_REGS_reg_3__2_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_rf_REGS_reg_2__2_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_rf_REGS_reg_1__2_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_wrd_q_reg_2_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_areg_q_reg_2_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_pcreg_q_reg_3_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_res_q_reg_3_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_rf_REGS_reg_7__3_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_rf_REGS_reg_6__3_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_rf_REGS_reg_5__3_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_rf_REGS_reg_4__3_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_rf_REGS_reg_3__3_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_rf_REGS_reg_2__3_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_rf_REGS_reg_1__3_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_wrd_q_reg_3_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_areg_q_reg_3_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_pcreg_q_reg_4_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_res_q_reg_4_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_rf_REGS_reg_7__4_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_rf_REGS_reg_6__4_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_rf_REGS_reg_5__4_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_rf_REGS_reg_4__4_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_rf_REGS_reg_3__4_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_rf_REGS_reg_2__4_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_rf_REGS_reg_1__4_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_wrd_q_reg_4_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_areg_q_reg_4_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_pcreg_q_reg_5_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_res_q_reg_5_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_rf_REGS_reg_7__5_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_rf_REGS_reg_6__5_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_rf_REGS_reg_5__5_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_rf_REGS_reg_4__5_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_rf_REGS_reg_3__5_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_rf_REGS_reg_2__5_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_rf_REGS_reg_1__5_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_wrd_q_reg_5_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_areg_q_reg_5_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_pcreg_q_reg_6_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_res_q_reg_6_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_rf_REGS_reg_7__6_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_rf_REGS_reg_6__6_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_rf_REGS_reg_5__6_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_rf_REGS_reg_4__6_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_rf_REGS_reg_3__6_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_rf_REGS_reg_2__6_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_rf_REGS_reg_1__6_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_wrd_q_reg_6_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_areg_q_reg_6_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_pcreg_q_reg_7_ (DFFPOSX1_SCAN) and all their descendants.
+Free PSO.
+Cleaning up the current multi-corner RC extraction setup.
+Resetting process node dependent CCOpt properties.
+AAE DB initialization (MEM=950.391 CPU=0:00:00.1 REAL=0:00:00.0) 
+**WARN: (IMPCK-8086):	The command setCTSMode is obsolete and will be removed in the next release. This command still works in this release, but by the next release you must transition to the CCOpt-based CTS flow.
+Set DBUPerIGU to 1000.
+Set net toggle Scale Factor to 1.00
+Set Shrink Factor to 1.00000
+Set net toggle Scale Factor to 1.00
+Set Shrink Factor to 1.00000
+Set net toggle Scale Factor to 1.00
+Set Shrink Factor to 1.00000
+
+*** Memory Usage v#1 (Current mem = 791.992M, initial mem = 260.398M) ***
+
+
+Info (SM2C): Status of key globals:
+	 MMMC-by-default flow     : 1
+	 Default MMMC objs envvar : 0
+	 Data portability         : 0
+	 MMMC PV Emulation        : 0
+	 MMMC debug               : 0
+	 Init_Design flow         : 1
+
+
+	 CTE SM2C global          : false
+	 Reporting view filter    : false
+Set Default Input Pin Transition as 0.1 ps.
+Loading design 'mips' saved by 'Innovus' '18.10-p002_1' on 'Thu Apr 30 15:01:40 2026'.
+% Begin Load MMMC data ... (date=05/02 16:13:38, mem=626.9M)
+% End Load MMMC data ... (date=05/02 16:13:38, total cpu=0:00:00.0, real=0:00:00.0, peak res=626.9M, current mem=626.9M)
+RC_typ
+
+Loading LEF file /home/ead/G44010997/ece6250/project/pnr/saves/mips_final.dat/libs/lef/osu05_stdcells.lef ...
+**WARN: (IMPLF-108):	There is no overlap layer defined in any LEF file
+so you are unable to create rectilinear partition in a hierarchical flow.
+Set DBUPerIGU to M2 pitch 2400.
+
+viaInitial starts at Sat May  2 16:13:38 2026
+**WARN: (IMPPP-556):	A SAMENET rule between different layers for a 4 layer technology is probably a mistake. Stacked vias will be difficult to create and probably will not be what expected. Check if this rule can be removed from the technology file: SAMENET cc via 0.150 ;
+**WARN: (IMPPP-556):	A SAMENET rule between different layers for a 4 layer technology is probably a mistake. Stacked vias will be difficult to create and probably will not be what expected. Check if this rule can be removed from the technology file: SAMENET via via2 0.150 ;
+**WARN: (IMPPP-557):	A single-layer VIARULE GENERATE for turn-vias is obsolete and is being ignored. Remove this statement from the technology file: VIARULE TURN1 GENERATE.
+Type 'man IMPPP-557' for more detail.
+**WARN: (IMPPP-557):	A single-layer VIARULE GENERATE for turn-vias is obsolete and is being ignored. Remove this statement from the technology file: VIARULE TURN2 GENERATE.
+Type 'man IMPPP-557' for more detail.
+**WARN: (IMPPP-557):	A single-layer VIARULE GENERATE for turn-vias is obsolete and is being ignored. Remove this statement from the technology file: VIARULE TURN3 GENERATE.
+Type 'man IMPPP-557' for more detail.
+viaInitial ends at Sat May  2 16:13:38 2026
+Loading view definition file from saves/mips_final.dat/viewDefinition.tcl
+Reading LIB_typ timing library '/apps/design_kits/osu_stdcells_v2p7/cadence/lib/ami05/signalstorm/osu05_stdcells.lib' ...
+Read 39 cells in library 'osu05_stdcells' 
+*** End library_loading (cpu=0.00min, real=0.00min, mem=18.0M, fe_cpu=0.47min, fe_real=5.20min, fe_mem=813.1M) ***
+% Begin Load netlist data ... (date=05/02 16:13:38, mem=630.6M)
+*** Begin netlist parsing (mem=813.1M) ***
+**WARN: (IMPVL-159):	Pin 'YPAD' of cell 'PADGND' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'gnd' of cell 'PADGND' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'YPAD' of cell 'PADVDD' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'vdd' of cell 'PADVDD' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'gnd' of cell 'XOR2X1' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'vdd' of cell 'XOR2X1' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'gnd' of cell 'XNOR2X1' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'vdd' of cell 'XNOR2X1' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'gnd' of cell 'TBUFX2' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'vdd' of cell 'TBUFX2' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'gnd' of cell 'TBUFX1' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'vdd' of cell 'TBUFX1' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'gnd' of cell 'OR2X2' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'vdd' of cell 'OR2X2' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'gnd' of cell 'OR2X1' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'vdd' of cell 'OR2X1' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'gnd' of cell 'OAI22X1' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'vdd' of cell 'OAI22X1' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'gnd' of cell 'OAI21X1' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'vdd' of cell 'OAI21X1' is defined in LEF but not in the timing library.
+**WARN: (EMS-27):	Message (IMPVL-159) has exceeded the current message display limit of 20.
+To increase the message display limit, refer to the product command reference manual.
+Created 39 new cells from 1 timing libraries.
+Reading netlist ...
+Backslashed names will retain backslash and a trailing blank character.
+Reading verilogBinary netlist '/home/ead/G44010997/ece6250/project/pnr/saves/mips_final.dat/mips.v.bin'
+Reading binary database version 1
+
+*** Memory Usage v#1 (Current mem = 819.098M, initial mem = 260.398M) ***
+*** End netlist parsing (cpu=0:00:00.0, real=0:00:00.0, mem=819.1M) ***
+% End Load netlist data ... (date=05/02 16:13:38, total cpu=0:00:00.0, real=0:00:00.0, peak res=634.1M, current mem=634.1M)
+Set top cell to mips.
+**WARN: (IMPTS-124):	Timing library description of pin 'YPAD' is missing from cell 'PADGND' in timing library 'osu05_stdcells'.
+**WARN: (IMPTS-124):	Timing library description of pin 'YPAD' is missing from cell 'PADVDD' in timing library 'osu05_stdcells'.
+Hooked 39 DB cells to tlib cells.
+1 empty module found.
+Starting recursive module instantiation check.
+No recursion found.
+Building hierarchical netlist for Cell mips ...
+*** Netlist is unique.
+** info: there are 42 modules.
+** info: there are 622 stdCell insts.
+
+*** Memory Usage v#1 (Current mem = 841.105M, initial mem = 260.398M) ***
+*info: set bottom ioPad orient R0
+**WARN: (IMPFP-3961):	The techSite 'IO' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+**WARN: (IMPFP-3961):	The techSite 'corner' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+Horizontal Layer M1 offset = 1500 (derived)
+Vertical Layer M2 offset = 1200 (derived)
+Set Default Net Delay as 1000 ps.
+Set Default Net Load as 0.5 pF. 
+Set Default Input Pin Transition as 0.1 ps.
+Loading preference file saves/mips_final.dat/gui.pref.tcl ...
+Applying the recommended capacitance filtering threshold values for 180nm process node: total_c_th=5, relative_c_th=0.03 and coupling_c_th=3.
+	These values will be used by all post-route extraction engines, including TQuantus, IQuantus and Quantus QRC extraction.
+	For postRoute effortLevel low extraction, the coupling_c_th value will be used only when the -capFilterMode parameter of the setExtractRCMode command is set to relAndCoup or relOrCoup. Default value of -capFilterMode parameter in postRoute extraction effortLevel low is relOnly.
+	The accuracy mode for postRoute effortLevel low extraction will be set to 'standard'.
+	Default value for EffortLevel(-effortLevel option of the setExtractRCMode) in postRoute extraction mode is 'low'.
+Updating process node dependent CCOpt properties for the 180nm process node.
+**WARN: analysis view VIEW_typ not found, use default_view_setup
+Extraction setup Started 
+Initializing multi-corner RC extraction with 1 active RC Corners ...
+**WARN: (IMPEXT-2773):	The via resistance between layers M0 and M1 could not be determined from the LEF technology file because the via resistance specification is missing. A default of 4 Ohms will be used as via resistance between these layers.
+Type 'man IMPEXT-2773' for more detail.
+**WARN: (IMPEXT-2773):	The via resistance between layers M1 and M2 could not be determined from the LEF technology file because the via resistance specification is missing. A default of 4 Ohms will be used as via resistance between these layers.
+Type 'man IMPEXT-2773' for more detail.
+**WARN: (IMPEXT-2773):	The via resistance between layers M2 and M3 could not be determined from the LEF technology file because the via resistance specification is missing. A default of 4 Ohms will be used as via resistance between these layers.
+Type 'man IMPEXT-2773' for more detail.
+**WARN: (IMPEXT-2766):	The sheet resistance for layer M1 is not defined in the cap table. Therefore, the LEF value 0.09 will be used instead. To avoid this message, update the relevant cap table to include the sheet resistance for the specified layer and read it back in.
+**WARN: (IMPEXT-2766):	The sheet resistance for layer M2 is not defined in the cap table. Therefore, the LEF value 0.09 will be used instead. To avoid this message, update the relevant cap table to include the sheet resistance for the specified layer and read it back in.
+**WARN: (IMPEXT-2766):	The sheet resistance for layer M3 is not defined in the cap table. Therefore, the LEF value 0.05 will be used instead. To avoid this message, update the relevant cap table to include the sheet resistance for the specified layer and read it back in.
+Summary of Active RC-Corners : 
+ 
+ Analysis View: VIEW_typ
+    RC-Corner Name        : RC_typ
+    RC-Corner Index       : 0
+    RC-Corner Temperature : 25 Celsius
+    RC-Corner Cap Table   : ''
+    RC-Corner PreRoute Res Factor         : 1
+    RC-Corner PreRoute Cap Factor         : 1
+    RC-Corner PostRoute Res Factor        : 1 {1 1 1}
+    RC-Corner PostRoute Cap Factor        : 1 {1 1 1}
+    RC-Corner PostRoute XCap Factor       : 1 {1 1 1}
+    RC-Corner PreRoute Clock Res Factor   : 1	[Derived from Cap Table]
+    RC-Corner PreRoute Clock Cap Factor   : 1	[Derived from Cap Table]
+    RC-Corner PostRoute Clock Cap Factor  : 1 {1 1 1} 	[Derived from postRoute_cap (effortLevel low)]
+    RC-Corner PostRoute Clock Res Factor  : 1 {1 1 1} 	[Derived from postRoute_res (effortLevel low)]
+Initializing multi-corner resistance tables ...
+*Info: initialize multi-corner CTS.
+Reading timing constraints file '/home/ead/G44010997/ece6250/project/pnr/saves/mips_final.dat/libs/mmmc/mips_scan.sdc' ...
+Current (total cpu=0:00:28.9, real=0:05:13, peak res=781.2M, current mem=757.5M)
+**WARN: (TCLCMD-1461):	Skipped unsupported command: set_units (File /home/ead/G44010997/ece6250/project/pnr/saves/mips_final.dat/libs/mmmc/mips_scan.sdc, Line 8).
+
+**WARN: (TCLNL-330):	set_input_delay on clock root 'clk' is not supported. You should use the -source option to set_clock_latency to provide this offset. You can also use the global timing_allow_input_delay_on_clock_source to allow set_input_delay assertion to have an effect on clock source paths beginning at this clock root. (File /home/ead/G44010997/ece6250/project/pnr/saves/mips_final.dat/libs/mmmc/mips_scan.sdc, Line 76).
+
+INFO (CTE): Reading of timing constraints file /home/ead/G44010997/ece6250/project/pnr/saves/mips_final.dat/libs/mmmc/mips_scan.sdc completed, with 2 WARNING
+Ending "Constraint file reading stats" (total cpu=0:00:00.0, real=0:00:00.0, peak res=765.9M, current mem=765.9M)
+Current (total cpu=0:00:28.9, real=0:05:13, peak res=781.2M, current mem=765.9M)
+Total number of combinational cells: 26
+Total number of sequential cells: 4
+Total number of tristate cells: 2
+Total number of level shifter cells: 0
+Total number of power gating cells: 0
+Total number of isolation cells: 0
+Total number of power switch cells: 0
+Total number of pulse generator cells: 0
+Total number of always on buffers: 0
+Total number of retention cells: 0
+List of usable buffers: BUFX2 BUFX4 CLKBUF1
+Total number of usable buffers: 3
+List of unusable buffers:
+Total number of unusable buffers: 0
+List of usable inverters: INVX2 INVX1 INVX4 INVX8
+Total number of usable inverters: 4
+List of unusable inverters:
+Total number of unusable inverters: 0
+List of identified usable delay cells: CLKBUF2 CLKBUF3
+Total number of identified usable delay cells: 2
+List of identified unusable delay cells:
+Total number of identified unusable delay cells: 0
+Reading floorplan file - saves/mips_final.dat/mips.fp.gz (mem = 969.4M).
+% Begin Load floorplan data ... (date=05/02 16:13:39, mem=766.2M)
+*info: reset 784 existing net BottomPreferredLayer and AvoidDetour
+Deleting old partition specification.
+Set FPlanBox to (0 0 578400 540000)
+Horizontal Layer M1 offset = 1500 (derived)
+Vertical Layer M2 offset = 1200 (derived)
+ ... processed partition successfully.
+Reading binary special route file saves/mips_final.dat/mips.fp.spr.gz (Created by Innovus v18.10-p002_1 on Thu Apr 30 15:01:39 2026, version: 1)
+Extracting standard cell pins and blockage ...... 
+Pin and blockage extraction finished
+% End Load floorplan data ... (date=05/02 16:13:39, total cpu=0:00:00.0, real=0:00:00.0, peak res=766.2M, current mem=766.2M)
+Reading congestion map file saves/mips_final.dat/mips.route.congmap.gz ...
+% Begin Load SymbolTable ... (date=05/02 16:13:39, mem=766.3M)
+Suppress "**WARN ..." messages.
+Un-suppress "**WARN ..." messages.
+% End Load SymbolTable ... (date=05/02 16:13:39, total cpu=0:00:00.0, real=0:00:00.0, peak res=766.3M, current mem=766.3M)
+Loading place ...
+% Begin Load placement data ... (date=05/02 16:13:39, mem=766.3M)
+Reading placement file - saves/mips_final.dat/mips.place.gz.
+** Reading stdCellPlacement_binary (Created by Innovus v18.10-p002_1 on Thu Apr 30 15:01:39 2026, version# 2) ...
+*** Completed restorePlace (cpu=0:00:00.0 real=0:00:00.0 mem=969.4M) ***
+Total net length = 6.224e+04 (2.930e+04 3.294e+04) (ext = 5.302e+03)
+% End Load placement data ... (date=05/02 16:13:39, total cpu=0:00:00.0, real=0:00:00.0, peak res=766.8M, current mem=766.8M)
+% Begin Load routing data ... (date=05/02 16:13:39, mem=766.8M)
+Reading routing file - saves/mips_final.dat/mips.route.gz.
+Reading Innovus routing data (Created by Innovus v18.10-p002_1 on Thu Apr 30 15:01:39 2026 Format: 18.1) ...
+*** Total 755 nets are successfully restored.
+*** Completed restoreRoute (cpu=0:00:00.0 real=0:00:00.0 mem=969.4M) ***
+% End Load routing data ... (date=05/02 16:13:39, total cpu=0:00:00.0, real=0:00:00.0, peak res=768.0M, current mem=768.0M)
+Loading Drc markers ...
+... 0 markers are loaded ...
+TAT_INFO: restoreCongMap REAL = 0 : CPU = 0 : MEM = 0.
+Reading property file saves/mips_final.dat/mips.prop
+*** Completed restoreProperty (cpu=0:00:00.0 real=0:00:00.0 mem=969.4M) ***
+Set Default Input Pin Transition as 0.1 ps.
+Initializing multi-corner resistance tables ...
+% Begin Load power constraints ... (date=05/02 16:13:40, mem=768.9M)
+'set_default_switching_activity' finished successfully.
+% End Load power constraints ... (date=05/02 16:13:40, total cpu=0:00:00.0, real=0:00:00.0, peak res=769.0M, current mem=769.0M)
+Start generating vias ...
+#Skip building auto via since it is not turned on.
+Via generation completed.
+% Begin load AAE data ... (date=05/02 16:13:40, mem=768.5M)
+AAE DB initialization (MEM=980.465 CPU=0:00:00.1 REAL=0:00:00.0) 
+% End load AAE data ... (date=05/02 16:13:40, total cpu=0:00:00.1, real=0:00:00.0, peak res=769.3M, current mem=769.3M)
+Restoring CCOpt config...
+  Extracting original clock gating for clk...
+    clock_tree clk contains 4 sinks and 0 clock gates.
+    Extraction for clk complete.
+  Extracting original clock gating for clk done.
+  The skew group clk/syn_constraints was created. It contains 4 sinks and 1 sources.
+Restoring CCOpt config done.
+Total number of combinational cells: 26
+Total number of sequential cells: 4
+Total number of tristate cells: 2
+Total number of level shifter cells: 0
+Total number of power gating cells: 0
+Total number of isolation cells: 0
+Total number of power switch cells: 0
+Total number of pulse generator cells: 0
+Total number of always on buffers: 0
+Total number of retention cells: 0
+List of usable buffers: BUFX2 BUFX4 CLKBUF1
+Total number of usable buffers: 3
+List of unusable buffers:
+Total number of unusable buffers: 0
+List of usable inverters: INVX2 INVX1 INVX4 INVX8
+Total number of usable inverters: 4
+List of unusable inverters:
+Total number of unusable inverters: 0
+List of identified usable delay cells: CLKBUF2 CLKBUF3
+Total number of identified usable delay cells: 2
+List of identified unusable delay cells:
+Total number of identified unusable delay cells: 0
+**WARN: (IMPCTE-107):	The following globals have been obsoleted since version 18.10-p002_1. They will be removed in the next release. 
+timing_enable_default_delay_arc
+#% End load design ... (date=05/02 16:13:40, total cpu=0:00:01.6, real=0:00:02.0, peak res=781.2M, current mem=772.0M)
+
+*** Summary of all messages that are not suppressed in this session:
+Severity  ID               Count  Summary                                  
+WARNING   IMPLF-108            1  There is no overlap layer defined in any...
+WARNING   IMPFP-3961           2  The techSite '%s' has no related standar...
+WARNING   IMPTS-124            2  Timing library description of pin '%s' i...
+WARNING   IMPEXT-2766          3  The sheet resistance for layer %s is not...
+WARNING   IMPEXT-2773          3  The via resistance between layers %s and...
+WARNING   IMPCK-8086           1  The command %s is obsolete and will be r...
+WARNING   IMPVL-159           68  Pin '%s' of cell '%s' is defined in LEF ...
+WARNING   IMPPP-556            2  A SAMENET rule between different layers ...
+WARNING   IMPPP-557            3  A single-layer VIARULE GENERATE for turn...
+WARNING   IMPCTE-107           1  The following globals have been obsolete...
+WARNING   TCLCMD-1461          1  Skipped unsupported command: %s          
+WARNING   TCLNL-330            1  set_input_delay on clock root '%s' is no...
+*** Message Summary: 88 warning(s), 0 error(s)
+
+<CMD> restoreDesign saves/mips_place.dat mips
+#% Begin load design ... (date=05/02 16:14:24, mem=772.1M)
+Resetting process node dependent CCOpt properties.
+Reset to color id 0 for dp_ir0_q_reg_7_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_ir0_q_reg_2_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_ir0_q_reg_3_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_ir0_q_reg_4_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_ir0_q_reg_5_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_ir0_q_reg_6_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_ir3_q_reg_0_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_ir3_q_reg_1_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_ir3_q_reg_2_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_ir3_q_reg_3_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_ir3_q_reg_4_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_ir3_q_reg_5_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_ir3_q_reg_6_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_ir3_q_reg_7_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_ir2_q_reg_3_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_ir2_q_reg_4_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_ir2_q_reg_5_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_ir1_q_reg_0_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_ir1_q_reg_1_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_ir1_q_reg_2_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_ir1_q_reg_5_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_ir1_q_reg_6_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_ir1_q_reg_7_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_mdr_q_reg_0_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_mdr_q_reg_1_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_mdr_q_reg_2_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_mdr_q_reg_3_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_mdr_q_reg_4_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_mdr_q_reg_5_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_mdr_q_reg_6_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_mdr_q_reg_7_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_areg_q_reg_7_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_res_q_reg_7_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_rf_REGS_reg_7__7_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_rf_REGS_reg_6__7_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_rf_REGS_reg_5__7_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_rf_REGS_reg_4__7_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_rf_REGS_reg_3__7_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_rf_REGS_reg_2__7_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_rf_REGS_reg_1__7_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_wrd_q_reg_7_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_pcreg_q_reg_0_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_res_q_reg_0_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_rf_REGS_reg_7__0_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_rf_REGS_reg_6__0_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_rf_REGS_reg_5__0_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_rf_REGS_reg_4__0_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_rf_REGS_reg_3__0_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_rf_REGS_reg_2__0_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_rf_REGS_reg_1__0_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_wrd_q_reg_0_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_areg_q_reg_0_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_pcreg_q_reg_1_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_res_q_reg_1_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_rf_REGS_reg_7__1_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_rf_REGS_reg_6__1_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_rf_REGS_reg_5__1_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_rf_REGS_reg_4__1_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_rf_REGS_reg_3__1_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_rf_REGS_reg_2__1_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_rf_REGS_reg_1__1_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_wrd_q_reg_1_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_areg_q_reg_1_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_pcreg_q_reg_2_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_res_q_reg_2_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_rf_REGS_reg_7__2_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_rf_REGS_reg_6__2_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_rf_REGS_reg_5__2_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_rf_REGS_reg_4__2_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_rf_REGS_reg_3__2_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_rf_REGS_reg_2__2_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_rf_REGS_reg_1__2_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_wrd_q_reg_2_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_areg_q_reg_2_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_pcreg_q_reg_3_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_res_q_reg_3_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_rf_REGS_reg_7__3_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_rf_REGS_reg_6__3_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_rf_REGS_reg_5__3_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_rf_REGS_reg_4__3_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_rf_REGS_reg_3__3_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_rf_REGS_reg_2__3_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_rf_REGS_reg_1__3_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_wrd_q_reg_3_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_areg_q_reg_3_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_pcreg_q_reg_4_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_res_q_reg_4_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_rf_REGS_reg_7__4_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_rf_REGS_reg_6__4_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_rf_REGS_reg_5__4_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_rf_REGS_reg_4__4_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_rf_REGS_reg_3__4_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_rf_REGS_reg_2__4_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_rf_REGS_reg_1__4_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_wrd_q_reg_4_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_areg_q_reg_4_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_pcreg_q_reg_5_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_res_q_reg_5_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_rf_REGS_reg_7__5_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_rf_REGS_reg_6__5_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_rf_REGS_reg_5__5_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_rf_REGS_reg_4__5_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_rf_REGS_reg_3__5_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_rf_REGS_reg_2__5_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_rf_REGS_reg_1__5_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_wrd_q_reg_5_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_areg_q_reg_5_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_pcreg_q_reg_6_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_res_q_reg_6_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_rf_REGS_reg_7__6_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_rf_REGS_reg_6__6_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_rf_REGS_reg_5__6_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_rf_REGS_reg_4__6_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_rf_REGS_reg_3__6_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_rf_REGS_reg_2__6_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_rf_REGS_reg_1__6_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_wrd_q_reg_6_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_areg_q_reg_6_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_pcreg_q_reg_7_ (DFFPOSX1_SCAN) and all their descendants.
+Free PSO.
+Cleaning up the current multi-corner RC extraction setup.
+Resetting process node dependent CCOpt properties.
+**WARN: (IMPCK-8086):	The command setCTSMode is obsolete and will be removed in the next release. This command still works in this release, but by the next release you must transition to the CCOpt-based CTS flow.
+Set DBUPerIGU to 1000.
+Set net toggle Scale Factor to 1.00
+Set Shrink Factor to 1.00000
+Set net toggle Scale Factor to 1.00
+Set Shrink Factor to 1.00000
+Set net toggle Scale Factor to 1.00
+Set Shrink Factor to 1.00000
+
+*** Memory Usage v#1 (Current mem = 822.730M, initial mem = 260.398M) ***
+
+
+Info (SM2C): Status of key globals:
+	 MMMC-by-default flow     : 1
+	 Default MMMC objs envvar : 0
+	 Data portability         : 0
+	 MMMC PV Emulation        : 0
+	 MMMC debug               : 0
+	 Init_Design flow         : 1
+
+
+	 CTE SM2C global          : false
+	 Reporting view filter    : false
+Set Default Input Pin Transition as 0.1 ps.
+Loading design 'mips' saved by 'Innovus' '18.10-p002_1' on 'Thu Apr 30 12:06:29 2026'.
+% Begin Load MMMC data ... (date=05/02 16:14:24, mem=633.6M)
+% End Load MMMC data ... (date=05/02 16:14:24, total cpu=0:00:00.0, real=0:00:00.0, peak res=633.6M, current mem=633.6M)
+RC_typ
+
+Loading LEF file /home/ead/G44010997/ece6250/project/pnr/saves/mips_place.dat/libs/lef/osu05_stdcells.lef ...
+**WARN: (IMPLF-108):	There is no overlap layer defined in any LEF file
+so you are unable to create rectilinear partition in a hierarchical flow.
+Set DBUPerIGU to M2 pitch 2400.
+
+viaInitial starts at Sat May  2 16:14:24 2026
+**WARN: (IMPPP-556):	A SAMENET rule between different layers for a 4 layer technology is probably a mistake. Stacked vias will be difficult to create and probably will not be what expected. Check if this rule can be removed from the technology file: SAMENET cc via 0.150 ;
+**WARN: (IMPPP-556):	A SAMENET rule between different layers for a 4 layer technology is probably a mistake. Stacked vias will be difficult to create and probably will not be what expected. Check if this rule can be removed from the technology file: SAMENET via via2 0.150 ;
+**WARN: (IMPPP-557):	A single-layer VIARULE GENERATE for turn-vias is obsolete and is being ignored. Remove this statement from the technology file: VIARULE TURN1 GENERATE.
+Type 'man IMPPP-557' for more detail.
+**WARN: (IMPPP-557):	A single-layer VIARULE GENERATE for turn-vias is obsolete and is being ignored. Remove this statement from the technology file: VIARULE TURN2 GENERATE.
+Type 'man IMPPP-557' for more detail.
+**WARN: (IMPPP-557):	A single-layer VIARULE GENERATE for turn-vias is obsolete and is being ignored. Remove this statement from the technology file: VIARULE TURN3 GENERATE.
+Type 'man IMPPP-557' for more detail.
+viaInitial ends at Sat May  2 16:14:24 2026
+Loading view definition file from saves/mips_place.dat/viewDefinition.tcl
+Reading LIB_typ timing library '/apps/design_kits/osu_stdcells_v2p7/cadence/lib/ami05/signalstorm/osu05_stdcells.lib' ...
+Read 39 cells in library 'osu05_stdcells' 
+*** End library_loading (cpu=0.00min, real=0.00min, mem=7.0M, fe_cpu=0.54min, fe_real=5.97min, fe_mem=832.8M) ***
+% Begin Load netlist data ... (date=05/02 16:14:24, mem=636.6M)
+*** Begin netlist parsing (mem=832.8M) ***
+**WARN: (IMPVL-159):	Pin 'YPAD' of cell 'PADGND' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'gnd' of cell 'PADGND' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'YPAD' of cell 'PADVDD' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'vdd' of cell 'PADVDD' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'gnd' of cell 'XOR2X1' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'vdd' of cell 'XOR2X1' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'gnd' of cell 'XNOR2X1' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'vdd' of cell 'XNOR2X1' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'gnd' of cell 'TBUFX2' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'vdd' of cell 'TBUFX2' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'gnd' of cell 'TBUFX1' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'vdd' of cell 'TBUFX1' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'gnd' of cell 'OR2X2' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'vdd' of cell 'OR2X2' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'gnd' of cell 'OR2X1' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'vdd' of cell 'OR2X1' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'gnd' of cell 'OAI22X1' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'vdd' of cell 'OAI22X1' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'gnd' of cell 'OAI21X1' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'vdd' of cell 'OAI21X1' is defined in LEF but not in the timing library.
+**WARN: (EMS-27):	Message (IMPVL-159) has exceeded the current message display limit of 20.
+To increase the message display limit, refer to the product command reference manual.
+Created 39 new cells from 1 timing libraries.
+Reading netlist ...
+Backslashed names will retain backslash and a trailing blank character.
+Reading verilogBinary netlist '/home/ead/G44010997/ece6250/project/pnr/saves/mips_place.dat/mips.v.bin'
+Reading binary database version 1
+
+*** Memory Usage v#1 (Current mem = 838.832M, initial mem = 260.398M) ***
+*** End netlist parsing (cpu=0:00:00.0, real=0:00:00.0, mem=838.8M) ***
+% End Load netlist data ... (date=05/02 16:14:24, total cpu=0:00:00.0, real=0:00:00.0, peak res=637.3M, current mem=637.3M)
+Set top cell to mips.
+**WARN: (IMPTS-124):	Timing library description of pin 'YPAD' is missing from cell 'PADGND' in timing library 'osu05_stdcells'.
+**WARN: (IMPTS-124):	Timing library description of pin 'YPAD' is missing from cell 'PADVDD' in timing library 'osu05_stdcells'.
+Hooked 39 DB cells to tlib cells.
+1 empty module found.
+Starting recursive module instantiation check.
+No recursion found.
+Building hierarchical netlist for Cell mips ...
+*** Netlist is unique.
+** info: there are 42 modules.
+** info: there are 603 stdCell insts.
+
+*** Memory Usage v#1 (Current mem = 850.836M, initial mem = 260.398M) ***
+*info: set bottom ioPad orient R0
+**WARN: (IMPFP-3961):	The techSite 'IO' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+**WARN: (IMPFP-3961):	The techSite 'corner' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+Horizontal Layer M1 offset = 1500 (derived)
+Vertical Layer M2 offset = 1200 (derived)
+Set Default Net Delay as 1000 ps.
+Set Default Net Load as 0.5 pF. 
+Set Default Input Pin Transition as 0.1 ps.
+Loading preference file saves/mips_place.dat/gui.pref.tcl ...
+Applying the recommended capacitance filtering threshold values for 180nm process node: total_c_th=5, relative_c_th=0.03 and coupling_c_th=3.
+	These values will be used by all post-route extraction engines, including TQuantus, IQuantus and Quantus QRC extraction.
+	For postRoute effortLevel low extraction, the coupling_c_th value will be used only when the -capFilterMode parameter of the setExtractRCMode command is set to relAndCoup or relOrCoup. Default value of -capFilterMode parameter in postRoute extraction effortLevel low is relOnly.
+	The accuracy mode for postRoute effortLevel low extraction will be set to 'standard'.
+	Default value for EffortLevel(-effortLevel option of the setExtractRCMode) in postRoute extraction mode is 'low'.
+Updating process node dependent CCOpt properties for the 180nm process node.
+**WARN: analysis view VIEW_typ not found, use default_view_setup
+**WARN: analysis view VIEW_typ not found, use default_view_setup
+Extraction setup Started 
+Initializing multi-corner RC extraction with 1 active RC Corners ...
+**WARN: (IMPEXT-2773):	The via resistance between layers M0 and M1 could not be determined from the LEF technology file because the via resistance specification is missing. A default of 4 Ohms will be used as via resistance between these layers.
+Type 'man IMPEXT-2773' for more detail.
+**WARN: (IMPEXT-2773):	The via resistance between layers M1 and M2 could not be determined from the LEF technology file because the via resistance specification is missing. A default of 4 Ohms will be used as via resistance between these layers.
+Type 'man IMPEXT-2773' for more detail.
+**WARN: (IMPEXT-2773):	The via resistance between layers M2 and M3 could not be determined from the LEF technology file because the via resistance specification is missing. A default of 4 Ohms will be used as via resistance between these layers.
+Type 'man IMPEXT-2773' for more detail.
+**WARN: (IMPEXT-2766):	The sheet resistance for layer M1 is not defined in the cap table. Therefore, the LEF value 0.09 will be used instead. To avoid this message, update the relevant cap table to include the sheet resistance for the specified layer and read it back in.
+**WARN: (IMPEXT-2766):	The sheet resistance for layer M2 is not defined in the cap table. Therefore, the LEF value 0.09 will be used instead. To avoid this message, update the relevant cap table to include the sheet resistance for the specified layer and read it back in.
+**WARN: (IMPEXT-2766):	The sheet resistance for layer M3 is not defined in the cap table. Therefore, the LEF value 0.05 will be used instead. To avoid this message, update the relevant cap table to include the sheet resistance for the specified layer and read it back in.
+Summary of Active RC-Corners : 
+ 
+ Analysis View: VIEW_typ
+    RC-Corner Name        : RC_typ
+    RC-Corner Index       : 0
+    RC-Corner Temperature : 25 Celsius
+    RC-Corner Cap Table   : ''
+    RC-Corner PreRoute Res Factor         : 1
+    RC-Corner PreRoute Cap Factor         : 1
+    RC-Corner PostRoute Res Factor        : 1 {1 1 1}
+    RC-Corner PostRoute Cap Factor        : 1 {1 1 1}
+    RC-Corner PostRoute XCap Factor       : 1 {1 1 1}
+    RC-Corner PreRoute Clock Res Factor   : 1	[Derived from Cap Table]
+    RC-Corner PreRoute Clock Cap Factor   : 1	[Derived from Cap Table]
+    RC-Corner PostRoute Clock Cap Factor  : 1 {1 1 1} 	[Derived from postRoute_cap (effortLevel low)]
+    RC-Corner PostRoute Clock Res Factor  : 1 {1 1 1} 	[Derived from postRoute_res (effortLevel low)]
+Updating RC grid for preRoute extraction ...
+Initializing multi-corner resistance tables ...
+*Info: initialize multi-corner CTS.
+Reading timing constraints file '/home/ead/G44010997/ece6250/project/pnr/saves/mips_place.dat/libs/mmmc/mips_scan.sdc' ...
+Current (total cpu=0:00:33.0, real=0:05:58, peak res=781.2M, current mem=762.8M)
+**WARN: (TCLCMD-1461):	Skipped unsupported command: set_units (File /home/ead/G44010997/ece6250/project/pnr/saves/mips_place.dat/libs/mmmc/mips_scan.sdc, Line 8).
+
+**WARN: (TCLNL-330):	set_input_delay on clock root 'clk' is not supported. You should use the -source option to set_clock_latency to provide this offset. You can also use the global timing_allow_input_delay_on_clock_source to allow set_input_delay assertion to have an effect on clock source paths beginning at this clock root. (File /home/ead/G44010997/ece6250/project/pnr/saves/mips_place.dat/libs/mmmc/mips_scan.sdc, Line 76).
+
+INFO (CTE): Reading of timing constraints file /home/ead/G44010997/ece6250/project/pnr/saves/mips_place.dat/libs/mmmc/mips_scan.sdc completed, with 2 WARNING
+Ending "Constraint file reading stats" (total cpu=0:00:00.0, real=0:00:00.0, peak res=771.1M, current mem=771.1M)
+Current (total cpu=0:00:33.0, real=0:05:59, peak res=781.2M, current mem=771.1M)
+Total number of combinational cells: 26
+Total number of sequential cells: 4
+Total number of tristate cells: 2
+Total number of level shifter cells: 0
+Total number of power gating cells: 0
+Total number of isolation cells: 0
+Total number of power switch cells: 0
+Total number of pulse generator cells: 0
+Total number of always on buffers: 0
+Total number of retention cells: 0
+List of usable buffers: BUFX2 BUFX4 CLKBUF1
+Total number of usable buffers: 3
+List of unusable buffers:
+Total number of unusable buffers: 0
+List of usable inverters: INVX2 INVX1 INVX4 INVX8
+Total number of usable inverters: 4
+List of unusable inverters:
+Total number of unusable inverters: 0
+List of identified usable delay cells: CLKBUF2 CLKBUF3
+Total number of identified usable delay cells: 2
+List of identified unusable delay cells:
+Total number of identified unusable delay cells: 0
+Reading floorplan file - saves/mips_place.dat/mips.fp.gz (mem = 979.8M).
+% Begin Load floorplan data ... (date=05/02 16:14:25, mem=771.4M)
+*info: reset 765 existing net BottomPreferredLayer and AvoidDetour
+Deleting old partition specification.
+Set FPlanBox to (0 0 578400 540000)
+Horizontal Layer M1 offset = 1500 (derived)
+Vertical Layer M2 offset = 1200 (derived)
+ ... processed partition successfully.
+Reading binary special route file saves/mips_place.dat/mips.fp.spr.gz (Created by Innovus v18.10-p002_1 on Thu Apr 30 12:06:29 2026, version: 1)
+Extracting standard cell pins and blockage ...... 
+Pin and blockage extraction finished
+% End Load floorplan data ... (date=05/02 16:14:25, total cpu=0:00:00.0, real=0:00:00.0, peak res=771.5M, current mem=771.5M)
+Reading congestion map file saves/mips_place.dat/mips.route.congmap.gz ...
+% Begin Load SymbolTable ... (date=05/02 16:14:25, mem=771.7M)
+Suppress "**WARN ..." messages.
+Un-suppress "**WARN ..." messages.
+% End Load SymbolTable ... (date=05/02 16:14:25, total cpu=0:00:00.0, real=0:00:00.0, peak res=771.8M, current mem=771.8M)
+Loading place ...
+% Begin Load placement data ... (date=05/02 16:14:25, mem=771.8M)
+Reading placement file - saves/mips_place.dat/mips.place.gz.
+** Reading stdCellPlacement_binary (Created by Innovus v18.10-p002_1 on Thu Apr 30 12:06:29 2026, version# 2) ...
+*** Completed restorePlace (cpu=0:00:00.0 real=0:00:00.0 mem=979.8M) ***
+Total net length = 6.188e+04 (2.911e+04 3.276e+04) (ext = 5.298e+03)
+% End Load placement data ... (date=05/02 16:14:25, total cpu=0:00:00.0, real=0:00:00.0, peak res=772.0M, current mem=772.0M)
+% Begin Load routing data ... (date=05/02 16:14:25, mem=772.0M)
+Reading routing file - saves/mips_place.dat/mips.route.gz.
+Reading Innovus routing data (Created by Innovus v18.10-p002_1 on Thu Apr 30 12:06:29 2026 Format: 18.1) ...
+*** Total 736 nets are successfully restored.
+*** Completed restoreRoute (cpu=0:00:00.0 real=0:00:00.0 mem=979.8M) ***
+% End Load routing data ... (date=05/02 16:14:25, total cpu=0:00:00.0, real=0:00:00.0, peak res=773.5M, current mem=773.5M)
+TAT_INFO: restoreCongMap REAL = 0 : CPU = 0 : MEM = 0.
+Reading property file saves/mips_place.dat/mips.prop
+*** Completed restoreProperty (cpu=0:00:00.0 real=0:00:00.0 mem=979.8M) ***
+Set Default Input Pin Transition as 0.1 ps.
+Updating RC grid for preRoute extraction ...
+Initializing multi-corner resistance tables ...
+% Begin Load power constraints ... (date=05/02 16:14:25, mem=774.6M)
+% End Load power constraints ... (date=05/02 16:14:25, total cpu=0:00:00.0, real=0:00:00.0, peak res=774.6M, current mem=774.6M)
+Start generating vias ...
+#Skip building auto via since it is not turned on.
+Via generation completed.
+% Begin load AAE data ... (date=05/02 16:14:25, mem=773.6M)
+AAE DB initialization (MEM=990.875 CPU=0:00:00.1 REAL=0:00:00.0) 
+% End load AAE data ... (date=05/02 16:14:25, total cpu=0:00:00.1, real=0:00:00.0, peak res=776.2M, current mem=776.2M)
+Total number of combinational cells: 26
+Total number of sequential cells: 4
+Total number of tristate cells: 2
+Total number of level shifter cells: 0
+Total number of power gating cells: 0
+Total number of isolation cells: 0
+Total number of power switch cells: 0
+Total number of pulse generator cells: 0
+Total number of always on buffers: 0
+Total number of retention cells: 0
+List of usable buffers: BUFX2 BUFX4 CLKBUF1
+Total number of usable buffers: 3
+List of unusable buffers:
+Total number of unusable buffers: 0
+List of usable inverters: INVX2 INVX1 INVX4 INVX8
+Total number of usable inverters: 4
+List of unusable inverters:
+Total number of unusable inverters: 0
+List of identified usable delay cells: CLKBUF2 CLKBUF3
+Total number of identified usable delay cells: 2
+List of identified unusable delay cells:
+Total number of identified unusable delay cells: 0
+**WARN: (IMPCTE-107):	The following globals have been obsoleted since version 18.10-p002_1. They will be removed in the next release. 
+timing_enable_default_delay_arc
+#% End load design ... (date=05/02 16:14:25, total cpu=0:00:01.2, real=0:00:01.0, peak res=776.2M, current mem=776.2M)
+
+*** Summary of all messages that are not suppressed in this session:
+Severity  ID               Count  Summary                                  
+WARNING   IMPLF-108            1  There is no overlap layer defined in any...
+WARNING   IMPFP-3961           2  The techSite '%s' has no related standar...
+WARNING   IMPTS-124            2  Timing library description of pin '%s' i...
+WARNING   IMPEXT-2766          3  The sheet resistance for layer %s is not...
+WARNING   IMPEXT-2773          3  The via resistance between layers %s and...
+WARNING   IMPCK-8086           1  The command %s is obsolete and will be r...
+WARNING   IMPVL-159           68  Pin '%s' of cell '%s' is defined in LEF ...
+WARNING   IMPPP-556            2  A SAMENET rule between different layers ...
+WARNING   IMPPP-557            3  A single-layer VIARULE GENERATE for turn...
+WARNING   IMPCTE-107           1  The following globals have been obsolete...
+WARNING   TCLCMD-1461          1  Skipped unsupported command: %s          
+WARNING   TCLNL-330            1  set_input_delay on clock root '%s' is no...
+*** Message Summary: 88 warning(s), 0 error(s)
+
+<CMD> setLayerPreference allM2 -isVisible 0
+<CMD> setLayerPreference allM3 -isVisible 0
+<CMD> setLayerPreference allM3Cont -isVisible 0
+<CMD> setLayerPreference allM2Cont -isVisible 0
+<CMD> fit
+<CMD> fit
+<CMD> fit
+<CMD> selectNet vdd!
+<CMD> selectNet gnd!
+invalid command name "deselctAll"
+<CMD> selectNet clk
+<CMD> setLayerPreference pgPower -isVisible 0
+<CMD> setLayerPreference pgPower -isVisible 1
+<CMD> setLayerPreference pgPower -isVisible 0
+<CMD> setLayerPreference pgPower -isVisible 1
+<CMD> setLayerPreference allM2Cont -isVisible 1
+<CMD> setLayerPreference allM2 -isVisible 1
+<CMD> setLayerPreference allM3Cont -isVisible 1
+<CMD> setLayerPreference allM3 -isVisible 1
+<CMD> setLayerPreference clock -isVisible 0
+<CMD> setLayerPreference clock -isVisible 1
+<CMD> setLayerPreference pgPower -isVisible 0
+<CMD> setLayerPreference pgPower -isVisible 1
+<CMD> setLayerPreference pgGround -isVisible 0
+<CMD> setLayerPreference pgGround -isVisible 1
+<CMD> setLayerPreference pgGround -isVisible 0
+<CMD> setLayerPreference pgGround -isVisible 1
+<CMD> setLayerPreference pgGround -isVisible 0
+<CMD> setLayerPreference pgGround -isVisible 1
+<CMD> setLayerPreference allM0 -isVisible 0
+<CMD> setLayerPreference allM1Cont -isVisible 0
+<CMD> setLayerPreference allM1 -isVisible 0
+<CMD> setLayerPreference allM2Cont -isVisible 0
+<CMD> setLayerPreference allM2 -isVisible 0
+<CMD> setLayerPreference allM3Cont -isVisible 0
+<CMD> setLayerPreference allM3 -isVisible 0
+<CMD> setLayerPreference allM3 -isVisible 1
+<CMD> fit
+<CMD> fit
+<CMD> setLayerPreference allM0 -isVisible 1
+<CMD> setLayerPreference allM1Cont -isVisible 1
+<CMD> setLayerPreference allM2Cont -isVisible 1
+<CMD> setLayerPreference allM1 -isVisible 1
+<CMD> setLayerPreference allM2 -isVisible 1
+<CMD> setLayerPreference allM3Cont -isVisible 1
+<CMD> setLayerPreference node_gird -isVisible 1
+<CMD> setLayerPreference node_gird -isVisible 0
+<CMD> selectNet VDD
+**WARN: (IMPSYC-1187):	Cannot select net 'VDD' - could not find it.
+
+<CMD> selectNet GND
+**WARN: (IMPSYC-1187):	Cannot select net 'GND' - could not find it.
+
+<CMD> setLayerPreference allM2Cont -isVisible 0
+<CMD> setLayerPreference allM2 -isVisible 0
+<CMD> setLayerPreference allM3Cont -isVisible 0
+<CMD> setLayerPreference allM3 -isVisible 0
+<CMD> setLayerPreference allM1 -isVisible 0
+<CMD> setLayerPreference allM1 -isVisible 1
+<CMD> set sprCreateIeRingOffset 1.0
+<CMD> set sprCreateIeRingThreshold 1.0
+<CMD> set sprCreateIeRingJogDistance 1.0
+<CMD> set sprCreateIeRingLayers {}
+<CMD> set sprCreateIeRingOffset 1.0
+<CMD> set sprCreateIeRingThreshold 1.0
+<CMD> set sprCreateIeRingJogDistance 1.0
+<CMD> set sprCreateIeRingLayers {}
+<CMD> set sprCreateIeStripeWidth 10.0
+<CMD> set sprCreateIeStripeThreshold 1.0
+<CMD> set sprCreateIeStripeWidth 10.0
+<CMD> set sprCreateIeStripeThreshold 1.0
+<CMD> set sprCreateIeRingOffset 1.0
+<CMD> set sprCreateIeRingThreshold 1.0
+<CMD> set sprCreateIeRingJogDistance 1.0
+<CMD> set sprCreateIeRingLayers {}
+<CMD> set sprCreateIeStripeWidth 10.0
+<CMD> set sprCreateIeStripeThreshold 1.0
+<CMD> setAddStripeMode -ignore_block_check false -break_at none -route_over_rows_only false -rows_without_stripes_only false -extend_to_closest_target none -stop_at_last_wire_for_area false -partial_set_thru_domain false -ignore_nondefault_domains false -trim_antenna_back_to_shape none -spacing_type edge_to_edge -spacing_from_block 0 -stripe_min_length stripe_width -stacked_via_top_layer metal3 -stacked_via_bottom_layer metal1 -via_using_exact_crossover_size false -split_vias false -orthogonal_only true -allow_jog { padcore_ring  block_ring } -skip_via_on_pin {  standardcell } -skip_via_on_wire_shape {  noshape   }
+addStripe will allow jog to connect padcore ring and block ring.
+
+Stripes will stop at the boundary of the specified area.
+When breaking rings, the power planner will consider the existence of blocks.
+Stripes will not extend to closest target.
+The power planner will set stripe antenna targets to none (no trimming allowed).
+Stripes will not be created over regions without power planning wires.
+The entire stripe set will break at the domain if one of the nets is not in the domain.
+addStripe will break automatically at non-default domains when generating global stripes over the core area or default domain.
+Offset for stripe breaking is set to 0.
+<CMD> addStripe -nets {} -layer metal1 -direction vertical -width 4.8 -spacing 1.8 -set_to_set_distance 99 -start_from left -switch_layer_over_obs false -max_same_layer_jog_length 2 -padcore_ring_top_layer_limit metal3 -padcore_ring_bottom_layer_limit metal1 -block_ring_top_layer_limit metal3 -block_ring_bottom_layer_limit metal1 -use_wire_group 0 -snap_wire_center_to_grid Grid
+
+**WARN: (IMPPP-151):	-merge_stripes_value (-1.000000) is not multiple of manufacturing grid (0.150000), setting to -0.900000.
+**WARN: (IMPPP-133):	The block boundary of instance 'cont_state_reg_2_' was increased to (167.400 434.100) (221.400 465.900) because pins or obstructions were outside the original block boundary.
+**WARN: (IMPPP-133):	The block boundary of instance 'cont_state_reg_1_' was increased to (285.000 464.100) (339.000 495.900) because pins or obstructions were outside the original block boundary.
+**WARN: (IMPPP-133):	The block boundary of instance 'cont_state_reg_0_' was increased to (162.600 494.100) (216.600 525.900) because pins or obstructions were outside the original block boundary.
+**WARN: (IMPPP-133):	The block boundary of instance 'cont_state_reg_3_' was increased to (268.200 494.100) (322.200 525.900) because pins or obstructions were outside the original block boundary.
+**WARN: (IMPPP-133):	The block boundary of instance 'U181' was increased to (57.000 404.100) (70.200 435.900) because pins or obstructions were outside the original block boundary.
+**WARN: (IMPPP-133):	The block boundary of instance 'U182' was increased to (23.400 44.100) (36.600 75.900) because pins or obstructions were outside the original block boundary.
+**WARN: (IMPPP-133):	The block boundary of instance 'U183' was increased to (371.400 104.100) (384.600 135.900) because pins or obstructions were outside the original block boundary.
+**WARN: (IMPPP-133):	The block boundary of instance 'U184' was increased to (112.200 44.100) (125.400 75.900) because pins or obstructions were outside the original block boundary.
+**WARN: (IMPPP-133):	The block boundary of instance 'U185' was increased to (299.400 44.100) (312.600 75.900) because pins or obstructions were outside the original block boundary.
+**WARN: (IMPPP-133):	The block boundary of instance 'U186' was increased to (61.800 134.100) (75.000 165.900) because pins or obstructions were outside the original block boundary.
+**WARN: (IMPPP-133):	The block boundary of instance 'U187' was increased to (270.600 104.100) (283.800 135.900) because pins or obstructions were outside the original block boundary.
+**WARN: (IMPPP-133):	The block boundary of instance 'U188' was increased to (33.000 104.100) (46.200 135.900) because pins or obstructions were outside the original block boundary.
+**WARN: (IMPPP-133):	The block boundary of instance 'U189' was increased to (429.000 44.100) (442.200 75.900) because pins or obstructions were outside the original block boundary.
+**WARN: (IMPPP-133):	The block boundary of instance 'U190' was increased to (23.400 194.100) (36.600 225.900) because pins or obstructions were outside the original block boundary.
+**WARN: (IMPPP-133):	The block boundary of instance 'U191' was increased to (354.600 194.100) (367.800 225.900) because pins or obstructions were outside the original block boundary.
+**WARN: (IMPPP-133):	The block boundary of instance 'U192' was increased to (109.800 194.100) (123.000 225.900) because pins or obstructions were outside the original block boundary.
+**WARN: (IMPPP-133):	The block boundary of instance 'U193' was increased to (342.600 164.100) (355.800 195.900) because pins or obstructions were outside the original block boundary.
+**WARN: (IMPPP-133):	The block boundary of instance 'U194' was increased to (59.400 224.100) (72.600 255.900) because pins or obstructions were outside the original block boundary.
+**WARN: (IMPPP-133):	The block boundary of instance 'U195' was increased to (270.600 284.100) (283.800 315.900) because pins or obstructions were outside the original block boundary.
+**WARN: (IMPPP-133):	The block boundary of instance 'U196' was increased to (33.000 224.100) (46.200 255.900) because pins or obstructions were outside the original block boundary.
+**WARN: (EMS-27):	Message (IMPPP-133) has exceeded the current message display limit of 20.
+To increase the message display limit, refer to the product command reference manual.
+<CMD> setLayerPreference allM2Cont -isVisible 1
+<CMD> setLayerPreference allM2 -isVisible 1
+<CMD> setLayerPreference allM1 -isVisible 0
+<CMD> setLayerPreference allM1 -isVisible 1
+<CMD> setLayerPreference allM1 -isVisible 0
+<CMD> setLayerPreference allM1 -isVisible 1
+<CMD> setLayerPreference allM3 -isVisible 1
+<CMD> setLayerPreference allM3Cont -isVisible 1
+<CMD> restoreDesign saves/mips_final.dat mips
+#% Begin load design ... (date=05/02 18:04:00, mem=795.7M)
+Resetting process node dependent CCOpt properties.
+Reset to color id 0 for dp_ir0_q_reg_7_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_ir0_q_reg_2_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_ir0_q_reg_3_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_ir0_q_reg_4_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_ir0_q_reg_5_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_ir0_q_reg_6_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_ir3_q_reg_0_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_ir3_q_reg_1_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_ir3_q_reg_2_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_ir3_q_reg_3_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_ir3_q_reg_4_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_ir3_q_reg_5_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_ir3_q_reg_6_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_ir3_q_reg_7_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_ir2_q_reg_3_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_ir2_q_reg_4_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_ir2_q_reg_5_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_ir1_q_reg_0_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_ir1_q_reg_1_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_ir1_q_reg_2_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_ir1_q_reg_5_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_ir1_q_reg_6_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_ir1_q_reg_7_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_mdr_q_reg_0_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_mdr_q_reg_1_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_mdr_q_reg_2_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_mdr_q_reg_3_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_mdr_q_reg_4_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_mdr_q_reg_5_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_mdr_q_reg_6_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_mdr_q_reg_7_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_areg_q_reg_7_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_res_q_reg_7_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_rf_REGS_reg_7__7_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_rf_REGS_reg_6__7_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_rf_REGS_reg_5__7_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_rf_REGS_reg_4__7_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_rf_REGS_reg_3__7_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_rf_REGS_reg_2__7_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_rf_REGS_reg_1__7_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_wrd_q_reg_7_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_pcreg_q_reg_0_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_res_q_reg_0_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_rf_REGS_reg_7__0_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_rf_REGS_reg_6__0_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_rf_REGS_reg_5__0_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_rf_REGS_reg_4__0_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_rf_REGS_reg_3__0_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_rf_REGS_reg_2__0_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_rf_REGS_reg_1__0_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_wrd_q_reg_0_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_areg_q_reg_0_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_pcreg_q_reg_1_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_res_q_reg_1_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_rf_REGS_reg_7__1_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_rf_REGS_reg_6__1_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_rf_REGS_reg_5__1_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_rf_REGS_reg_4__1_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_rf_REGS_reg_3__1_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_rf_REGS_reg_2__1_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_rf_REGS_reg_1__1_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_wrd_q_reg_1_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_areg_q_reg_1_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_pcreg_q_reg_2_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_res_q_reg_2_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_rf_REGS_reg_7__2_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_rf_REGS_reg_6__2_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_rf_REGS_reg_5__2_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_rf_REGS_reg_4__2_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_rf_REGS_reg_3__2_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_rf_REGS_reg_2__2_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_rf_REGS_reg_1__2_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_wrd_q_reg_2_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_areg_q_reg_2_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_pcreg_q_reg_3_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_res_q_reg_3_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_rf_REGS_reg_7__3_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_rf_REGS_reg_6__3_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_rf_REGS_reg_5__3_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_rf_REGS_reg_4__3_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_rf_REGS_reg_3__3_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_rf_REGS_reg_2__3_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_rf_REGS_reg_1__3_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_wrd_q_reg_3_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_areg_q_reg_3_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_pcreg_q_reg_4_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_res_q_reg_4_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_rf_REGS_reg_7__4_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_rf_REGS_reg_6__4_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_rf_REGS_reg_5__4_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_rf_REGS_reg_4__4_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_rf_REGS_reg_3__4_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_rf_REGS_reg_2__4_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_rf_REGS_reg_1__4_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_wrd_q_reg_4_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_areg_q_reg_4_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_pcreg_q_reg_5_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_res_q_reg_5_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_rf_REGS_reg_7__5_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_rf_REGS_reg_6__5_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_rf_REGS_reg_5__5_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_rf_REGS_reg_4__5_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_rf_REGS_reg_3__5_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_rf_REGS_reg_2__5_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_rf_REGS_reg_1__5_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_wrd_q_reg_5_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_areg_q_reg_5_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_pcreg_q_reg_6_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_res_q_reg_6_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_rf_REGS_reg_7__6_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_rf_REGS_reg_6__6_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_rf_REGS_reg_5__6_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_rf_REGS_reg_4__6_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_rf_REGS_reg_3__6_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_rf_REGS_reg_2__6_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_rf_REGS_reg_1__6_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_wrd_q_reg_6_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_areg_q_reg_6_ (DFFPOSX1_SCAN) and all their descendants.
+Reset to color id 0 for dp_pcreg_q_reg_7_ (DFFPOSX1_SCAN) and all their descendants.
+Free PSO.
+Cleaning up the current multi-corner RC extraction setup.
+Resetting process node dependent CCOpt properties.
+**WARN: (IMPCK-8086):	The command setCTSMode is obsolete and will be removed in the next release. This command still works in this release, but by the next release you must transition to the CCOpt-based CTS flow.
+Set DBUPerIGU to 1000.
+Set net toggle Scale Factor to 1.00
+Set Shrink Factor to 1.00000
+Set net toggle Scale Factor to 1.00
+Set Shrink Factor to 1.00000
+Set net toggle Scale Factor to 1.00
+Set Shrink Factor to 1.00000
+
+*** Memory Usage v#1 (Current mem = 841.461M, initial mem = 260.398M) ***
+
+
+Info (SM2C): Status of key globals:
+	 MMMC-by-default flow     : 1
+	 Default MMMC objs envvar : 0
+	 Data portability         : 0
+	 MMMC PV Emulation        : 0
+	 MMMC debug               : 0
+	 Init_Design flow         : 1
+
+
+	 CTE SM2C global          : false
+	 Reporting view filter    : false
+Set Default Input Pin Transition as 0.1 ps.
+Loading design 'mips' saved by 'Innovus' '18.10-p002_1' on 'Thu Apr 30 15:01:40 2026'.
+% Begin Load MMMC data ... (date=05/02 18:04:00, mem=651.3M)
+% End Load MMMC data ... (date=05/02 18:04:00, total cpu=0:00:00.0, real=0:00:00.0, peak res=651.3M, current mem=651.3M)
+RC_typ
+
+Loading LEF file /home/ead/G44010997/ece6250/project/pnr/saves/mips_final.dat/libs/lef/osu05_stdcells.lef ...
+**WARN: (IMPLF-108):	There is no overlap layer defined in any LEF file
+so you are unable to create rectilinear partition in a hierarchical flow.
+Set DBUPerIGU to M2 pitch 2400.
+
+viaInitial starts at Sat May  2 18:04:00 2026
+**WARN: (IMPPP-556):	A SAMENET rule between different layers for a 4 layer technology is probably a mistake. Stacked vias will be difficult to create and probably will not be what expected. Check if this rule can be removed from the technology file: SAMENET cc via 0.150 ;
+**WARN: (IMPPP-556):	A SAMENET rule between different layers for a 4 layer technology is probably a mistake. Stacked vias will be difficult to create and probably will not be what expected. Check if this rule can be removed from the technology file: SAMENET via via2 0.150 ;
+**WARN: (IMPPP-557):	A single-layer VIARULE GENERATE for turn-vias is obsolete and is being ignored. Remove this statement from the technology file: VIARULE TURN1 GENERATE.
+Type 'man IMPPP-557' for more detail.
+**WARN: (IMPPP-557):	A single-layer VIARULE GENERATE for turn-vias is obsolete and is being ignored. Remove this statement from the technology file: VIARULE TURN2 GENERATE.
+Type 'man IMPPP-557' for more detail.
+**WARN: (IMPPP-557):	A single-layer VIARULE GENERATE for turn-vias is obsolete and is being ignored. Remove this statement from the technology file: VIARULE TURN3 GENERATE.
+Type 'man IMPPP-557' for more detail.
+viaInitial ends at Sat May  2 18:04:00 2026
+Loading view definition file from saves/mips_final.dat/viewDefinition.tcl
+Reading LIB_typ timing library '/apps/design_kits/osu_stdcells_v2p7/cadence/lib/ami05/signalstorm/osu05_stdcells.lib' ...
+Read 39 cells in library 'osu05_stdcells' 
+*** End library_loading (cpu=0.00min, real=0.00min, mem=9.0M, fe_cpu=6.96min, fe_real=115.57min, fe_mem=853.6M) ***
+% Begin Load netlist data ... (date=05/02 18:04:00, mem=654.4M)
+*** Begin netlist parsing (mem=853.6M) ***
+**WARN: (IMPVL-159):	Pin 'YPAD' of cell 'PADGND' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'gnd' of cell 'PADGND' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'YPAD' of cell 'PADVDD' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'vdd' of cell 'PADVDD' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'gnd' of cell 'XOR2X1' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'vdd' of cell 'XOR2X1' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'gnd' of cell 'XNOR2X1' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'vdd' of cell 'XNOR2X1' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'gnd' of cell 'TBUFX2' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'vdd' of cell 'TBUFX2' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'gnd' of cell 'TBUFX1' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'vdd' of cell 'TBUFX1' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'gnd' of cell 'OR2X2' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'vdd' of cell 'OR2X2' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'gnd' of cell 'OR2X1' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'vdd' of cell 'OR2X1' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'gnd' of cell 'OAI22X1' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'vdd' of cell 'OAI22X1' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'gnd' of cell 'OAI21X1' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'vdd' of cell 'OAI21X1' is defined in LEF but not in the timing library.
+**WARN: (EMS-27):	Message (IMPVL-159) has exceeded the current message display limit of 20.
+To increase the message display limit, refer to the product command reference manual.
+Created 39 new cells from 1 timing libraries.
+Reading netlist ...
+Backslashed names will retain backslash and a trailing blank character.
+Reading verilogBinary netlist '/home/ead/G44010997/ece6250/project/pnr/saves/mips_final.dat/mips.v.bin'
+Reading binary database version 1
+
+*** Memory Usage v#1 (Current mem = 859.562M, initial mem = 260.398M) ***
+*** End netlist parsing (cpu=0:00:00.0, real=0:00:00.0, mem=859.6M) ***
+% End Load netlist data ... (date=05/02 18:04:00, total cpu=0:00:00.0, real=0:00:00.0, peak res=655.1M, current mem=655.1M)
+Set top cell to mips.
+**WARN: (IMPTS-124):	Timing library description of pin 'YPAD' is missing from cell 'PADGND' in timing library 'osu05_stdcells'.
+**WARN: (IMPTS-124):	Timing library description of pin 'YPAD' is missing from cell 'PADVDD' in timing library 'osu05_stdcells'.
+Hooked 39 DB cells to tlib cells.
+1 empty module found.
+Starting recursive module instantiation check.
+No recursion found.
+Building hierarchical netlist for Cell mips ...
+*** Netlist is unique.
+** info: there are 42 modules.
+** info: there are 622 stdCell insts.
+
+*** Memory Usage v#1 (Current mem = 871.566M, initial mem = 260.398M) ***
+*info: set bottom ioPad orient R0
+**WARN: (IMPFP-3961):	The techSite 'IO' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+**WARN: (IMPFP-3961):	The techSite 'corner' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+Horizontal Layer M1 offset = 1500 (derived)
+Vertical Layer M2 offset = 1200 (derived)
+Set Default Net Delay as 1000 ps.
+Set Default Net Load as 0.5 pF. 
+Set Default Input Pin Transition as 0.1 ps.
+Loading preference file saves/mips_final.dat/gui.pref.tcl ...
+Applying the recommended capacitance filtering threshold values for 180nm process node: total_c_th=5, relative_c_th=0.03 and coupling_c_th=3.
+	These values will be used by all post-route extraction engines, including TQuantus, IQuantus and Quantus QRC extraction.
+	For postRoute effortLevel low extraction, the coupling_c_th value will be used only when the -capFilterMode parameter of the setExtractRCMode command is set to relAndCoup or relOrCoup. Default value of -capFilterMode parameter in postRoute extraction effortLevel low is relOnly.
+	The accuracy mode for postRoute effortLevel low extraction will be set to 'standard'.
+	Default value for EffortLevel(-effortLevel option of the setExtractRCMode) in postRoute extraction mode is 'low'.
+Updating process node dependent CCOpt properties for the 180nm process node.
+**WARN: analysis view VIEW_typ not found, use default_view_setup
+**WARN: analysis view VIEW_typ not found, use default_view_setup
+**WARN: analysis view VIEW_typ not found, use default_view_setup
+Extraction setup Started 
+Initializing multi-corner RC extraction with 1 active RC Corners ...
+**WARN: (IMPEXT-2773):	The via resistance between layers M0 and M1 could not be determined from the LEF technology file because the via resistance specification is missing. A default of 4 Ohms will be used as via resistance between these layers.
+Type 'man IMPEXT-2773' for more detail.
+**WARN: (IMPEXT-2773):	The via resistance between layers M1 and M2 could not be determined from the LEF technology file because the via resistance specification is missing. A default of 4 Ohms will be used as via resistance between these layers.
+Type 'man IMPEXT-2773' for more detail.
+**WARN: (IMPEXT-2773):	The via resistance between layers M2 and M3 could not be determined from the LEF technology file because the via resistance specification is missing. A default of 4 Ohms will be used as via resistance between these layers.
+Type 'man IMPEXT-2773' for more detail.
+**WARN: (IMPEXT-2766):	The sheet resistance for layer M1 is not defined in the cap table. Therefore, the LEF value 0.09 will be used instead. To avoid this message, update the relevant cap table to include the sheet resistance for the specified layer and read it back in.
+**WARN: (IMPEXT-2766):	The sheet resistance for layer M2 is not defined in the cap table. Therefore, the LEF value 0.09 will be used instead. To avoid this message, update the relevant cap table to include the sheet resistance for the specified layer and read it back in.
+**WARN: (IMPEXT-2766):	The sheet resistance for layer M3 is not defined in the cap table. Therefore, the LEF value 0.05 will be used instead. To avoid this message, update the relevant cap table to include the sheet resistance for the specified layer and read it back in.
+Summary of Active RC-Corners : 
+ 
+ Analysis View: VIEW_typ
+    RC-Corner Name        : RC_typ
+    RC-Corner Index       : 0
+    RC-Corner Temperature : 25 Celsius
+    RC-Corner Cap Table   : ''
+    RC-Corner PreRoute Res Factor         : 1
+    RC-Corner PreRoute Cap Factor         : 1
+    RC-Corner PostRoute Res Factor        : 1 {1 1 1}
+    RC-Corner PostRoute Cap Factor        : 1 {1 1 1}
+    RC-Corner PostRoute XCap Factor       : 1 {1 1 1}
+    RC-Corner PreRoute Clock Res Factor   : 1	[Derived from Cap Table]
+    RC-Corner PreRoute Clock Cap Factor   : 1	[Derived from Cap Table]
+    RC-Corner PostRoute Clock Cap Factor  : 1 {1 1 1} 	[Derived from postRoute_cap (effortLevel low)]
+    RC-Corner PostRoute Clock Res Factor  : 1 {1 1 1} 	[Derived from postRoute_res (effortLevel low)]
+Initializing multi-corner resistance tables ...
+*Info: initialize multi-corner CTS.
+Reading timing constraints file '/home/ead/G44010997/ece6250/project/pnr/saves/mips_final.dat/libs/mmmc/mips_scan.sdc' ...
+Current (total cpu=0:06:58, real=1:55:35, peak res=796.0M, current mem=777.5M)
+**WARN: (TCLCMD-1461):	Skipped unsupported command: set_units (File /home/ead/G44010997/ece6250/project/pnr/saves/mips_final.dat/libs/mmmc/mips_scan.sdc, Line 8).
+
+**WARN: (TCLNL-330):	set_input_delay on clock root 'clk' is not supported. You should use the -source option to set_clock_latency to provide this offset. You can also use the global timing_allow_input_delay_on_clock_source to allow set_input_delay assertion to have an effect on clock source paths beginning at this clock root. (File /home/ead/G44010997/ece6250/project/pnr/saves/mips_final.dat/libs/mmmc/mips_scan.sdc, Line 76).
+
+INFO (CTE): Reading of timing constraints file /home/ead/G44010997/ece6250/project/pnr/saves/mips_final.dat/libs/mmmc/mips_scan.sdc completed, with 2 WARNING
+Ending "Constraint file reading stats" (total cpu=0:00:00.0, real=0:00:00.0, peak res=785.9M, current mem=785.9M)
+Current (total cpu=0:06:58, real=1:55:35, peak res=796.0M, current mem=785.9M)
+Total number of combinational cells: 26
+Total number of sequential cells: 4
+Total number of tristate cells: 2
+Total number of level shifter cells: 0
+Total number of power gating cells: 0
+Total number of isolation cells: 0
+Total number of power switch cells: 0
+Total number of pulse generator cells: 0
+Total number of always on buffers: 0
+Total number of retention cells: 0
+List of usable buffers: BUFX2 BUFX4 CLKBUF1
+Total number of usable buffers: 3
+List of unusable buffers:
+Total number of unusable buffers: 0
+List of usable inverters: INVX2 INVX1 INVX4 INVX8
+Total number of usable inverters: 4
+List of unusable inverters:
+Total number of unusable inverters: 0
+List of identified usable delay cells: CLKBUF2 CLKBUF3
+Total number of identified usable delay cells: 2
+List of identified unusable delay cells:
+Total number of identified unusable delay cells: 0
+Reading floorplan file - saves/mips_final.dat/mips.fp.gz (mem = 1003.1M).
+% Begin Load floorplan data ... (date=05/02 18:04:01, mem=786.3M)
+*info: reset 784 existing net BottomPreferredLayer and AvoidDetour
+Deleting old partition specification.
+Set FPlanBox to (0 0 578400 540000)
+Horizontal Layer M1 offset = 1500 (derived)
+Vertical Layer M2 offset = 1200 (derived)
+ ... processed partition successfully.
+Reading binary special route file saves/mips_final.dat/mips.fp.spr.gz (Created by Innovus v18.10-p002_1 on Thu Apr 30 15:01:39 2026, version: 1)
+Extracting standard cell pins and blockage ...... 
+Pin and blockage extraction finished
+% End Load floorplan data ... (date=05/02 18:04:01, total cpu=0:00:00.0, real=0:00:00.0, peak res=786.3M, current mem=786.3M)
+Reading congestion map file saves/mips_final.dat/mips.route.congmap.gz ...
+% Begin Load SymbolTable ... (date=05/02 18:04:01, mem=786.3M)
+Suppress "**WARN ..." messages.
+Un-suppress "**WARN ..." messages.
+% End Load SymbolTable ... (date=05/02 18:04:01, total cpu=0:00:00.0, real=0:00:00.0, peak res=786.4M, current mem=786.4M)
+Loading place ...
+% Begin Load placement data ... (date=05/02 18:04:01, mem=786.4M)
+Reading placement file - saves/mips_final.dat/mips.place.gz.
+** Reading stdCellPlacement_binary (Created by Innovus v18.10-p002_1 on Thu Apr 30 15:01:39 2026, version# 2) ...
+*** Completed restorePlace (cpu=0:00:00.0 real=0:00:00.0 mem=1003.1M) ***
+Total net length = 6.224e+04 (2.930e+04 3.294e+04) (ext = 5.302e+03)
+% End Load placement data ... (date=05/02 18:04:01, total cpu=0:00:00.0, real=0:00:00.0, peak res=786.6M, current mem=786.6M)
+% Begin Load routing data ... (date=05/02 18:04:01, mem=786.6M)
+Reading routing file - saves/mips_final.dat/mips.route.gz.
+Reading Innovus routing data (Created by Innovus v18.10-p002_1 on Thu Apr 30 15:01:39 2026 Format: 18.1) ...
+*** Total 755 nets are successfully restored.
+*** Completed restoreRoute (cpu=0:00:00.0 real=0:00:00.0 mem=1003.1M) ***
+% End Load routing data ... (date=05/02 18:04:01, total cpu=0:00:00.0, real=0:00:00.0, peak res=787.7M, current mem=787.7M)
+Loading Drc markers ...
+... 0 markers are loaded ...
+TAT_INFO: restoreCongMap REAL = 0 : CPU = 0 : MEM = 0.
+Reading property file saves/mips_final.dat/mips.prop
+*** Completed restoreProperty (cpu=0:00:00.0 real=0:00:00.0 mem=1003.1M) ***
+Set Default Input Pin Transition as 0.1 ps.
+Initializing multi-corner resistance tables ...
+% Begin Load power constraints ... (date=05/02 18:04:01, mem=790.2M)
+'set_default_switching_activity' finished successfully.
+% End Load power constraints ... (date=05/02 18:04:01, total cpu=0:00:00.0, real=0:00:00.0, peak res=790.2M, current mem=790.2M)
+Start generating vias ...
+#Skip building auto via since it is not turned on.
+Via generation completed.
+% Begin load AAE data ... (date=05/02 18:04:01, mem=789.3M)
+AAE DB initialization (MEM=1014.18 CPU=0:00:00.1 REAL=0:00:00.0) 
+% End load AAE data ... (date=05/02 18:04:01, total cpu=0:00:00.1, real=0:00:00.0, peak res=790.1M, current mem=790.1M)
+Restoring CCOpt config...
+  Extracting original clock gating for clk...
+    clock_tree clk contains 4 sinks and 0 clock gates.
+    Extraction for clk complete.
+  Extracting original clock gating for clk done.
+  The skew group clk/syn_constraints was created. It contains 4 sinks and 1 sources.
+Restoring CCOpt config done.
+Total number of combinational cells: 26
+Total number of sequential cells: 4
+Total number of tristate cells: 2
+Total number of level shifter cells: 0
+Total number of power gating cells: 0
+Total number of isolation cells: 0
+Total number of power switch cells: 0
+Total number of pulse generator cells: 0
+Total number of always on buffers: 0
+Total number of retention cells: 0
+List of usable buffers: BUFX2 BUFX4 CLKBUF1
+Total number of usable buffers: 3
+List of unusable buffers:
+Total number of unusable buffers: 0
+List of usable inverters: INVX2 INVX1 INVX4 INVX8
+Total number of usable inverters: 4
+List of unusable inverters:
+Total number of unusable inverters: 0
+List of identified usable delay cells: CLKBUF2 CLKBUF3
+Total number of identified usable delay cells: 2
+List of identified unusable delay cells:
+Total number of identified unusable delay cells: 0
+**WARN: (IMPCTE-107):	The following globals have been obsoleted since version 18.10-p002_1. They will be removed in the next release. 
+timing_enable_default_delay_arc
+#% End load design ... (date=05/02 18:04:01, total cpu=0:00:01.4, real=0:00:01.0, peak res=796.0M, current mem=790.9M)
+
+*** Summary of all messages that are not suppressed in this session:
+Severity  ID               Count  Summary                                  
+WARNING   IMPLF-108            1  There is no overlap layer defined in any...
+WARNING   IMPFP-3961           2  The techSite '%s' has no related standar...
+WARNING   IMPTS-124            2  Timing library description of pin '%s' i...
+WARNING   IMPEXT-2766          3  The sheet resistance for layer %s is not...
+WARNING   IMPEXT-2773          3  The via resistance between layers %s and...
+WARNING   IMPCK-8086           1  The command %s is obsolete and will be r...
+WARNING   IMPVL-159           68  Pin '%s' of cell '%s' is defined in LEF ...
+WARNING   IMPPP-556            2  A SAMENET rule between different layers ...
+WARNING   IMPPP-557            3  A single-layer VIARULE GENERATE for turn...
+WARNING   IMPCTE-107           1  The following globals have been obsolete...
+WARNING   TCLCMD-1461          1  Skipped unsupported command: %s          
+WARNING   TCLNL-330            1  set_input_delay on clock root '%s' is no...
+*** Message Summary: 88 warning(s), 0 error(s)
+
+<CMD> selectNet vdd!
+<CMD> selectNet gnd!
+<CMD> setLayerPreference allM2Cont -isVisible 0
+<CMD> setLayerPreference allM2 -isVisible 0
+<CMD> setLayerPreference allM3Cont -isVisible 0
+<CMD> setLayerPreference allM3 -isVisible 0
+<CMD> setLayerPreference node_bump -isVisible 0
+<CMD> fit
+<CMD> fit
+<CMD> displayScanChain *
+**WARN: (IMPSP-9025):	No scan chain specified/traced.
+Type 'man IMPSP-9025' for more detail.
+<CMD> deselectAll
+<CMD> fit
+<CMD> setLayerPreference pgPower -isVisible 0
+<CMD> setLayerPreference pgGround -isVisible 0
+<CMD> setLayerPreference clock -isVisible 0
+<CMD> setLayerPreference clock -isVisible 1
+<CMD> setLayerPreference pgGround -isVisible 1
+<CMD> setLayerPreference pgPower -isVisible 1
+<CMD> setLayerPreference allM3 -isVisible 1
+<CMD> setLayerPreference allM3Cont -isVisible 1
+<CMD> setLayerPreference allM2 -isVisible 1
+<CMD> setLayerPreference allM2Cont -isVisible 1
+<CMD> setLayerPreference node_power -isVisible 1
+<CMD> setLayerPreference node_power -isVisible 0
+<CMD> setLayerPreference node_power -isVisible 1
+<CMD> setLayerPreference pgPower -isVisible 0
+<CMD> setLayerPreference pgPower -isVisible 1
+<CMD> setLayerPreference pgGround -isVisible 0
+<CMD> setLayerPreference pgGround -isVisible 1
+<CMD> setLayerPreference clock -isVisible 0
+<CMD> setLayerPreference clock -isVisible 1
+<CMD> setLayerPreference clock -isVisible 0
+<CMD> setLayerPreference clock -isVisible 1
+<CMD> setLayerPreference pgGround -isVisible 0
+<CMD> setLayerPreference pgGround -isVisible 1
+<CMD> setLayerPreference pgGround -isVisible 0
+<CMD> setLayerPreference pgGround -isVisible 1
+<CMD> setLayerPreference pgGround -isVisible 0
+<CMD> setLayerPreference pgGround -isVisible 1
+<CMD> setLayerPreference node_power -isVisible 0
+<CMD> setLayerPreference node_power -isVisible 1
+<CMD> setLayerPreference node_floorplan -isVisible 1
+<CMD> setLayerPreference node_floorplan -isVisible 0
+<CMD> setLayerPreference node_floorplan -isVisible 1
+<CMD> setLayerPreference node_partition -isVisible 0
+<CMD> setLayerPreference node_partition -isVisible 1
+<CMD> setLayerPreference node_cell -isVisible 1
+<CMD> setLayerPreference node_cell -isVisible 0
+<CMD> setLayerPreference node_cell -isVisible 1
+<CMD> setLayerPreference node_cell -isVisible 0
+<CMD> setLayerPreference node_module -isVisible 0
+<CMD> setLayerPreference node_module -isVisible 1
+<CMD> fit
+invalid command name "deselctAll"
+<CMD> selectNet -clock clk
+**ERROR: (IMPTCM-67):	Option <netName> and -clock are mutually exclusive. Check if more than one options that are mutually exclusive were given or if an invalid option was given.
+
+<CMD> ctd_win -id ctd_window
+Clock tree timing engine global stage delay update for CORNER_typ:setup.late...
+Rebuilding timing graph...
+Rebuilding timing graph done.
+Ccopt calling extractRC to access parasitic RC data.
+Leaving CCOpt scope - extractRC...
+Updating RC parasitics by calling: "extractRC"...
+Extraction called for design 'mips' of instances=622 and nets=784 using extraction engine 'postRoute' at effort level 'low' .
+PostRoute (effortLevel low) RC Extraction called for design mips.
+RC Extraction called in multi-corner(1) mode.
+**WARN: (IMPEXT-6197):	The Cap table file is not specified. This will result in lower parasitic accuracy when using preRoute extraction or postRoute extraction with effort level 'low'. It is recommended to generate the Cap table file using the 'generateCapTbl' command and specify it before extraction using 'create_rc_corner/update_rc_corner -cap_table'.
+Type 'man IMPEXT-6197' for more detail.
+**WARN: (IMPEXT-3032):	Because the cap table file was not provided, it will be created internally with the following process info:
+* Layer Id             : 1 - M1
+      Thickness        : 0.6
+      Min Width        : 0.9
+      Layer Dielectric : 4.1
+* Layer Id             : 2 - M2
+      Thickness        : 0.6
+      Min Width        : 0.9
+      Layer Dielectric : 4.1
+* Layer Id             : 3 - M3
+      Thickness        : 1
+      Min Width        : 1.5
+      Layer Dielectric : 4.1
+extractDetailRC Option : -outfile /tmp/innovus_temp_87194_vlsi.seas.gwu.edu_G44010997_6E58p8/mips_87194_fCTmmh.rcdb.d  -basic
+RC Mode: PostRoute -effortLevel low [Basic CapTable, LEF Resistances]
+      RC Corner Indexes            0   
+Capacitance Scaling Factor   : 1.00000 
+Coupling Cap. Scaling Factor : 1.00000 
+Resistance Scaling Factor    : 1.00000 
+Clock Cap. Scaling Factor    : 1.00000 
+Clock Res. Scaling Factor    : 1.00000 
+Shrink Factor                : 1.00000
+Initializing multi-corner resistance tables ...
+Checking LVS Completed (CPU Time= 0:00:00.0  MEM= 1052.6M)
+Extracted 10.0354% (CPU Time= 0:00:00.0  MEM= 1114.6M)
+**WARN: (IMPEXT-2882):	Unable to find the resistance for via 'M2_M1' in Cap table or LEF or OA files. The default value of 4.0 ohms is being assigned. To avoid this, check the Cap table and LEF and OA files, provide the resistance and read the files again.
+Extracted 20.0265% (CPU Time= 0:00:00.0  MEM= 1114.6M)
+Extracted 30.0398% (CPU Time= 0:00:00.0  MEM= 1114.6M)
+Extracted 40.0309% (CPU Time= 0:00:00.0  MEM= 1114.6M)
+Extracted 50.0442% (CPU Time= 0:00:00.0  MEM= 1114.6M)
+**WARN: (IMPEXT-2882):	Unable to find the resistance for via 'M3_M2' in Cap table or LEF or OA files. The default value of 4.0 ohms is being assigned. To avoid this, check the Cap table and LEF and OA files, provide the resistance and read the files again.
+Extracted 60.0354% (CPU Time= 0:00:00.0  MEM= 1114.6M)
+Extracted 70.0265% (CPU Time= 0:00:00.0  MEM= 1114.6M)
+Extracted 80.0398% (CPU Time= 0:00:00.0  MEM= 1114.6M)
+Extracted 90.0309% (CPU Time= 0:00:00.0  MEM= 1114.6M)
+Extracted 100% (CPU Time= 0:00:00.0  MEM= 1114.6M)
+Number of Extracted Resistors     : 7871
+Number of Extracted Ground Cap.   : 8443
+Number of Extracted Coupling Cap. : 22824
+Filtering XCap in 'relativeOnly' mode using values relative_c_threshold=0.03 and total_c_threshold=5fF.
+Checking LVS Completed (CPU Time= 0:00:00.0  MEM= 1082.6M)
+PostRoute (effortLevel low) RC Extraction DONE (CPU Time: 0:00:00.1  Real Time: 0:00:00.0  MEM: 1090.562M)
+Updating RC parasitics by calling: "extractRC" done.
+Leaving CCOpt scope - extractRC done. (took cpu=0:00:00.3 real=0:00:00.4)
+Initializing multi-corner resistance tables ...
+Clock tree timing engine global stage delay update for CORNER_typ:setup.late done. (took cpu=0:00:00.5 real=0:00:00.6)
+<CMD> selectInst cont_state_reg_1_
+<CMD> zoomSelected
+<CMD> deselectInst cont_state_reg_1_
+<CMD> selectInst cont_state_reg_0_
+<CMD> zoomSelected
+<CMD> deselectInst cont_state_reg_0_
+<CMD> selectInst cont_state_reg_2_
+<CMD> zoomSelected
+<CMD> deselectInst cont_state_reg_2_
+<CMD> selectInst cont_state_reg_3_
+<CMD> zoomSelected
+<CMD> deselectInst cont_state_reg_3_
+<CMD> selectInst cont_state_reg_0_
+<CMD> zoomSelected
+<CMD> deselectInst cont_state_reg_0_
+<CMD> selectInst cont_state_reg_1_
+<CMD> zoomSelected
+<CMD> deselectInst cont_state_reg_1_
+<CMD> selectInst cont_state_reg_1_
+<CMD> zoomSelected
+<CMD> deselectInst cont_state_reg_1_
+<CMD> selectInst cont_state_reg_1_
+<CMD> zoomSelected
+<CMD> ctd_win -id ctd_window -unit_delay
+<CMD> deselectInst cont_state_reg_1_
+<CMD> selectObject IO_Pin clk
+<CMD> zoomSelected
+<CMD> selectObject IO_Pin clk
+<CMD> zoomSelected
+<CMD> selectObject IO_Pin clk
+<CMD> zoomSelected
+<CMD> selectObject IO_Pin clk
+<CMD> zoomSelected
+<CMD> selectObject IO_Pin clk
+<CMD> zoomSelected
+<CMD> selectObject IO_Pin clk
+<CMD> zoomSelected
+<CMD> selectObject IO_Pin clk
+<CMD> zoomSelected
+<CMD> selectObject IO_Pin clk
+<CMD> zoomSelected
+<CMD> selectObject IO_Pin clk
+<CMD> zoomSelected
+<CMD> selectObject IO_Pin clk
+<CMD> zoomSelected
+<CMD> selectObject IO_Pin clk
+<CMD> zoomSelected
+<CMD> selectObject IO_Pin clk
+<CMD> zoomSelected
+<CMD> selectObject IO_Pin clk
+<CMD> zoomSelected
+<CMD> selectObject IO_Pin clk
+<CMD> zoomSelected
+<CMD> selectObject IO_Pin clk
+<CMD> zoomSelected
+<CMD> selectObject IO_Pin clk
+<CMD> zoomSelected
+<CMD> selectObject IO_Pin clk
+<CMD> zoomSelected
+<CMD> selectObject IO_Pin clk
+<CMD> zoomSelected
+<CMD> selectObject IO_Pin clk
+<CMD> zoomSelected
+<CMD> selectObject IO_Pin clk
+<CMD> zoomSelected
+<CMD> selectObject IO_Pin clk
+<CMD> zoomSelected
+<CMD> selectObject IO_Pin clk
+<CMD> zoomSelected
+<CMD> selectObject IO_Pin clk
+<CMD> zoomSelected
+<CMD> selectObject IO_Pin clk
+<CMD> zoomSelected
+<CMD> selectObject IO_Pin clk
+<CMD> zoomSelected
+<CMD> selectObject IO_Pin clk
+<CMD> zoomSelected
+<CMD> selectObject IO_Pin clk
+<CMD> zoomSelected
+<CMD> selectObject IO_Pin clk
+<CMD> zoomSelected
+<CMD> selectObject IO_Pin clk
+<CMD> zoomSelected
+<CMD> selectObject IO_Pin clk
+<CMD> zoomSelected
+<CMD> selectObject IO_Pin clk
+<CMD> zoomSelected
+<CMD> selectObject IO_Pin clk
+<CMD> zoomSelected
+<CMD> selectObject IO_Pin clk
+<CMD> zoomSelected
+<CMD> selectObject IO_Pin clk
+<CMD> zoomSelected
+<CMD> selectObject IO_Pin clk
+<CMD> zoomSelected
+<CMD> selectObject IO_Pin clk
+<CMD> zoomSelected
+<CMD> selectObject IO_Pin clk
+<CMD> zoomSelected
+<CMD> selectObject IO_Pin clk
+<CMD> zoomSelected
+<CMD> selectObject IO_Pin clk
+<CMD> zoomSelected
+<CMD> selectObject IO_Pin clk
+<CMD> zoomSelected
+<CMD> selectObject IO_Pin clk
+<CMD> zoomSelected
+<CMD> selectObject IO_Pin clk
+<CMD> zoomSelected
+<CMD> selectObject IO_Pin clk
+<CMD> zoomSelected
+<CMD> selectObject IO_Pin clk
+<CMD> zoomSelected
+<CMD> selectObject IO_Pin clk
+<CMD> zoomSelected
+<CMD> selectObject IO_Pin clk
+<CMD> zoomSelected
+<CMD> selectObject IO_Pin clk
+<CMD> zoomSelected
+<CMD> selectObject IO_Pin clk
+<CMD> zoomSelected
+<CMD> selectObject IO_Pin clk
+<CMD> zoomSelected
+<CMD> selectObject IO_Pin clk
+<CMD> zoomSelected
+<CMD> selectObject IO_Pin clk
+<CMD> zoomSelected
+<CMD> selectObject IO_Pin clk
+<CMD> zoomSelected
+<CMD> selectInst cont_state_reg_0_
+<CMD> zoomSelected
+<CMD> selectNet -clock clk
+**ERROR: (IMPTCM-67):	Option <netName> and -clock are mutually exclusive. Check if more than one options that are mutually exclusive were given or if an invalid option was given.
+
+<CMD> selectNet clk
+<CMD> deselectAll
+<CMD> selectInst U93
+<CMD> fit
+<CMD> deselectAll
+<CMD> ccopt_design
+#% Begin ccopt_design (date=05/02 18:41:19, mem=826.6M)
+Runtime...
+(ccopt_design): CTS Engine: auto. Used Spec: pre-existing CCOPT spec.
+**ERROR: (IMPTCM-162):	"" does not match any object in design for specified type "layer " object in command "create_route_type".
+
+Usage: create_route_type [-help] [-em_ndr_dist <float>] [-em_ndr_rule <rule_name>] [-min_stack_layer <layer>] -name <string>
+                         [-one_side_spacing_range <bottomLayerNum:topLayerNum] [-pref_multi_cut_via] [-shield_side {one_side both_side}]
+                         [-stack_distance <float>] [[[-non_default_rule <ndr_name>] [-shield_net <net_name>] [-top_preferred_layer <layer>] [-bottom_preferred_layer <layer>] [-preferred_routing_layer_effort {low medium high}]] ] [-mask <mask_number> [-layer_mask_range <bottomLayerNum:topLayerNum>]]
+
+**ERROR: (IMPTCM-4):	The value "" specified for the object type of argument "-top_preferred_layer" is not a valid object. Review the command specification and remove the argument or specify a legal value.
+**ERROR: (IMPTCM-162):	"" does not match any object in design for specified type "layer " object in command "create_route_type".
+
+Usage: create_route_type [-help] [-em_ndr_dist <float>] [-em_ndr_rule <rule_name>] [-min_stack_layer <layer>] -name <string>
+                         [-one_side_spacing_range <bottomLayerNum:topLayerNum] [-pref_multi_cut_via] [-shield_side {one_side both_side}]
+                         [-stack_distance <float>] [[[-non_default_rule <ndr_name>] [-shield_net <net_name>] [-top_preferred_layer <layer>] [-bottom_preferred_layer <layer>] [-preferred_routing_layer_effort {low medium high}]] ] [-mask <mask_number> [-layer_mask_range <bottomLayerNum:topLayerNum>]]
+
+**ERROR: (IMPTCM-4):	The value "" specified for the object type of argument "-top_preferred_layer" is not a valid object. Review the command specification and remove the argument or specify a legal value.
+**ERROR: (IMPCCOPT-2156):	The supplied input 'default_route_type_nonleaf' does not correspond to an existing route_type object.
+**ERROR: (IMPCCOPT-2149):	Invalid value for property: Could not convert value "default_route_type_nonleaf" to a compatible type.
+**ERROR: (IMPCCOPT-2066):	Command 'set_ccopt_property' used with the property 'route_type' gave result ''.
+For help on this property run 'set_ccopt_property -help route_type'
+
+*** Summary of all messages that are not suppressed in this session:
+Severity  ID               Count  Summary                                  
+ERROR     IMPCCOPT-2066        1  Command '%s' used with the property '%s'...
+ERROR     IMPCCOPT-2149        1  Invalid value for property: %s.          
+ERROR     IMPCCOPT-2156        1  The supplied input '%s' does not corresp...
+ERROR     IMPTCM-4             2  The value "%s" specified for the %s type...
+ERROR     IMPTCM-162           2  "%s" does not match any object in design...
+*** Message Summary: 0 warning(s), 7 error(s)
+
+#% End ccopt_design (date=05/02 18:41:19, total cpu=0:00:00.0, real=0:00:00.0, peak res=826.9M, current mem=826.9M)
+
+<CMD> report_power -outfile reports/mips/final/power.rpt
+
+Power Net Detected:
+    Voltage	    Name
+    0.00V	    gnd!
+    5.00V	    vdd!
+Using Power View: VIEW_typ.
+Starting SI iteration 1 using Infinite Timing Windows
+#################################################################################
+# Design Stage: PostRoute
+# Design Name: mips
+# Design Mode: 180nm
+# Analysis Mode: MMMC OCV 
+# Parasitics Mode: SPEF/RCDB
+# Signoff Settings: SI On 
+#################################################################################
+AAE_INFO: 1 threads acquired from CTE.
+Calculate early delays in OCV mode...
+Calculate late delays in OCV mode...
+Start delay calculation (fullDC) (1 T). (MEM=1128.72)
+Total number of fetched objects 632
+AAE_INFO-618: Total number of nets in the design is 784,  79.8 percent of the nets selected for SI analysis
+End delay calculation. (MEM=1116.86 CPU=0:00:00.1 REAL=0:00:00.0)
+End delay calculation (fullDC). (MEM=1105.32 CPU=0:00:00.3 REAL=0:00:00.0)
+Loading CTE timing window with TwFlowType 0...(CPU = 0:00:00.0, REAL = 0:00:00.0, MEM = 1105.3M)
+Add other clocks and setupCteToAAEClockMapping during iter 1
+Loading CTE timing window is completed (CPU = 0:00:00.0, REAL = 0:00:00.0, MEM = 1105.3M)
+Starting SI iteration 2
+Calculate early delays in OCV mode...
+Calculate late delays in OCV mode...
+Start delay calculation (fullDC) (1 T). (MEM=1067.29)
+Glitch Analysis: View VIEW_typ -- Total Number of Nets Skipped = 0. 
+Glitch Analysis: View VIEW_typ -- Total Number of Nets Analyzed = 632. 
+Total number of fetched objects 632
+AAE_INFO-618: Total number of nets in the design is 784,  1.5 percent of the nets selected for SI analysis
+End delay calculation. (MEM=1105.44 CPU=0:00:00.0 REAL=0:00:00.0)
+End delay calculation (fullDC). (MEM=1105.44 CPU=0:00:00.1 REAL=0:00:00.0)
+
+Begin Power Analysis
+
+    0.00V	    gnd!
+    5.00V	    vdd!
+
+Warning:
+  There are 2 power/gnd nets that are not connected
+gnd! vdd! ...
+Use 'globalNetConnect' to define rail connections.
+[PowermeterNetlistLib::InfoMergingRails]
+** WARN:  (VOLTUS_POWR-2035): There are 2 power/gnd nets that are not connected
+gnd! vdd! ...
+Use 'globalNetConnect' to define rail connections.
+
+
+
+Begin Processing Timing Library for Power Calculation
+
+Begin Processing Timing Library for Power Calculation
+
+
+
+Begin Processing Power Net/Grid for Power Calculation
+
+Ended Processing Power Net/Grid for Power Calculation: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=860.11MB/1943.05MB/860.12MB)
+
+Begin Processing Timing Window Data for Power Calculation
+
+clk(100MHz) Ended Processing Timing Window Data for Power Calculation: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=860.32MB/1943.05MB/860.32MB)
+
+Begin Processing User Attributes
+
+Ended Processing User Attributes: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=860.37MB/1943.05MB/860.37MB)
+
+Begin Processing Signal Activity
+
+
+Starting Levelizing
+2026-May-02 18:42:34 (2026-May-02 22:42:34 GMT)
+2026-May-02 18:42:34 (2026-May-02 22:42:34 GMT): 10%
+2026-May-02 18:42:34 (2026-May-02 22:42:34 GMT): 20%
+2026-May-02 18:42:34 (2026-May-02 22:42:34 GMT): 30%
+2026-May-02 18:42:34 (2026-May-02 22:42:34 GMT): 40%
+2026-May-02 18:42:34 (2026-May-02 22:42:34 GMT): 50%
+2026-May-02 18:42:34 (2026-May-02 22:42:34 GMT): 60%
+2026-May-02 18:42:34 (2026-May-02 22:42:34 GMT): 70%
+2026-May-02 18:42:34 (2026-May-02 22:42:34 GMT): 80%
+2026-May-02 18:42:34 (2026-May-02 22:42:34 GMT): 90%
+
+Finished Levelizing
+2026-May-02 18:42:34 (2026-May-02 22:42:34 GMT)
+
+Starting Activity Propagation
+2026-May-02 18:42:34 (2026-May-02 22:42:34 GMT)
+** INFO:  (VOLTUS_POWR-1356): No default input activity has been set. Defaulting to 0.2.
+Use 'set_default_switching_activity -input_activity' command to change the default activity value.
+
+2026-May-02 18:42:34 (2026-May-02 22:42:34 GMT): 10%
+2026-May-02 18:42:34 (2026-May-02 22:42:34 GMT): 20%
+2026-May-02 18:42:34 (2026-May-02 22:42:34 GMT): 30%
+
+Finished Activity Propagation
+2026-May-02 18:42:34 (2026-May-02 22:42:34 GMT)
+Ended Processing Signal Activity: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=860.71MB/1943.05MB/860.71MB)
+
+Begin Power Computation
+
+      ----------------------------------------------------------
+      # of cell(s) missing both power/leakage table: 0
+      # of cell(s) missing power table: 0
+      # of cell(s) missing leakage table: 0
+      # of MSMV cell(s) missing power_level: 0
+      ----------------------------------------------------------
+
+
+
+Starting Calculating power
+2026-May-02 18:42:34 (2026-May-02 22:42:34 GMT)
+ ... Calculating switching power
+  instance U442 is not connected to any rail
+  instance U90 is not connected to any rail
+  instance U580 is not connected to any rail
+  instance U581 is not connected to any rail
+  instance U582 is not connected to any rail
+  only first five unconnected instances are listed...
+2026-May-02 18:42:34 (2026-May-02 22:42:34 GMT): 10%
+2026-May-02 18:42:34 (2026-May-02 22:42:34 GMT): 20%
+2026-May-02 18:42:34 (2026-May-02 22:42:34 GMT): 30%
+2026-May-02 18:42:34 (2026-May-02 22:42:34 GMT): 40%
+2026-May-02 18:42:34 (2026-May-02 22:42:34 GMT): 50%
+ ... Calculating internal and leakage power
+2026-May-02 18:42:34 (2026-May-02 22:42:34 GMT): 60%
+2026-May-02 18:42:34 (2026-May-02 22:42:34 GMT): 70%
+2026-May-02 18:42:34 (2026-May-02 22:42:34 GMT): 80%
+2026-May-02 18:42:34 (2026-May-02 22:42:34 GMT): 90%
+
+Finished Calculating power
+2026-May-02 18:42:34 (2026-May-02 22:42:34 GMT)
+Ended Power Computation: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=861.14MB/1943.05MB/861.14MB)
+
+Begin Processing User Attributes
+
+Ended Processing User Attributes: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=861.15MB/1943.05MB/861.15MB)
+
+Ended Power Analysis: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=861.16MB/1943.05MB/861.16MB)
+
+Begin Static Power Report Generation
+*
+
+
+
+Total Power
+-----------------------------------------------------------------------------------------
+Total Internal Power:       13.61123867 	   46.7192%
+Total Switching Power:      15.52288429 	   53.2807%
+Total Leakage Power:         0.00004460 	    0.0002%
+Total Power:                29.13416764
+-----------------------------------------------------------------------------------------
+Ended Static Power Report Generation: (cpu=0:00:00, real=0:00:00,
+mem(process/total/peak)=861.52MB/1943.05MB/861.52MB)
+
+
+Output file is reports/mips/final/power.rpt.
+<CMD> fit
+<CMD> fit
+<CMD> set sprCreateIeRingOffset 1.0
+<CMD> set sprCreateIeRingThreshold 1.0
+<CMD> set sprCreateIeRingJogDistance 1.0
+<CMD> set sprCreateIeRingLayers {}
+<CMD> set sprCreateIeRingOffset 1.0
+<CMD> set sprCreateIeRingThreshold 1.0
+<CMD> set sprCreateIeRingJogDistance 1.0
+<CMD> set sprCreateIeRingLayers {}
+<CMD> set sprCreateIeStripeWidth 10.0
+<CMD> set sprCreateIeStripeThreshold 1.0
+<CMD> set sprCreateIeStripeWidth 10.0
+<CMD> set sprCreateIeStripeThreshold 1.0
+<CMD> set sprCreateIeRingOffset 1.0
+<CMD> set sprCreateIeRingThreshold 1.0
+<CMD> set sprCreateIeRingJogDistance 1.0
+<CMD> set sprCreateIeRingLayers {}
+<CMD> set sprCreateIeStripeWidth 10.0
+<CMD> set sprCreateIeStripeThreshold 1.0
+<CMD> setAddRingMode -ring_target default -extend_over_row 0 -ignore_rows 0 -avoid_short 0 -skip_crossing_trunks none -stacked_via_top_layer metal3 -stacked_via_bottom_layer metal1 -via_using_exact_crossover_size 1 -orthogonal_only true -skip_via_on_pin {  standardcell } -skip_via_on_wire_shape {  noshape }
+The ring targets are set to core/block ring wires.
+addRing command will consider rows while creating rings.
+addRing command will disallow rings to go over rows.
+addRing command will ignore shorts while creating rings.
+<CMD> addRing -nets {vdd! gnd!} -type core_rings -follow core -layer {top metal1 bottom metal1 left metal2 right metal2} -width {top 9.9 bottom 9.9 left 9.9 right 9.9} -spacing {top 1.8 bottom 1.8 left 1.8 right 1.8} -offset {top 1.8 bottom 1.8 left 1.8 right 1.8} -center 1 -extend_corner {} -threshold 0 -jog_distance 0 -snap_wire_center_to_grid None
+
+**WARN: (IMPPP-220):	The power planner does not create core rings outside the design boundary. Check the design boundary, or specify valid offsets.
+**WARN: (IMPPP-4051):	Fail to add rings. Gaps among IO cells may exist. Execute command addIoFiller to fill gaps among cells before addRing.
+<CMD> setAddRingMode -ring_target default -extend_over_row 0 -ignore_rows 0 -avoid_short 0 -skip_crossing_trunks none -stacked_via_top_layer metal3 -stacked_via_bottom_layer metal1 -via_using_exact_crossover_size 1 -orthogonal_only true -skip_via_on_pin {  standardcell } -skip_via_on_wire_shape {  noshape }
+The ring targets are set to core/block ring wires.
+addRing command will consider rows while creating rings.
+addRing command will disallow rings to go over rows.
+addRing command will ignore shorts while creating rings.
+<CMD> addRing -nets {vdd! gnd!} -type core_rings -follow core -layer {top metal1 bottom metal1 left metal2 right metal2} -width {top 9.9 bottom 9.9 left 9.9 right 9.9} -spacing {top 1.8 bottom 1.8 left 1.8 right 1.8} -offset {top 1.8 bottom 1.8 left 1.8 right 1.8} -center 1 -extend_corner {} -threshold 0 -jog_distance 0 -snap_wire_center_to_grid None
+
+**WARN: (IMPPP-220):	The power planner does not create core rings outside the design boundary. Check the design boundary, or specify valid offsets.
+**WARN: (IMPPP-4051):	Fail to add rings. Gaps among IO cells may exist. Execute command addIoFiller to fill gaps among cells before addRing.
+<CMD> setAddRingMode -ring_target default -extend_over_row 0 -ignore_rows 0 -avoid_short 0 -skip_crossing_trunks none -stacked_via_top_layer metal3 -stacked_via_bottom_layer metal1 -via_using_exact_crossover_size 1 -orthogonal_only true -skip_via_on_pin {  standardcell } -skip_via_on_wire_shape {  noshape }
+The ring targets are set to core/block ring wires.
+addRing command will consider rows while creating rings.
+addRing command will disallow rings to go over rows.
+addRing command will ignore shorts while creating rings.
+<CMD> addRing -nets {vdd! gnd!} -type core_rings -follow core -layer {top metal1 bottom metal1 left metal2 right metal2} -width {top 9.9 bottom 9.9 left 9.9 right 9.9} -spacing {top 1.8 bottom 1.8 left 1.8 right 1.8} -offset {top 1.8 bottom 1.8 left 1.8 right 1.8} -center 1 -extend_corner {} -threshold 0 -jog_distance 0 -snap_wire_center_to_grid None
+
+**WARN: (IMPPP-220):	The power planner does not create core rings outside the design boundary. Check the design boundary, or specify valid offsets.
+**WARN: (IMPPP-4051):	Fail to add rings. Gaps among IO cells may exist. Execute command addIoFiller to fill gaps among cells before addRing.
+<CMD> setAddRingMode -ring_target default -extend_over_row 0 -ignore_rows 0 -avoid_short 0 -skip_crossing_trunks none -stacked_via_top_layer metal3 -stacked_via_bottom_layer metal1 -via_using_exact_crossover_size 1 -orthogonal_only true -skip_via_on_pin {  standardcell } -skip_via_on_wire_shape {  noshape }
+The ring targets are set to core/block ring wires.
+addRing command will consider rows while creating rings.
+addRing command will disallow rings to go over rows.
+addRing command will ignore shorts while creating rings.
+<CMD> addRing -nets {vdd! gnd!} -type core_rings -follow core -layer {top metal1 bottom metal1 left metal2 right metal2} -width {top 9.9 bottom 9.9 left 9.9 right 9.9} -spacing {top 1.8 bottom 1.8 left 1.8 right 1.8} -offset {top 1.8 bottom 1.8 left 1.8 right 1.8} -center 1 -extend_corner {} -threshold 0 -jog_distance 0 -snap_wire_center_to_grid None
+
+**WARN: (IMPPP-220):	The power planner does not create core rings outside the design boundary. Check the design boundary, or specify valid offsets.
+**WARN: (IMPPP-4051):	Fail to add rings. Gaps among IO cells may exist. Execute command addIoFiller to fill gaps among cells before addRing.
+<CMD> setAddRingMode -ring_target default -extend_over_row 0 -ignore_rows 0 -avoid_short 0 -skip_crossing_trunks none -stacked_via_top_layer metal3 -stacked_via_bottom_layer metal1 -via_using_exact_crossover_size 1 -orthogonal_only true -skip_via_on_pin {  standardcell } -skip_via_on_wire_shape {  noshape }
+The ring targets are set to core/block ring wires.
+addRing command will consider rows while creating rings.
+addRing command will disallow rings to go over rows.
+addRing command will ignore shorts while creating rings.
+<CMD> addRing -nets {vdd! gnd!} -type core_rings -follow core -layer {top metal1 bottom metal1 left metal2 right metal2} -width {top 9.9 bottom 9.9 left 9.9 right 9.9} -spacing {top 1.8 bottom 1.8 left 1.8 right 1.8} -offset {top 1.8 bottom 1.8 left 1.8 right 1.8} -center 1 -extend_corner {} -threshold 0 -jog_distance 0 -snap_wire_center_to_grid None
+
+**WARN: (IMPPP-220):	The power planner does not create core rings outside the design boundary. Check the design boundary, or specify valid offsets.
+**WARN: (IMPPP-4051):	Fail to add rings. Gaps among IO cells may exist. Execute command addIoFiller to fill gaps among cells before addRing.
+<CMD> setAddRingMode -ring_target default -extend_over_row 0 -ignore_rows 0 -avoid_short 0 -skip_crossing_trunks none -stacked_via_top_layer metal3 -stacked_via_bottom_layer metal1 -via_using_exact_crossover_size 1 -orthogonal_only true -skip_via_on_pin {  standardcell } -skip_via_on_wire_shape {  noshape }
+The ring targets are set to core/block ring wires.
+addRing command will consider rows while creating rings.
+addRing command will disallow rings to go over rows.
+addRing command will ignore shorts while creating rings.
+<CMD> addRing -nets {vdd! gnd!} -type core_rings -follow core -layer {top metal1 bottom metal1 left metal2 right metal2} -width {top 9.9 bottom 9.9 left 9.9 right 9.9} -spacing {top 1.8 bottom 1.8 left 1.8 right 1.8} -offset {top 1.8 bottom 1.8 left 1.8 right 1.8} -center 1 -extend_corner {} -threshold 0 -jog_distance 0 -snap_wire_center_to_grid None
+
+**WARN: (IMPPP-220):	The power planner does not create core rings outside the design boundary. Check the design boundary, or specify valid offsets.
+**WARN: (IMPPP-4051):	Fail to add rings. Gaps among IO cells may exist. Execute command addIoFiller to fill gaps among cells before addRing.
+<CMD> setAddRingMode -ring_target default -extend_over_row 0 -ignore_rows 0 -avoid_short 0 -skip_crossing_trunks none -stacked_via_top_layer metal3 -stacked_via_bottom_layer metal1 -via_using_exact_crossover_size 1 -orthogonal_only true -skip_via_on_pin {  standardcell } -skip_via_on_wire_shape {  noshape }
+The ring targets are set to core/block ring wires.
+addRing command will consider rows while creating rings.
+addRing command will disallow rings to go over rows.
+addRing command will ignore shorts while creating rings.
+<CMD> addRing -nets {vdd! gnd!} -type core_rings -follow core -layer {top metal1 bottom metal1 left metal2 right metal2} -width {top 9.9 bottom 9.9 left 9.9 right 9.9} -spacing {top 1.8 bottom 1.8 left 1.8 right 1.8} -offset {top 1.8 bottom 1.8 left 1.8 right 1.8} -center 1 -extend_corner {} -threshold 0 -jog_distance 0 -snap_wire_center_to_grid None
+
+**WARN: (IMPPP-220):	The power planner does not create core rings outside the design boundary. Check the design boundary, or specify valid offsets.
+**WARN: (IMPPP-4051):	Fail to add rings. Gaps among IO cells may exist. Execute command addIoFiller to fill gaps among cells before addRing.
+<CMD> fit
+<CMD> addIoFiller
+
+Usage: addIoFiller [-help] -cell {name list} [-fillAnyGap] [-fillerOrient <R0|R90|R180|R270|MX|MX90|MY|MY90>] [-from <coord>] [-prefix <string>]
+                   [-side <top|bottom|left|right>] [-to <coord>] [-useSmallIoHeight] [-row <num> ] [-logic [ -deriveConnectivity ]]
+
+**ERROR: (IMPTCM-32):	Wrong number of arguments specified for command "addIoFiller".
+
+<CMD> getFillerMode -quiet
+<CMD> addFiller -cell FILL -prefix FILLER
+**WARN: (IMPSP-5217):	addFiller command is running on a postRoute database. It is recommended to be followed by ecoRoute -target command to make the DRC clean.
+Type 'man IMPSP-5217' for more detail.
+Estimated cell power/ground rail width = 3.750 um
+*INFO: Adding fillers to top-module.
+*INFO:   Added 1507 filler insts (cell FILL / prefix FILLER).
+*INFO: Total 1507 filler insts added - prefix FILLER (CPU: 0:00:00.0).
+For 1507 new insts, *** Applied 0 GNC rules (cpu = 0:00:00.0)
+*INFO: Filler mode add_fillers_with_drc is default true to avoid gaps, which may add fillers with violations. Please check the violations for FILLER_incr* fillers and fix them before routeDesign. Set it to false can avoid the violation but may leave gaps.
+*INFO: Second pass addFiller without DRC checking.
+*INFO: Adding fillers to top-module.
+*INFO:   Added 2 filler insts (cell FILL / prefix FILLER_incr).
+*INFO: Total 2 filler insts added - prefix FILLER_incr (CPU: 0:00:00.0).
+For 2 new insts, *** Applied 0 GNC rules (cpu = 0:00:00.0)
+Pre-route DRC Violation:	2
+<CMD> addFiller -cell FILL -prefix FILLER
+**WARN: (IMPSP-5217):	addFiller command is running on a postRoute database. It is recommended to be followed by ecoRoute -target command to make the DRC clean.
+Type 'man IMPSP-5217' for more detail.
+*INFO: Adding fillers to top-module.
+*INFO:   Added 0 filler inst of any cell-type.
+<CMD> setAddRingMode -ring_target default -extend_over_row 0 -ignore_rows 0 -avoid_short 0 -skip_crossing_trunks none -stacked_via_top_layer metal3 -stacked_via_bottom_layer metal1 -via_using_exact_crossover_size 1 -orthogonal_only true -skip_via_on_pin {  standardcell } -skip_via_on_wire_shape {  noshape }
+The ring targets are set to core/block ring wires.
+addRing command will consider rows while creating rings.
+addRing command will disallow rings to go over rows.
+addRing command will ignore shorts while creating rings.
+<CMD> addRing -nets {vdd! gnd!} -type core_rings -follow core -layer {top metal1 bottom metal1 left metal2 right metal2} -width {top 9.9 bottom 9.9 left 9.9 right 9.9} -spacing {top 1.8 bottom 1.8 left 1.8 right 1.8} -offset {top 1.8 bottom 1.8 left 1.8 right 1.8} -center 1 -extend_corner {} -threshold 0 -jog_distance 0 -snap_wire_center_to_grid None
+
+**WARN: (IMPPP-220):	The power planner does not create core rings outside the design boundary. Check the design boundary, or specify valid offsets.
+**WARN: (IMPPP-4051):	Fail to add rings. Gaps among IO cells may exist. Execute command addIoFiller to fill gaps among cells before addRing.
+<CMD> setAddRingMode -ring_target default -extend_over_row 0 -ignore_rows 0 -avoid_short 0 -skip_crossing_trunks none -stacked_via_top_layer metal3 -stacked_via_bottom_layer metal1 -via_using_exact_crossover_size 1 -orthogonal_only true -skip_via_on_pin {  standardcell } -skip_via_on_wire_shape {  noshape }
+The ring targets are set to core/block ring wires.
+addRing command will consider rows while creating rings.
+addRing command will disallow rings to go over rows.
+addRing command will ignore shorts while creating rings.
+<CMD> addRing -nets {vdd! gnd!} -type core_rings -follow core -layer {top metal1 bottom metal1 left metal2 right metal2} -width {top 9.9 bottom 9.9 left 9.9 right 9.9} -spacing {top 1.8 bottom 1.8 left 1.8 right 1.8} -offset {top 1.8 bottom 1.8 left 1.8 right 1.8} -center 1 -extend_corner {} -threshold 0 -jog_distance 0 -snap_wire_center_to_grid None
+
+**WARN: (IMPPP-220):	The power planner does not create core rings outside the design boundary. Check the design boundary, or specify valid offsets.
+**WARN: (IMPPP-4051):	Fail to add rings. Gaps among IO cells may exist. Execute command addIoFiller to fill gaps among cells before addRing.
+<CMD> setAddRingMode -ring_target default -extend_over_row 0 -ignore_rows 0 -avoid_short 0 -skip_crossing_trunks none -stacked_via_top_layer metal3 -stacked_via_bottom_layer metal1 -via_using_exact_crossover_size 1 -orthogonal_only true -skip_via_on_pin {  standardcell } -skip_via_on_wire_shape {  noshape }
+The ring targets are set to core/block ring wires.
+addRing command will consider rows while creating rings.
+addRing command will disallow rings to go over rows.
+addRing command will ignore shorts while creating rings.
+<CMD> addRing -nets {vdd! gnd!} -type core_rings -follow core -layer {top metal1 bottom metal1 left metal2 right metal2} -width {top 9.9 bottom 9.9 left 9.9 right 9.9} -spacing {top 1.8 bottom 1.8 left 1.8 right 1.8} -offset {top 1.8 bottom 1.8 left 1.8 right 1.8} -center 1 -extend_corner {} -threshold 0 -jog_distance 0 -snap_wire_center_to_grid None
+
+**WARN: (IMPPP-220):	The power planner does not create core rings outside the design boundary. Check the design boundary, or specify valid offsets.
+**WARN: (IMPPP-4051):	Fail to add rings. Gaps among IO cells may exist. Execute command addIoFiller to fill gaps among cells before addRing.
+<CMD> fit
+<CMD> selectInst U373
+<CMD> fit
+<CMD> fit
+<CMD> deselectAll
+<CMD> selectInst FILLER_789
+<CMD> fit
+<CMD> addRing
+#% Begin addRing (date=05/07 19:03:43, mem=883.6M)
+**ERROR: (IMPTCM-46):	Argument "{-layer }" is required for command "addRing", either this option is not specified or an option prior to it is not specified correctly.
+#% End addRing (date=05/07 19:03:43, total cpu=0:00:00.0, real=0:00:00.0, peak res=883.6M, current mem=883.6M)
+  
+
+--------------------------------------------------------------------------------
+Exiting Innovus on Thu May  7 19:05:00 2026
+  Total CPU time:     6:58:56
+  Total real time:    122:56:35
+  Peak memory (main): 883.61MB
+
+
+*** Memory Usage v#1 (Current mem = 1083.855M, initial mem = 260.398M) ***
+*** Message Summary: 819 warning(s), 13 error(s)
+
+--- Ending "Innovus" (totcpu=6:58:55, real=122:56:34, mem=1083.9M) ---

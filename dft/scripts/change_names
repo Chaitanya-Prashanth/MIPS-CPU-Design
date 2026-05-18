@@ -1,0 +1,6 @@
+
+Design          Type    Object                  New Name
+--------------------------------------------------------------------------------
+Warning: In the design mips, net 'writedata[7]' is connecting multiple ports. (UCN-1)
+mips            net     *Logic1*                n_Logic1_
+1

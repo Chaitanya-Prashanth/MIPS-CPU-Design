@@ -1,0 +1,9 @@
+xrun(64): 17.10-s001: (c) Copyright 1995-2017 Cadence Design Systems, Inc.
+TOOL:	xrun(64)	17.10-s001: Started on Apr 22, 2026 at 13:02:55 EDT
+xrun
+	-access src/*.v
+	tb_mips.v
+	-top tb_mips
+xmelab: *F,ILACC: illegal ACCESS specification (src/*.v).
+xrun: *E,ELBERR: Error during elaboration (status 2), exiting.
+TOOL:	xrun(64)	17.10-s001: Exiting on Apr 22, 2026 at 13:02:56 EDT  (total: 00:00:01)

@@ -1,0 +1,27 @@
+//
+// File created by:  xrun
+// Do not modify this file
+//
+-timescale
+1ns/10ps
+-access
++rwc
+./flop.v
+./flopen.v
+./flopenr.v
+./mux2.v
+./mux4.v
+./mux23.v
+./zerodetect.v
+./alu.v
+./alucontrol.v
+./regfile.v
+./datapath.v
+./controller.v
+./mips.v
+./ram.v
+./tb_mips.v
+-top
+tb_mips
+-log
+mips.log

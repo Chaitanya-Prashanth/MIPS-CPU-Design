@@ -1,0 +1,56 @@
+# PPCMD 1 
+# sroute -nets {VDD GND}
+# 4 
+# 16 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 1 
+
+# PPCMD 2 
+# addStripe -nets {VDD GND} -direction horizontal -layer metal3 -width 3.0 -spacing 2.0 -set_to_set_distance 100.0 -start_offset 50.0
+# 3 
+# 2 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 2 
+
+# PPCMD 3 
+# addStripe -nets {VDD GND} -direction vertical -layer metal2 -width 3.0 -spacing 2.0 -set_to_set_distance 100.0 -start_offset 50.0
+# 2 
+# 2 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 3 
+
+# PPCMD 4 
+# addRing -follow core -nets {VDD GND} -layer {top metal3 bottom metal3 left metal2 right metal2} -width 5.0 -spacing 2.0
+# 1 
+# 32 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 4 
+

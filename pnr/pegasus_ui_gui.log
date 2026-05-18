@@ -1,0 +1,11 @@
+
+
+An exception has propagated all the way to the main segment of
+  /apps/vlsi_2018/cadence/PEGASUS251/tools/Pegasus/bin/64bit/pegasusgui
+called with 3 arguments.
+==== begin exception ====
+Unknown exception
+Details: Caught unknown exception
+====   end exception ====
+
+Execution aborted.  Exiting with status 1.

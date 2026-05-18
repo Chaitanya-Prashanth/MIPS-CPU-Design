@@ -1,0 +1,587 @@
+$date
+    Apr 22, 2026  12:57:39
+$end
+$version
+    TOOL:	xmsim(64)	17.10-s001
+$end
+$timescale
+    10 ps
+$end
+
+$scope module tb_mips $end
+
+$scope module dut $end
+
+$scope module cont $end
+$var parameter  4 !    S0 $end
+$var parameter  4 "    S1 $end
+$var parameter  4 #    S2 $end
+$var parameter  4 $    S3 $end
+$var parameter  4 %    S4 $end
+$var parameter  4 &    S5 $end
+$var parameter  4 '    S6 $end
+$var parameter  4 (    S7 $end
+$var parameter  4 )    S8 $end
+$var parameter  4 *    S9 $end
+$var parameter  4 +    S10 $end
+$var parameter  4 ,    S11 $end
+$var parameter  4 -    S12 $end
+$var parameter  6 .    OP_RTYPE $end
+$var parameter  6 /    OP_ADDI $end
+$var parameter  6 0    OP_BEQ $end
+$var parameter  6 1    OP_J $end
+$var parameter  6 2    OP_LB $end
+$var parameter  6 3    OP_SB $end
+$upscope $end
+
+
+$scope module dp $end
+$var parameter  8 4    CONST_ZERO $end
+$var parameter  8 5    CONST_ONE $end
+$upscope $end
+
+$upscope $end
+
+
+$scope module mem $end
+$var reg       8 6    mips_ram[0] [7:0] $end
+$var reg       8 7    mips_ram[1] [7:0] $end
+$var reg       8 8    mips_ram[2] [7:0] $end
+$var reg       8 9    mips_ram[3] [7:0] $end
+$var reg       8 :    mips_ram[4] [7:0] $end
+$var reg       8 ;    mips_ram[5] [7:0] $end
+$var reg       8 <    mips_ram[6] [7:0] $end
+$var reg       8 =    mips_ram[7] [7:0] $end
+$var reg       8 >    mips_ram[8] [7:0] $end
+$var reg       8 ?    mips_ram[9] [7:0] $end
+$var reg       8 @    mips_ram[10] [7:0] $end
+$var reg       8 A    mips_ram[11] [7:0] $end
+$var reg       8 B    mips_ram[12] [7:0] $end
+$var reg       8 C    mips_ram[13] [7:0] $end
+$var reg       8 D    mips_ram[14] [7:0] $end
+$var reg       8 E    mips_ram[15] [7:0] $end
+$var reg       8 F    mips_ram[16] [7:0] $end
+$var reg       8 G    mips_ram[17] [7:0] $end
+$var reg       8 H    mips_ram[18] [7:0] $end
+$var reg       8 I    mips_ram[19] [7:0] $end
+$var reg       8 J    mips_ram[20] [7:0] $end
+$var reg       8 K    mips_ram[21] [7:0] $end
+$var reg       8 L    mips_ram[22] [7:0] $end
+$var reg       8 M    mips_ram[23] [7:0] $end
+$var reg       8 N    mips_ram[24] [7:0] $end
+$var reg       8 O    mips_ram[25] [7:0] $end
+$var reg       8 P    mips_ram[26] [7:0] $end
+$var reg       8 Q    mips_ram[27] [7:0] $end
+$var reg       8 R    mips_ram[28] [7:0] $end
+$var reg       8 S    mips_ram[29] [7:0] $end
+$var reg       8 T    mips_ram[30] [7:0] $end
+$var reg       8 U    mips_ram[31] [7:0] $end
+$var reg       8 V    mips_ram[32] [7:0] $end
+$var reg       8 W    mips_ram[33] [7:0] $end
+$var reg       8 X    mips_ram[34] [7:0] $end
+$var reg       8 Y    mips_ram[35] [7:0] $end
+$var reg       8 Z    mips_ram[36] [7:0] $end
+$var reg       8 [    mips_ram[37] [7:0] $end
+$var reg       8 \    mips_ram[38] [7:0] $end
+$var reg       8 ]    mips_ram[39] [7:0] $end
+$var reg       8 ^    mips_ram[40] [7:0] $end
+$var reg       8 _    mips_ram[41] [7:0] $end
+$var reg       8 `    mips_ram[42] [7:0] $end
+$var reg       8 a    mips_ram[43] [7:0] $end
+$var reg       8 b    mips_ram[44] [7:0] $end
+$var reg       8 c    mips_ram[45] [7:0] $end
+$var reg       8 d    mips_ram[46] [7:0] $end
+$var reg       8 e    mips_ram[47] [7:0] $end
+$var reg       8 f    mips_ram[48] [7:0] $end
+$var reg       8 g    mips_ram[49] [7:0] $end
+$var reg       8 h    mips_ram[50] [7:0] $end
+$var reg       8 i    mips_ram[51] [7:0] $end
+$var reg       8 j    mips_ram[52] [7:0] $end
+$var reg       8 k    mips_ram[53] [7:0] $end
+$var reg       8 l    mips_ram[54] [7:0] $end
+$var reg       8 m    mips_ram[55] [7:0] $end
+$var reg       8 n    mips_ram[56] [7:0] $end
+$var reg       8 o    mips_ram[57] [7:0] $end
+$var reg       8 p    mips_ram[58] [7:0] $end
+$var reg       8 q    mips_ram[59] [7:0] $end
+$var reg       8 r    mips_ram[60] [7:0] $end
+$var reg       8 s    mips_ram[61] [7:0] $end
+$var reg       8 t    mips_ram[62] [7:0] $end
+$var reg       8 u    mips_ram[63] [7:0] $end
+$var reg       8 v    mips_ram[64] [7:0] $end
+$var reg       8 w    mips_ram[65] [7:0] $end
+$var reg       8 x    mips_ram[66] [7:0] $end
+$var reg       8 y    mips_ram[67] [7:0] $end
+$var reg       8 z    mips_ram[68] [7:0] $end
+$var reg       8 {    mips_ram[69] [7:0] $end
+$var reg       8 |    mips_ram[70] [7:0] $end
+$var reg       8 }    mips_ram[71] [7:0] $end
+$var reg       8 ~    mips_ram[72] [7:0] $end
+$var reg       8 !!   mips_ram[73] [7:0] $end
+$var reg       8 "!   mips_ram[74] [7:0] $end
+$var reg       8 #!   mips_ram[75] [7:0] $end
+$var reg       8 $!   mips_ram[76] [7:0] $end
+$var reg       8 %!   mips_ram[77] [7:0] $end
+$var reg       8 &!   mips_ram[78] [7:0] $end
+$var reg       8 '!   mips_ram[79] [7:0] $end
+$var reg       8 (!   mips_ram[80] [7:0] $end
+$var reg       8 )!   mips_ram[81] [7:0] $end
+$var reg       8 *!   mips_ram[82] [7:0] $end
+$var reg       8 +!   mips_ram[83] [7:0] $end
+$var reg       8 ,!   mips_ram[84] [7:0] $end
+$var reg       8 -!   mips_ram[85] [7:0] $end
+$var reg       8 .!   mips_ram[86] [7:0] $end
+$var reg       8 /!   mips_ram[87] [7:0] $end
+$var reg       8 0!   mips_ram[88] [7:0] $end
+$var reg       8 1!   mips_ram[89] [7:0] $end
+$var reg       8 2!   mips_ram[90] [7:0] $end
+$var reg       8 3!   mips_ram[91] [7:0] $end
+$var reg       8 4!   mips_ram[92] [7:0] $end
+$var reg       8 5!   mips_ram[93] [7:0] $end
+$var reg       8 6!   mips_ram[94] [7:0] $end
+$var reg       8 7!   mips_ram[95] [7:0] $end
+$var reg       8 8!   mips_ram[96] [7:0] $end
+$var reg       8 9!   mips_ram[97] [7:0] $end
+$var reg       8 :!   mips_ram[98] [7:0] $end
+$var reg       8 ;!   mips_ram[99] [7:0] $end
+$var reg       8 <!   mips_ram[100] [7:0] $end
+$var reg       8 =!   mips_ram[101] [7:0] $end
+$var reg       8 >!   mips_ram[102] [7:0] $end
+$var reg       8 ?!   mips_ram[103] [7:0] $end
+$var reg       8 @!   mips_ram[104] [7:0] $end
+$var reg       8 A!   mips_ram[105] [7:0] $end
+$var reg       8 B!   mips_ram[106] [7:0] $end
+$var reg       8 C!   mips_ram[107] [7:0] $end
+$var reg       8 D!   mips_ram[108] [7:0] $end
+$var reg       8 E!   mips_ram[109] [7:0] $end
+$var reg       8 F!   mips_ram[110] [7:0] $end
+$var reg       8 G!   mips_ram[111] [7:0] $end
+$var reg       8 H!   mips_ram[112] [7:0] $end
+$var reg       8 I!   mips_ram[113] [7:0] $end
+$var reg       8 J!   mips_ram[114] [7:0] $end
+$var reg       8 K!   mips_ram[115] [7:0] $end
+$var reg       8 L!   mips_ram[116] [7:0] $end
+$var reg       8 M!   mips_ram[117] [7:0] $end
+$var reg       8 N!   mips_ram[118] [7:0] $end
+$var reg       8 O!   mips_ram[119] [7:0] $end
+$var reg       8 P!   mips_ram[120] [7:0] $end
+$var reg       8 Q!   mips_ram[121] [7:0] $end
+$var reg       8 R!   mips_ram[122] [7:0] $end
+$var reg       8 S!   mips_ram[123] [7:0] $end
+$var reg       8 T!   mips_ram[124] [7:0] $end
+$var reg       8 U!   mips_ram[125] [7:0] $end
+$var reg       8 V!   mips_ram[126] [7:0] $end
+$var reg       8 W!   mips_ram[127] [7:0] $end
+$var reg       8 X!   mips_ram[128] [7:0] $end
+$var reg       8 Y!   mips_ram[129] [7:0] $end
+$var reg       8 Z!   mips_ram[130] [7:0] $end
+$var reg       8 [!   mips_ram[131] [7:0] $end
+$var reg       8 \!   mips_ram[132] [7:0] $end
+$var reg       8 ]!   mips_ram[133] [7:0] $end
+$var reg       8 ^!   mips_ram[134] [7:0] $end
+$var reg       8 _!   mips_ram[135] [7:0] $end
+$var reg       8 `!   mips_ram[136] [7:0] $end
+$var reg       8 a!   mips_ram[137] [7:0] $end
+$var reg       8 b!   mips_ram[138] [7:0] $end
+$var reg       8 c!   mips_ram[139] [7:0] $end
+$var reg       8 d!   mips_ram[140] [7:0] $end
+$var reg       8 e!   mips_ram[141] [7:0] $end
+$var reg       8 f!   mips_ram[142] [7:0] $end
+$var reg       8 g!   mips_ram[143] [7:0] $end
+$var reg       8 h!   mips_ram[144] [7:0] $end
+$var reg       8 i!   mips_ram[145] [7:0] $end
+$var reg       8 j!   mips_ram[146] [7:0] $end
+$var reg       8 k!   mips_ram[147] [7:0] $end
+$var reg       8 l!   mips_ram[148] [7:0] $end
+$var reg       8 m!   mips_ram[149] [7:0] $end
+$var reg       8 n!   mips_ram[150] [7:0] $end
+$var reg       8 o!   mips_ram[151] [7:0] $end
+$var reg       8 p!   mips_ram[152] [7:0] $end
+$var reg       8 q!   mips_ram[153] [7:0] $end
+$var reg       8 r!   mips_ram[154] [7:0] $end
+$var reg       8 s!   mips_ram[155] [7:0] $end
+$var reg       8 t!   mips_ram[156] [7:0] $end
+$var reg       8 u!   mips_ram[157] [7:0] $end
+$var reg       8 v!   mips_ram[158] [7:0] $end
+$var reg       8 w!   mips_ram[159] [7:0] $end
+$var reg       8 x!   mips_ram[160] [7:0] $end
+$var reg       8 y!   mips_ram[161] [7:0] $end
+$var reg       8 z!   mips_ram[162] [7:0] $end
+$var reg       8 {!   mips_ram[163] [7:0] $end
+$var reg       8 |!   mips_ram[164] [7:0] $end
+$var reg       8 }!   mips_ram[165] [7:0] $end
+$var reg       8 ~!   mips_ram[166] [7:0] $end
+$var reg       8 !"   mips_ram[167] [7:0] $end
+$var reg       8 ""   mips_ram[168] [7:0] $end
+$var reg       8 #"   mips_ram[169] [7:0] $end
+$var reg       8 $"   mips_ram[170] [7:0] $end
+$var reg       8 %"   mips_ram[171] [7:0] $end
+$var reg       8 &"   mips_ram[172] [7:0] $end
+$var reg       8 '"   mips_ram[173] [7:0] $end
+$var reg       8 ("   mips_ram[174] [7:0] $end
+$var reg       8 )"   mips_ram[175] [7:0] $end
+$var reg       8 *"   mips_ram[176] [7:0] $end
+$var reg       8 +"   mips_ram[177] [7:0] $end
+$var reg       8 ,"   mips_ram[178] [7:0] $end
+$var reg       8 -"   mips_ram[179] [7:0] $end
+$var reg       8 ."   mips_ram[180] [7:0] $end
+$var reg       8 /"   mips_ram[181] [7:0] $end
+$var reg       8 0"   mips_ram[182] [7:0] $end
+$var reg       8 1"   mips_ram[183] [7:0] $end
+$var reg       8 2"   mips_ram[184] [7:0] $end
+$var reg       8 3"   mips_ram[185] [7:0] $end
+$var reg       8 4"   mips_ram[186] [7:0] $end
+$var reg       8 5"   mips_ram[187] [7:0] $end
+$var reg       8 6"   mips_ram[188] [7:0] $end
+$var reg       8 7"   mips_ram[189] [7:0] $end
+$var reg       8 8"   mips_ram[190] [7:0] $end
+$var reg       8 9"   mips_ram[191] [7:0] $end
+$var reg       8 :"   mips_ram[192] [7:0] $end
+$var reg       8 ;"   mips_ram[193] [7:0] $end
+$var reg       8 <"   mips_ram[194] [7:0] $end
+$var reg       8 ="   mips_ram[195] [7:0] $end
+$var reg       8 >"   mips_ram[196] [7:0] $end
+$var reg       8 ?"   mips_ram[197] [7:0] $end
+$var reg       8 @"   mips_ram[198] [7:0] $end
+$var reg       8 A"   mips_ram[199] [7:0] $end
+$var reg       8 B"   mips_ram[200] [7:0] $end
+$var reg       8 C"   mips_ram[201] [7:0] $end
+$var reg       8 D"   mips_ram[202] [7:0] $end
+$var reg       8 E"   mips_ram[203] [7:0] $end
+$var reg       8 F"   mips_ram[204] [7:0] $end
+$var reg       8 G"   mips_ram[205] [7:0] $end
+$var reg       8 H"   mips_ram[206] [7:0] $end
+$var reg       8 I"   mips_ram[207] [7:0] $end
+$var reg       8 J"   mips_ram[208] [7:0] $end
+$var reg       8 K"   mips_ram[209] [7:0] $end
+$var reg       8 L"   mips_ram[210] [7:0] $end
+$var reg       8 M"   mips_ram[211] [7:0] $end
+$var reg       8 N"   mips_ram[212] [7:0] $end
+$var reg       8 O"   mips_ram[213] [7:0] $end
+$var reg       8 P"   mips_ram[214] [7:0] $end
+$var reg       8 Q"   mips_ram[215] [7:0] $end
+$var reg       8 R"   mips_ram[216] [7:0] $end
+$var reg       8 S"   mips_ram[217] [7:0] $end
+$var reg       8 T"   mips_ram[218] [7:0] $end
+$var reg       8 U"   mips_ram[219] [7:0] $end
+$var reg       8 V"   mips_ram[220] [7:0] $end
+$var reg       8 W"   mips_ram[221] [7:0] $end
+$var reg       8 X"   mips_ram[222] [7:0] $end
+$var reg       8 Y"   mips_ram[223] [7:0] $end
+$var reg       8 Z"   mips_ram[224] [7:0] $end
+$var reg       8 ["   mips_ram[225] [7:0] $end
+$var reg       8 \"   mips_ram[226] [7:0] $end
+$var reg       8 ]"   mips_ram[227] [7:0] $end
+$var reg       8 ^"   mips_ram[228] [7:0] $end
+$var reg       8 _"   mips_ram[229] [7:0] $end
+$var reg       8 `"   mips_ram[230] [7:0] $end
+$var reg       8 a"   mips_ram[231] [7:0] $end
+$var reg       8 b"   mips_ram[232] [7:0] $end
+$var reg       8 c"   mips_ram[233] [7:0] $end
+$var reg       8 d"   mips_ram[234] [7:0] $end
+$var reg       8 e"   mips_ram[235] [7:0] $end
+$var reg       8 f"   mips_ram[236] [7:0] $end
+$var reg       8 g"   mips_ram[237] [7:0] $end
+$var reg       8 h"   mips_ram[238] [7:0] $end
+$var reg       8 i"   mips_ram[239] [7:0] $end
+$var reg       8 j"   mips_ram[240] [7:0] $end
+$var reg       8 k"   mips_ram[241] [7:0] $end
+$var reg       8 l"   mips_ram[242] [7:0] $end
+$var reg       8 m"   mips_ram[243] [7:0] $end
+$var reg       8 n"   mips_ram[244] [7:0] $end
+$var reg       8 o"   mips_ram[245] [7:0] $end
+$var reg       8 p"   mips_ram[246] [7:0] $end
+$var reg       8 q"   mips_ram[247] [7:0] $end
+$var reg       8 r"   mips_ram[248] [7:0] $end
+$var reg       8 s"   mips_ram[249] [7:0] $end
+$var reg       8 t"   mips_ram[250] [7:0] $end
+$var reg       8 u"   mips_ram[251] [7:0] $end
+$var reg       8 v"   mips_ram[252] [7:0] $end
+$var reg       8 w"   mips_ram[253] [7:0] $end
+$var reg       8 x"   mips_ram[254] [7:0] $end
+$var reg       8 y"   mips_ram[255] [7:0] $end
+$upscope $end
+
+$upscope $end
+
+$enddefinitions $end
+$dumpvars
+b1 5
+b0 4
+b110000 3
+b100000 2
+b10 1
+b100 0
+b1000 /
+b0 .
+b1100 -
+b1011 ,
+b1010 +
+b1001 *
+b1000 )
+b111 (
+b110 '
+b101 &
+b100 %
+b11 $
+b10 #
+b1 "
+b0 !
+b0 6
+b0 7
+b0 8
+b0 9
+b0 :
+b0 ;
+b0 <
+b0 =
+b0 >
+b0 ?
+b0 @
+b0 A
+b0 B
+b0 C
+b0 D
+b0 E
+b0 F
+b0 G
+b0 H
+b0 I
+b0 J
+b0 K
+b0 L
+b0 M
+b0 N
+b0 O
+b0 P
+b0 Q
+b0 R
+b0 S
+b0 T
+b0 U
+b0 V
+b0 W
+b0 X
+b0 Y
+b0 Z
+b0 [
+b0 \
+b0 ]
+b0 ^
+b0 _
+b0 `
+b0 a
+b0 b
+b0 c
+b0 d
+b0 e
+b0 f
+b0 g
+b0 h
+b0 i
+b0 j
+b0 k
+b0 l
+b0 m
+b0 n
+b0 o
+b0 p
+b0 q
+b0 r
+b0 s
+b0 t
+b0 u
+b0 v
+b0 w
+b0 x
+b0 y
+b0 z
+b0 {
+b0 |
+b0 }
+b0 ~
+b0 !!
+b0 "!
+b0 #!
+b0 $!
+b0 %!
+b0 &!
+b0 '!
+b0 (!
+b0 )!
+b0 *!
+b0 +!
+b0 ,!
+b0 -!
+b0 .!
+b0 /!
+b0 0!
+b0 1!
+b0 2!
+b0 3!
+b0 4!
+b0 5!
+b0 6!
+b0 7!
+b0 8!
+b0 9!
+b0 :!
+b0 ;!
+b0 <!
+b0 =!
+b0 >!
+b0 ?!
+b0 @!
+b0 A!
+b0 B!
+b0 C!
+b0 D!
+b0 E!
+b0 F!
+b0 G!
+b0 H!
+b0 I!
+b0 J!
+b0 K!
+b0 L!
+b0 M!
+b0 N!
+b0 O!
+b0 P!
+b0 Q!
+b0 R!
+b0 S!
+b0 T!
+b0 U!
+b0 V!
+b0 W!
+b0 X!
+b0 Y!
+b0 Z!
+b0 [!
+b0 \!
+b0 ]!
+b0 ^!
+b0 _!
+b0 `!
+b0 a!
+b0 b!
+b0 c!
+b0 d!
+b0 e!
+b0 f!
+b0 g!
+b0 h!
+b0 i!
+b0 j!
+b0 k!
+b0 l!
+b0 m!
+b0 n!
+b0 o!
+b0 p!
+b0 q!
+b0 r!
+b0 s!
+b0 t!
+b0 u!
+b0 v!
+b0 w!
+b0 x!
+b0 y!
+b0 z!
+b0 {!
+b0 |!
+b0 }!
+b0 ~!
+b0 !"
+b0 ""
+b0 #"
+b0 $"
+b0 %"
+b0 &"
+b0 '"
+b0 ("
+b0 )"
+b0 *"
+b0 +"
+b0 ,"
+b0 -"
+b0 ."
+b0 /"
+b0 0"
+b0 1"
+b0 2"
+b0 3"
+b0 4"
+b0 5"
+b0 6"
+b0 7"
+b0 8"
+b0 9"
+b0 :"
+b0 ;"
+b0 <"
+b0 ="
+b0 >"
+b0 ?"
+b0 @"
+b0 A"
+b0 B"
+b0 C"
+b0 D"
+b0 E"
+b0 F"
+b0 G"
+b0 H"
+b0 I"
+b0 J"
+b0 K"
+b0 L"
+b0 M"
+b0 N"
+b0 O"
+b0 P"
+b0 Q"
+b0 R"
+b0 S"
+b0 T"
+b0 U"
+b0 V"
+b0 W"
+b0 X"
+b0 Y"
+b0 Z"
+b0 ["
+b0 \"
+b0 ]"
+b0 ^"
+b0 _"
+b0 `"
+b0 a"
+b0 b"
+b0 c"
+b0 d"
+b0 e"
+b0 f"
+b0 g"
+b0 h"
+b0 i"
+b0 j"
+b0 k"
+b0 l"
+b0 m"
+b0 n"
+b0 o"
+b0 p"
+b0 q"
+b0 r"
+b0 s"
+b0 t"
+b0 u"
+b0 v"
+b0 w"
+b0 x"
+b0 y"
+$end
+#500000

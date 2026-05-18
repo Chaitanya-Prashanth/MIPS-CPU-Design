@@ -1,0 +1,3 @@
+s1(22Apr2026:12:58:50):  xrun mips.v tb_mips.v -top tb_mips 
+s2(22Apr2026:13:00:49):  xrun -access src/*.v tb_mips.v -top tb_mips 
+s3(22Apr2026:13:02:56):  xrun -access src/*.v tb_mips.v -top tb_mips 

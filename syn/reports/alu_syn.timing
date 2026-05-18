@@ -1,0 +1,414 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -nworst 5
+        -max_paths 5
+        -sort_by group
+Design : alu
+Version: O-2018.06-SP1
+Date   : Thu Apr 23 17:40:05 2026
+****************************************
+
+Operating Conditions: typical   Library: osu05_stdcells
+Wire Load Model Mode: top
+
+  Startpoint: alucont[2] (input port clocked by clk)
+  Endpoint: result[0] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.30       0.30
+  input external delay                     2.00       2.30 r
+  alucont[2] (in)                          0.03       2.33 r
+  U107/Y (BUFX2)                           0.43       2.76 r
+  U69/Y (INVX1)                            0.63       3.38 f
+  U114/Y (AOI22X1)                         0.27       3.65 r
+  U116/Y (NOR2X1)                          0.23       3.88 f
+  U117/Y (AOI21X1)                         0.16       4.04 r
+  U120/Y (NOR2X1)                          0.24       4.29 f
+  U121/Y (AOI21X1)                         0.16       4.44 r
+  U124/Y (NOR2X1)                          0.24       4.69 f
+  U125/Y (AOI21X1)                         0.16       4.84 r
+  U128/Y (NOR2X1)                          0.24       5.09 f
+  U129/Y (AOI21X1)                         0.16       5.24 r
+  U132/Y (NOR2X1)                          0.24       5.49 f
+  U133/Y (AOI21X1)                         0.14       5.62 r
+  U138/Y (INVX1)                           0.10       5.72 f
+  U139/Y (NAND2X1)                         0.14       5.86 r
+  U140/Y (OAI21X1)                         0.14       6.00 f
+  U141/Y (NAND2X1)                         0.13       6.13 r
+  U142/Y (OAI21X1)                         0.11       6.24 f
+  U143/Y (MUX2X1)                          0.24       6.48 r
+  U144/Y (MUX2X1)                          0.30       6.78 r
+  U145/Y (OAI21X1)                         0.13       6.91 f
+  U146/Y (AOI21X1)                         0.11       7.02 r
+  U147/Y (AOI21X1)                         0.13       7.15 f
+  U148/Y (OAI21X1)                         0.27       7.43 r
+  result[0] (out)                          0.00       7.43 r
+  data arrival time                                   7.43
+
+  clock clk (rise edge)                   10.00      10.00
+  clock network delay (ideal)              0.30      10.30
+  output external delay                   -1.65       8.65
+  data required time                                  8.65
+  -----------------------------------------------------------
+  data required time                                  8.65
+  data arrival time                                  -7.43
+  -----------------------------------------------------------
+  slack (MET)                                         1.22
+
+
+  Startpoint: alucont[2] (input port clocked by clk)
+  Endpoint: result[0] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.30       0.30
+  input external delay                     2.00       2.30 r
+  alucont[2] (in)                          0.03       2.33 r
+  U107/Y (BUFX2)                           0.43       2.76 r
+  U69/Y (INVX1)                            0.63       3.38 f
+  U114/Y (AOI22X1)                         0.27       3.65 r
+  U116/Y (NOR2X1)                          0.23       3.88 f
+  U117/Y (AOI21X1)                         0.16       4.04 r
+  U120/Y (NOR2X1)                          0.24       4.29 f
+  U121/Y (AOI21X1)                         0.16       4.44 r
+  U124/Y (NOR2X1)                          0.24       4.69 f
+  U125/Y (AOI21X1)                         0.16       4.84 r
+  U128/Y (NOR2X1)                          0.24       5.09 f
+  U129/Y (AOI21X1)                         0.16       5.24 r
+  U132/Y (NOR2X1)                          0.24       5.49 f
+  U133/Y (AOI21X1)                         0.14       5.62 r
+  U138/Y (INVX1)                           0.10       5.72 f
+  U139/Y (NAND2X1)                         0.14       5.86 r
+  U140/Y (OAI21X1)                         0.14       6.00 f
+  U141/Y (NAND2X1)                         0.13       6.13 r
+  U142/Y (OAI21X1)                         0.11       6.24 f
+  U143/Y (MUX2X1)                          0.24       6.48 f
+  U144/Y (MUX2X1)                          0.29       6.77 r
+  U145/Y (OAI21X1)                         0.13       6.90 f
+  U146/Y (AOI21X1)                         0.11       7.01 r
+  U147/Y (AOI21X1)                         0.13       7.15 f
+  U148/Y (OAI21X1)                         0.27       7.42 r
+  result[0] (out)                          0.00       7.42 r
+  data arrival time                                   7.42
+
+  clock clk (rise edge)                   10.00      10.00
+  clock network delay (ideal)              0.30      10.30
+  output external delay                   -1.65       8.65
+  data required time                                  8.65
+  -----------------------------------------------------------
+  data required time                                  8.65
+  data arrival time                                  -7.42
+  -----------------------------------------------------------
+  slack (MET)                                         1.23
+
+
+  Startpoint: alucont[2] (input port clocked by clk)
+  Endpoint: result[0] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.30       0.30
+  input external delay                     2.00       2.30 r
+  alucont[2] (in)                          0.03       2.33 r
+  U107/Y (BUFX2)                           0.43       2.76 r
+  U69/Y (INVX1)                            0.63       3.38 f
+  U114/Y (AOI22X1)                         0.27       3.65 r
+  U116/Y (NOR2X1)                          0.23       3.88 f
+  U117/Y (AOI21X1)                         0.16       4.04 r
+  U120/Y (NOR2X1)                          0.24       4.29 f
+  U121/Y (AOI21X1)                         0.16       4.44 r
+  U124/Y (NOR2X1)                          0.24       4.69 f
+  U125/Y (AOI21X1)                         0.16       4.84 r
+  U128/Y (NOR2X1)                          0.24       5.09 f
+  U129/Y (AOI21X1)                         0.16       5.24 r
+  U132/Y (NOR2X1)                          0.24       5.49 f
+  U133/Y (AOI21X1)                         0.14       5.62 r
+  U135/Y (NAND2X1)                         0.09       5.71 f
+  U136/Y (INVX1)                           0.12       5.83 r
+  U140/Y (OAI21X1)                         0.14       5.97 f
+  U141/Y (NAND2X1)                         0.13       6.10 r
+  U142/Y (OAI21X1)                         0.11       6.21 f
+  U143/Y (MUX2X1)                          0.24       6.45 r
+  U144/Y (MUX2X1)                          0.30       6.75 r
+  U145/Y (OAI21X1)                         0.13       6.87 f
+  U146/Y (AOI21X1)                         0.11       6.99 r
+  U147/Y (AOI21X1)                         0.13       7.12 f
+  U148/Y (OAI21X1)                         0.27       7.40 r
+  result[0] (out)                          0.00       7.40 r
+  data arrival time                                   7.40
+
+  clock clk (rise edge)                   10.00      10.00
+  clock network delay (ideal)              0.30      10.30
+  output external delay                   -1.65       8.65
+  data required time                                  8.65
+  -----------------------------------------------------------
+  data required time                                  8.65
+  data arrival time                                  -7.40
+  -----------------------------------------------------------
+  slack (MET)                                         1.25
+
+
+  Startpoint: alucont[2] (input port clocked by clk)
+  Endpoint: result[0] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.30       0.30
+  input external delay                     2.00       2.30 r
+  alucont[2] (in)                          0.03       2.33 r
+  U107/Y (BUFX2)                           0.43       2.76 r
+  U69/Y (INVX1)                            0.63       3.38 f
+  U114/Y (AOI22X1)                         0.27       3.65 r
+  U116/Y (NOR2X1)                          0.23       3.88 f
+  U117/Y (AOI21X1)                         0.16       4.04 r
+  U120/Y (NOR2X1)                          0.24       4.29 f
+  U121/Y (AOI21X1)                         0.16       4.44 r
+  U124/Y (NOR2X1)                          0.24       4.69 f
+  U125/Y (AOI21X1)                         0.16       4.84 r
+  U128/Y (NOR2X1)                          0.24       5.09 f
+  U129/Y (AOI21X1)                         0.16       5.24 r
+  U132/Y (NOR2X1)                          0.24       5.49 f
+  U133/Y (AOI21X1)                         0.14       5.62 r
+  U138/Y (INVX1)                           0.10       5.72 f
+  U139/Y (NAND2X1)                         0.14       5.86 r
+  U140/Y (OAI21X1)                         0.14       6.00 f
+  U141/Y (NAND2X1)                         0.13       6.13 r
+  U142/Y (OAI21X1)                         0.11       6.24 f
+  U143/Y (MUX2X1)                          0.24       6.48 r
+  U144/Y (MUX2X1)                          0.29       6.78 f
+  U145/Y (OAI21X1)                         0.16       6.94 r
+  U146/Y (AOI21X1)                         0.15       7.09 f
+  U147/Y (AOI21X1)                         0.10       7.19 r
+  U148/Y (OAI21X1)                         0.20       7.39 f
+  result[0] (out)                          0.00       7.39 f
+  data arrival time                                   7.39
+
+  clock clk (rise edge)                   10.00      10.00
+  clock network delay (ideal)              0.30      10.30
+  output external delay                   -1.65       8.65
+  data required time                                  8.65
+  -----------------------------------------------------------
+  data required time                                  8.65
+  data arrival time                                  -7.39
+  -----------------------------------------------------------
+  slack (MET)                                         1.26
+
+
+  Startpoint: alucont[2] (input port clocked by clk)
+  Endpoint: result[0] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.30       0.30
+  input external delay                     2.00       2.30 r
+  alucont[2] (in)                          0.03       2.33 r
+  U107/Y (BUFX2)                           0.43       2.76 r
+  U69/Y (INVX1)                            0.63       3.38 f
+  U114/Y (AOI22X1)                         0.27       3.65 r
+  U116/Y (NOR2X1)                          0.23       3.88 f
+  U117/Y (AOI21X1)                         0.16       4.04 r
+  U120/Y (NOR2X1)                          0.24       4.29 f
+  U121/Y (AOI21X1)                         0.16       4.44 r
+  U124/Y (NOR2X1)                          0.24       4.69 f
+  U125/Y (AOI21X1)                         0.16       4.84 r
+  U128/Y (NOR2X1)                          0.24       5.09 f
+  U129/Y (AOI21X1)                         0.16       5.24 r
+  U132/Y (NOR2X1)                          0.24       5.49 f
+  U133/Y (AOI21X1)                         0.14       5.62 r
+  U135/Y (NAND2X1)                         0.09       5.71 f
+  U136/Y (INVX1)                           0.12       5.83 r
+  U140/Y (OAI21X1)                         0.14       5.97 f
+  U141/Y (NAND2X1)                         0.13       6.10 r
+  U142/Y (OAI21X1)                         0.11       6.21 f
+  U143/Y (MUX2X1)                          0.24       6.45 f
+  U144/Y (MUX2X1)                          0.29       6.74 r
+  U145/Y (OAI21X1)                         0.13       6.87 f
+  U146/Y (AOI21X1)                         0.11       6.98 r
+  U147/Y (AOI21X1)                         0.13       7.12 f
+  U148/Y (OAI21X1)                         0.27       7.39 r
+  result[0] (out)                          0.00       7.39 r
+  data arrival time                                   7.39
+
+  clock clk (rise edge)                   10.00      10.00
+  clock network delay (ideal)              0.30      10.30
+  output external delay                   -1.65       8.65
+  data required time                                  8.65
+  -----------------------------------------------------------
+  data required time                                  8.65
+  data arrival time                                  -7.39
+  -----------------------------------------------------------
+  slack (MET)                                         1.26
+
+
+1
+ 
+****************************************
+Report : timing
+        -path full
+        -delay min
+        -nworst 5
+        -max_paths 5
+        -sort_by group
+Design : alu
+Version: O-2018.06-SP1
+Date   : Thu Apr 23 17:40:05 2026
+****************************************
+
+Operating Conditions: typical   Library: osu05_stdcells
+Wire Load Model Mode: top
+
+  Startpoint: b[5] (input port clocked by clk)
+  Endpoint: result[5] (output port clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.30       0.30
+  input external delay                     2.00       2.30 f
+  b[5] (in)                                0.04       2.34 f
+  U95/Y (INVX1)                            0.18       2.51 r
+  U188/Y (OAI21X1)                         0.21       2.72 f
+  result[5] (out)                          0.00       2.72 f
+  data arrival time                                   2.72
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.30       0.30
+  output external delay                   -1.65      -1.35
+  data required time                                 -1.35
+  -----------------------------------------------------------
+  data required time                                 -1.35
+  data arrival time                                  -2.72
+  -----------------------------------------------------------
+  slack (MET)                                         4.07
+
+
+  Startpoint: b[4] (input port clocked by clk)
+  Endpoint: result[4] (output port clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.30       0.30
+  input external delay                     2.00       2.30 f
+  b[4] (in)                                0.04       2.34 f
+  U93/Y (INVX1)                            0.18       2.51 r
+  U180/Y (OAI21X1)                         0.21       2.72 f
+  result[4] (out)                          0.00       2.72 f
+  data arrival time                                   2.72
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.30       0.30
+  output external delay                   -1.65      -1.35
+  data required time                                 -1.35
+  -----------------------------------------------------------
+  data required time                                 -1.35
+  data arrival time                                  -2.72
+  -----------------------------------------------------------
+  slack (MET)                                         4.07
+
+
+  Startpoint: b[3] (input port clocked by clk)
+  Endpoint: result[3] (output port clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.30       0.30
+  input external delay                     2.00       2.30 f
+  b[3] (in)                                0.04       2.34 f
+  U91/Y (INVX1)                            0.18       2.51 r
+  U172/Y (OAI21X1)                         0.21       2.72 f
+  result[3] (out)                          0.00       2.72 f
+  data arrival time                                   2.72
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.30       0.30
+  output external delay                   -1.65      -1.35
+  data required time                                 -1.35
+  -----------------------------------------------------------
+  data required time                                 -1.35
+  data arrival time                                  -2.72
+  -----------------------------------------------------------
+  slack (MET)                                         4.07
+
+
+  Startpoint: b[2] (input port clocked by clk)
+  Endpoint: result[2] (output port clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.30       0.30
+  input external delay                     2.00       2.30 f
+  b[2] (in)                                0.04       2.34 f
+  U89/Y (INVX1)                            0.18       2.51 r
+  U164/Y (OAI21X1)                         0.21       2.72 f
+  result[2] (out)                          0.00       2.72 f
+  data arrival time                                   2.72
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.30       0.30
+  output external delay                   -1.65      -1.35
+  data required time                                 -1.35
+  -----------------------------------------------------------
+  data required time                                 -1.35
+  data arrival time                                  -2.72
+  -----------------------------------------------------------
+  slack (MET)                                         4.07
+
+
+  Startpoint: b[1] (input port clocked by clk)
+  Endpoint: result[1] (output port clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.30       0.30
+  input external delay                     2.00       2.30 f
+  b[1] (in)                                0.04       2.34 f
+  U87/Y (INVX1)                            0.18       2.51 r
+  U156/Y (OAI21X1)                         0.21       2.72 f
+  result[1] (out)                          0.00       2.72 f
+  data arrival time                                   2.72
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.30       0.30
+  output external delay                   -1.65      -1.35
+  data required time                                 -1.35
+  -----------------------------------------------------------
+  data required time                                 -1.35
+  data arrival time                                  -2.72
+  -----------------------------------------------------------
+  slack (MET)                                         4.07
+
+
+1

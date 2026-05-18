@@ -1,0 +1,439 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -nworst 5
+        -max_paths 5
+        -sort_by group
+Design : mips
+Version: O-2018.06-SP1
+Date   : Sat Apr 25 12:27:21 2026
+****************************************
+
+Operating Conditions: typical   Library: osu05_stdcells
+Wire Load Model Mode: top
+
+  Startpoint: cont_state_reg_2_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: dp_pcreg_q_reg_0_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.30       0.30
+  cont_state_reg_2_/CLK (DFFSR)            0.00       0.30 r
+  cont_state_reg_2_/Q (DFFSR)              0.66       0.96 r
+  U606/Y (INVX1)                           0.27       1.23 f
+  U674/Y (NAND2X1)                         0.41       1.64 r
+  U708/Y (NOR2X1)                          0.85       2.48 f
+  U709/Y (INVX1)                           0.20       2.68 r
+  U710/Y (OAI21X1)                         0.56       3.24 f
+  U593/Y (INVX1)                           0.72       3.96 r
+  U732/Y (AOI22X1)                         0.39       4.35 f
+  U789/YC (FAX1)                           0.50       4.85 f
+  U795/YC (FAX1)                           0.46       5.30 f
+  U764/YC (FAX1)                           0.46       5.76 f
+  U759/YC (FAX1)                           0.46       6.21 f
+  U769/YC (FAX1)                           0.46       6.67 f
+  U799/YC (FAX1)                           0.46       7.13 f
+  U774/YC (FAX1)                           0.40       7.52 f
+  U784/Y (OAI21X1)                         0.12       7.65 r
+  U608/Y (INVX1)                           0.20       7.84 f
+  U788/Y (OAI21X1)                         0.22       8.06 r
+  U1123/Y (NOR2X1)                         0.22       8.28 f
+  U1126/Y (NAND3X1)                        0.21       8.49 r
+  U1128/Y (OAI21X1)                        0.11       8.60 f
+  U1130/Y (INVX1)                          0.11       8.71 r
+  U1131/Y (NAND2X1)                        0.42       9.13 f
+  U1132/Y (OAI22X1)                        0.20       9.33 r
+  dp_pcreg_q_reg_0_/D (DFFPOSX1)           0.00       9.33 r
+  data arrival time                                   9.33
+
+  clock clk (rise edge)                   10.00      10.00
+  clock network delay (ideal)              0.30      10.30
+  dp_pcreg_q_reg_0_/CLK (DFFPOSX1)         0.00      10.30 r
+  library setup time                      -0.36       9.94
+  data required time                                  9.94
+  -----------------------------------------------------------
+  data required time                                  9.94
+  data arrival time                                  -9.33
+  -----------------------------------------------------------
+  slack (MET)                                         0.61
+
+
+  Startpoint: cont_state_reg_2_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: dp_pcreg_q_reg_1_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.30       0.30
+  cont_state_reg_2_/CLK (DFFSR)            0.00       0.30 r
+  cont_state_reg_2_/Q (DFFSR)              0.66       0.96 r
+  U606/Y (INVX1)                           0.27       1.23 f
+  U674/Y (NAND2X1)                         0.41       1.64 r
+  U708/Y (NOR2X1)                          0.85       2.48 f
+  U709/Y (INVX1)                           0.20       2.68 r
+  U710/Y (OAI21X1)                         0.56       3.24 f
+  U593/Y (INVX1)                           0.72       3.96 r
+  U732/Y (AOI22X1)                         0.39       4.35 f
+  U789/YC (FAX1)                           0.50       4.85 f
+  U795/YC (FAX1)                           0.46       5.30 f
+  U764/YC (FAX1)                           0.46       5.76 f
+  U759/YC (FAX1)                           0.46       6.21 f
+  U769/YC (FAX1)                           0.46       6.67 f
+  U799/YC (FAX1)                           0.46       7.13 f
+  U774/YC (FAX1)                           0.40       7.52 f
+  U784/Y (OAI21X1)                         0.12       7.65 r
+  U608/Y (INVX1)                           0.20       7.84 f
+  U788/Y (OAI21X1)                         0.22       8.06 r
+  U1123/Y (NOR2X1)                         0.22       8.28 f
+  U1126/Y (NAND3X1)                        0.21       8.49 r
+  U1128/Y (OAI21X1)                        0.11       8.60 f
+  U1130/Y (INVX1)                          0.11       8.71 r
+  U1131/Y (NAND2X1)                        0.42       9.13 f
+  U1134/Y (OAI22X1)                        0.20       9.33 r
+  dp_pcreg_q_reg_1_/D (DFFPOSX1)           0.00       9.33 r
+  data arrival time                                   9.33
+
+  clock clk (rise edge)                   10.00      10.00
+  clock network delay (ideal)              0.30      10.30
+  dp_pcreg_q_reg_1_/CLK (DFFPOSX1)         0.00      10.30 r
+  library setup time                      -0.36       9.94
+  data required time                                  9.94
+  -----------------------------------------------------------
+  data required time                                  9.94
+  data arrival time                                  -9.33
+  -----------------------------------------------------------
+  slack (MET)                                         0.61
+
+
+  Startpoint: cont_state_reg_2_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: dp_pcreg_q_reg_2_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.30       0.30
+  cont_state_reg_2_/CLK (DFFSR)            0.00       0.30 r
+  cont_state_reg_2_/Q (DFFSR)              0.66       0.96 r
+  U606/Y (INVX1)                           0.27       1.23 f
+  U674/Y (NAND2X1)                         0.41       1.64 r
+  U708/Y (NOR2X1)                          0.85       2.48 f
+  U709/Y (INVX1)                           0.20       2.68 r
+  U710/Y (OAI21X1)                         0.56       3.24 f
+  U593/Y (INVX1)                           0.72       3.96 r
+  U732/Y (AOI22X1)                         0.39       4.35 f
+  U789/YC (FAX1)                           0.50       4.85 f
+  U795/YC (FAX1)                           0.46       5.30 f
+  U764/YC (FAX1)                           0.46       5.76 f
+  U759/YC (FAX1)                           0.46       6.21 f
+  U769/YC (FAX1)                           0.46       6.67 f
+  U799/YC (FAX1)                           0.46       7.13 f
+  U774/YC (FAX1)                           0.40       7.52 f
+  U784/Y (OAI21X1)                         0.12       7.65 r
+  U608/Y (INVX1)                           0.20       7.84 f
+  U788/Y (OAI21X1)                         0.22       8.06 r
+  U1123/Y (NOR2X1)                         0.22       8.28 f
+  U1126/Y (NAND3X1)                        0.21       8.49 r
+  U1128/Y (OAI21X1)                        0.11       8.60 f
+  U1130/Y (INVX1)                          0.11       8.71 r
+  U1131/Y (NAND2X1)                        0.42       9.13 f
+  U1138/Y (OAI21X1)                        0.18       9.31 r
+  dp_pcreg_q_reg_2_/D (DFFPOSX1)           0.00       9.31 r
+  data arrival time                                   9.31
+
+  clock clk (rise edge)                   10.00      10.00
+  clock network delay (ideal)              0.30      10.30
+  dp_pcreg_q_reg_2_/CLK (DFFPOSX1)         0.00      10.30 r
+  library setup time                      -0.36       9.94
+  data required time                                  9.94
+  -----------------------------------------------------------
+  data required time                                  9.94
+  data arrival time                                  -9.31
+  -----------------------------------------------------------
+  slack (MET)                                         0.63
+
+
+  Startpoint: cont_state_reg_2_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: dp_pcreg_q_reg_3_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.30       0.30
+  cont_state_reg_2_/CLK (DFFSR)            0.00       0.30 r
+  cont_state_reg_2_/Q (DFFSR)              0.66       0.96 r
+  U606/Y (INVX1)                           0.27       1.23 f
+  U674/Y (NAND2X1)                         0.41       1.64 r
+  U708/Y (NOR2X1)                          0.85       2.48 f
+  U709/Y (INVX1)                           0.20       2.68 r
+  U710/Y (OAI21X1)                         0.56       3.24 f
+  U593/Y (INVX1)                           0.72       3.96 r
+  U732/Y (AOI22X1)                         0.39       4.35 f
+  U789/YC (FAX1)                           0.50       4.85 f
+  U795/YC (FAX1)                           0.46       5.30 f
+  U764/YC (FAX1)                           0.46       5.76 f
+  U759/YC (FAX1)                           0.46       6.21 f
+  U769/YC (FAX1)                           0.46       6.67 f
+  U799/YC (FAX1)                           0.46       7.13 f
+  U774/YC (FAX1)                           0.40       7.52 f
+  U784/Y (OAI21X1)                         0.12       7.65 r
+  U608/Y (INVX1)                           0.20       7.84 f
+  U788/Y (OAI21X1)                         0.22       8.06 r
+  U1123/Y (NOR2X1)                         0.22       8.28 f
+  U1126/Y (NAND3X1)                        0.21       8.49 r
+  U1128/Y (OAI21X1)                        0.11       8.60 f
+  U1130/Y (INVX1)                          0.11       8.71 r
+  U1131/Y (NAND2X1)                        0.42       9.13 f
+  U1142/Y (OAI21X1)                        0.18       9.31 r
+  dp_pcreg_q_reg_3_/D (DFFPOSX1)           0.00       9.31 r
+  data arrival time                                   9.31
+
+  clock clk (rise edge)                   10.00      10.00
+  clock network delay (ideal)              0.30      10.30
+  dp_pcreg_q_reg_3_/CLK (DFFPOSX1)         0.00      10.30 r
+  library setup time                      -0.36       9.94
+  data required time                                  9.94
+  -----------------------------------------------------------
+  data required time                                  9.94
+  data arrival time                                  -9.31
+  -----------------------------------------------------------
+  slack (MET)                                         0.63
+
+
+  Startpoint: cont_state_reg_2_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: dp_pcreg_q_reg_4_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.30       0.30
+  cont_state_reg_2_/CLK (DFFSR)            0.00       0.30 r
+  cont_state_reg_2_/Q (DFFSR)              0.66       0.96 r
+  U606/Y (INVX1)                           0.27       1.23 f
+  U674/Y (NAND2X1)                         0.41       1.64 r
+  U708/Y (NOR2X1)                          0.85       2.48 f
+  U709/Y (INVX1)                           0.20       2.68 r
+  U710/Y (OAI21X1)                         0.56       3.24 f
+  U593/Y (INVX1)                           0.72       3.96 r
+  U732/Y (AOI22X1)                         0.39       4.35 f
+  U789/YC (FAX1)                           0.50       4.85 f
+  U795/YC (FAX1)                           0.46       5.30 f
+  U764/YC (FAX1)                           0.46       5.76 f
+  U759/YC (FAX1)                           0.46       6.21 f
+  U769/YC (FAX1)                           0.46       6.67 f
+  U799/YC (FAX1)                           0.46       7.13 f
+  U774/YC (FAX1)                           0.40       7.52 f
+  U784/Y (OAI21X1)                         0.12       7.65 r
+  U608/Y (INVX1)                           0.20       7.84 f
+  U788/Y (OAI21X1)                         0.22       8.06 r
+  U1123/Y (NOR2X1)                         0.22       8.28 f
+  U1126/Y (NAND3X1)                        0.21       8.49 r
+  U1128/Y (OAI21X1)                        0.11       8.60 f
+  U1130/Y (INVX1)                          0.11       8.71 r
+  U1131/Y (NAND2X1)                        0.42       9.13 f
+  U1146/Y (OAI21X1)                        0.18       9.31 r
+  dp_pcreg_q_reg_4_/D (DFFPOSX1)           0.00       9.31 r
+  data arrival time                                   9.31
+
+  clock clk (rise edge)                   10.00      10.00
+  clock network delay (ideal)              0.30      10.30
+  dp_pcreg_q_reg_4_/CLK (DFFPOSX1)         0.00      10.30 r
+  library setup time                      -0.36       9.94
+  data required time                                  9.94
+  -----------------------------------------------------------
+  data required time                                  9.94
+  data arrival time                                  -9.31
+  -----------------------------------------------------------
+  slack (MET)                                         0.63
+
+
+1
+ 
+****************************************
+Report : timing
+        -path full
+        -delay min
+        -nworst 5
+        -max_paths 5
+        -sort_by group
+Design : mips
+Version: O-2018.06-SP1
+Date   : Sat Apr 25 12:27:21 2026
+****************************************
+
+Operating Conditions: typical   Library: osu05_stdcells
+Wire Load Model Mode: top
+
+  Startpoint: dp_rf_REGS_reg_4__0_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: dp_rf_REGS_reg_4__0_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.30       0.30
+  dp_rf_REGS_reg_4__0_/CLK (DFFPOSX1)      0.00       0.30 r
+  dp_rf_REGS_reg_4__0_/Q (DFFPOSX1)        0.21       0.51 r
+  U999/Y (NAND2X1)                         0.07       0.58 f
+  U1000/Y (OAI21X1)                        0.09       0.67 r
+  dp_rf_REGS_reg_4__0_/D (DFFPOSX1)        0.00       0.67 r
+  data arrival time                                   0.67
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.30       0.30
+  dp_rf_REGS_reg_4__0_/CLK (DFFPOSX1)      0.00       0.30 r
+  library hold time                       -0.09       0.21
+  data required time                                  0.21
+  -----------------------------------------------------------
+  data required time                                  0.21
+  data arrival time                                  -0.67
+  -----------------------------------------------------------
+  slack (MET)                                         0.46
+
+
+  Startpoint: dp_rf_REGS_reg_4__1_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: dp_rf_REGS_reg_4__1_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.30       0.30
+  dp_rf_REGS_reg_4__1_/CLK (DFFPOSX1)      0.00       0.30 r
+  dp_rf_REGS_reg_4__1_/Q (DFFPOSX1)        0.21       0.51 r
+  U1020/Y (NAND2X1)                        0.07       0.58 f
+  U1021/Y (OAI21X1)                        0.09       0.67 r
+  dp_rf_REGS_reg_4__1_/D (DFFPOSX1)        0.00       0.67 r
+  data arrival time                                   0.67
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.30       0.30
+  dp_rf_REGS_reg_4__1_/CLK (DFFPOSX1)      0.00       0.30 r
+  library hold time                       -0.09       0.21
+  data required time                                  0.21
+  -----------------------------------------------------------
+  data required time                                  0.21
+  data arrival time                                  -0.67
+  -----------------------------------------------------------
+  slack (MET)                                         0.46
+
+
+  Startpoint: dp_rf_REGS_reg_4__2_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: dp_rf_REGS_reg_4__2_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.30       0.30
+  dp_rf_REGS_reg_4__2_/CLK (DFFPOSX1)      0.00       0.30 r
+  dp_rf_REGS_reg_4__2_/Q (DFFPOSX1)        0.21       0.51 r
+  U1035/Y (NAND2X1)                        0.07       0.58 f
+  U1036/Y (OAI21X1)                        0.09       0.67 r
+  dp_rf_REGS_reg_4__2_/D (DFFPOSX1)        0.00       0.67 r
+  data arrival time                                   0.67
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.30       0.30
+  dp_rf_REGS_reg_4__2_/CLK (DFFPOSX1)      0.00       0.30 r
+  library hold time                       -0.09       0.21
+  data required time                                  0.21
+  -----------------------------------------------------------
+  data required time                                  0.21
+  data arrival time                                  -0.67
+  -----------------------------------------------------------
+  slack (MET)                                         0.46
+
+
+  Startpoint: dp_rf_REGS_reg_3__4_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: dp_rf_REGS_reg_3__4_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.30       0.30
+  dp_rf_REGS_reg_3__4_/CLK (DFFPOSX1)      0.00       0.30 r
+  dp_rf_REGS_reg_3__4_/Q (DFFPOSX1)        0.21       0.51 r
+  U1067/Y (NAND2X1)                        0.07       0.58 f
+  U1068/Y (OAI21X1)                        0.09       0.67 r
+  dp_rf_REGS_reg_3__4_/D (DFFPOSX1)        0.00       0.67 r
+  data arrival time                                   0.67
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.30       0.30
+  dp_rf_REGS_reg_3__4_/CLK (DFFPOSX1)      0.00       0.30 r
+  library hold time                       -0.09       0.21
+  data required time                                  0.21
+  -----------------------------------------------------------
+  data required time                                  0.21
+  data arrival time                                  -0.67
+  -----------------------------------------------------------
+  slack (MET)                                         0.46
+
+
+  Startpoint: dp_rf_REGS_reg_4__5_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: dp_rf_REGS_reg_4__5_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.30       0.30
+  dp_rf_REGS_reg_4__5_/CLK (DFFPOSX1)      0.00       0.30 r
+  dp_rf_REGS_reg_4__5_/Q (DFFPOSX1)        0.21       0.51 r
+  U1080/Y (NAND2X1)                        0.07       0.58 f
+  U1081/Y (OAI21X1)                        0.09       0.67 r
+  dp_rf_REGS_reg_4__5_/D (DFFPOSX1)        0.00       0.67 r
+  data arrival time                                   0.67
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.30       0.30
+  dp_rf_REGS_reg_4__5_/CLK (DFFPOSX1)      0.00       0.30 r
+  library hold time                       -0.09       0.21
+  data required time                                  0.21
+  -----------------------------------------------------------
+  data required time                                  0.21
+  data arrival time                                  -0.67
+  -----------------------------------------------------------
+  slack (MET)                                         0.46
+
+
+1

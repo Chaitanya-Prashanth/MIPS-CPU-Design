@@ -1,0 +1,8 @@
+//
+// File created by:  xrun
+// Do not modify this file
+//
+src/mips.v
+src/tb_mips.v
+-top
+tb_mips

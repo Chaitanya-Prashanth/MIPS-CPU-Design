@@ -1,0 +1,51 @@
+
+Cadence Innovus(TM) Implementation System.
+Copyright 2018 Cadence Design Systems, Inc. All rights reserved worldwide.
+
+Version:	v18.10-p002_1, built Tue May 29 19:19:55 PDT 2018
+Options:	
+Date:		Thu May  7 19:05:19 2026
+Host:		vlsi.seas.gwu.edu (x86_64 w/Linux 2.6.32-754.15.3.el6.x86_64) (12cores*48cpus*Intel(R) Xeon(R) CPU E5-2690 v3 @ 2.60GHz 30720KB)
+OS:		CentOS release 6.10 (Final)
+
+License:
+		invs	Innovus Implementation System	18.1	checkout succeeded
+		8 CPU jobs allowed with the current license(s). Use setMultiCpuUsage to set your required CPU count.
+Change the soft stacksize limit to 0.2%RAM (516 mbytes). Set global soft_stack_size_limit to change the value.
+
+**INFO:  MMMC transition support version v31-84 
+
+<CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+<CMD> suppressMessage ENCEXT-2799
+<CMD> win
+<CMD> save_global Default.globals
+<CMD> save_global Default.globals
+<CMD> set init_lef_file {/cadence/innovus/osu05_stdcells.lef /cadence/innovus/osu05_stdcells_expanded.lef}
+<CMD> set init_verilog ../dft/netlists/mips_scan.v
+<CMD> set init_mmmc_file ../Default.view
+<CMD> set init_pwr_net {vdd gnd}
+<CMD> init_design
+#% Begin Load MMMC data ... (date=05/07 19:13:41, mem=496.4M)
+**ERROR: (TCLCMD-995):	Can not open file 'innovus/osu05_stdcells_expanded.tlf' for library set
+**ERROR: (TCLCMD-995):	Can not open file 'innovus/osu05_stdcells.tlf' for library set
+<CMD> save_global Default.globals
+<CMD> set init_lef_file {/cadence/innovus/osu05_stdcells.lef /cadence/innovus/osu05_stdcells_expanded.lef}
+<CMD> set init_verilog ../dft/netlists/mips_scan.v
+<CMD> set init_mmmc_file ../Default.view
+<CMD> set init_pwr_net {vdd gnd}
+<CMD> init_design
+% Begin Load MMMC data ... (date=05/07 19:14:42, mem=496.6M)
+**ERROR: (TCLCMD-995):	Can not open file '/cadence/innovus/osu05_stdcells_expanded.tlf' for library set
+**ERROR: (TCLCMD-995):	Can not open file '/cadence/innovus/osu05_stdcells.tlf' for library set
+
+--------------------------------------------------------------------------------
+Exiting Innovus on Thu May  7 19:16:09 2026
+  Total CPU time:     0:03:16
+  Total real time:    0:10:51
+  Peak memory (main): 496.76MB
+
+
+*** Memory Usage v#1 (Current mem = 629.262M, initial mem = 260.398M) ***
+*** Message Summary: 0 warning(s), 4 error(s)
+
+--- Ending "Innovus" (totcpu=0:03:16, real=0:10:50, mem=629.3M) ---

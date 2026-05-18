@@ -1,0 +1,19 @@
+//
+// File created by:  xrun
+// Do not modify this file
+//
+/home/ead/G44010997/ece6250/project/src/flop.v
+/home/ead/G44010997/ece6250/project/src/flopen.v
+/home/ead/G44010997/ece6250/project/src/flopenr.v
+/home/ead/G44010997/ece6250/project/src/mux2.v
+/home/ead/G44010997/ece6250/project/src/mux4.v
+/home/ead/G44010997/ece6250/project/src/mux23.v
+/home/ead/G44010997/ece6250/project/src/zerodetect.v
+/home/ead/G44010997/ece6250/project/src/alu.v
+/home/ead/G44010997/ece6250/project/src/alucontrol.v
+/home/ead/G44010997/ece6250/project/src/regfile.v
+/home/ead/G44010997/ece6250/project/src/datapath.v
+/home/ead/G44010997/ece6250/project/src/controller.v
+/home/ead/G44010997/ece6250/project/src/mips.v
+/home/ead/G44010997/ece6250/project/src/ram.v
+/home/ead/G44010997/ece6250/project/src/tb_mips.v

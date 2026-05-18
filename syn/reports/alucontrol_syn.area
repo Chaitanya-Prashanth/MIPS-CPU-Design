@@ -1,0 +1,77 @@
+ 
+****************************************
+Report : area
+Design : alucontrol
+Version: O-2018.06-SP1
+Date   : Thu Apr 23 17:42:33 2026
+****************************************
+
+Library(s) Used:
+
+    osu05_stdcells (File: /apps/design_kits/osu_stdcells_v2p7/synopsys/lib/ami05/osu05_stdcells.db)
+
+Number of ports:                           11
+Number of nets:                            35
+Number of cells:                           27
+Number of combinational cells:             27
+Number of sequential cells:                 0
+Number of macros/black boxes:               0
+Number of buf/inv:                         15
+Number of references:                       8
+
+Combinational area:               5571.000000
+Buf/Inv area:                     2160.000000
+Noncombinational area:               0.000000
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (No wire load specified)
+
+Total cell area:                  5571.000000
+Total area:                 undefined
+1
+ 
+****************************************
+Report : cell
+Design : alucontrol
+Version: O-2018.06-SP1
+Date   : Thu Apr 23 17:42:33 2026
+****************************************
+
+Attributes:
+    b - black box (unknown)
+    h - hierarchical
+    n - noncombinational
+    r - removable
+    u - contains unmapped logic
+
+Cell                      Reference       Library             Area  Attributes
+--------------------------------------------------------------------------------
+U3                        AND2X2          osu05_stdcells  288.000000
+U4                        INVX2           osu05_stdcells  144.000000
+U5                        INVX2           osu05_stdcells  144.000000
+U9                        INVX2           osu05_stdcells  144.000000
+U10                       OAI21X1         osu05_stdcells  207.000000
+U11                       NAND3X1         osu05_stdcells  324.000000
+U12                       NOR2X1          osu05_stdcells  216.000000
+U13                       OAI22X1         osu05_stdcells  360.000000
+U14                       NAND2X1         osu05_stdcells  216.000000
+U15                       NAND3X1         osu05_stdcells  324.000000
+U16                       NAND3X1         osu05_stdcells  324.000000
+U17                       OR2X1           osu05_stdcells  288.000000
+U18                       NAND3X1         osu05_stdcells  324.000000
+U19                       NAND3X1         osu05_stdcells  324.000000
+U20                       NOR2X1          osu05_stdcells  216.000000
+U21                       INVX2           osu05_stdcells  144.000000
+U22                       INVX2           osu05_stdcells  144.000000
+U23                       INVX2           osu05_stdcells  144.000000
+U24                       INVX2           osu05_stdcells  144.000000
+U25                       INVX2           osu05_stdcells  144.000000
+U26                       INVX2           osu05_stdcells  144.000000
+U27                       INVX2           osu05_stdcells  144.000000
+U28                       INVX2           osu05_stdcells  144.000000
+U29                       INVX2           osu05_stdcells  144.000000
+U30                       INVX2           osu05_stdcells  144.000000
+U31                       INVX2           osu05_stdcells  144.000000
+U32                       INVX2           osu05_stdcells  144.000000
+--------------------------------------------------------------------------------
+Total 27 cells                                            5571.000000
+1

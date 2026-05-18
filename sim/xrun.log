@@ -1,0 +1,12 @@
+xrun(64): 17.10-s001: (c) Copyright 1995-2017 Cadence Design Systems, Inc.
+TOOL:	xrun(64)	17.10-s001: Started on Apr 13, 2026 at 15:33:39 EDT
+xrun
+	src/flop.v
+	sim/tb_flops.v
+	-top tb_flops
+	-access +r
+	-run
+	-gui
+xrun: *E,FILEMIS: Cannot find the provided file src/flop.v.
+xrun: *E,FILEMIS: Cannot find the provided file sim/tb_flops.v.
+TOOL:	xrun(64)	17.10-s001: Exiting on Apr 13, 2026 at 15:33:39 EDT  (total: 00:00:00)

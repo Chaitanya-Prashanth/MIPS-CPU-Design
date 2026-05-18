@@ -1,0 +1,12 @@
+s1(22Apr2026:12:58:50):  xrun mips.v tb_mips.v -top tb_mips 
+s2(22Apr2026:13:00:49):  xrun -access src/*.v tb_mips.v -top tb_mips 
+s3(22Apr2026:13:02:56):  xrun -access src/*.v tb_mips.v -top tb_mips 
+s4(22Apr2026:13:10:25):  xrun -timescale 1ns/10ps -access +rwc ./flop.v ./flopen.v ./flopenr.v ./mux2.v ./mux4.v ./mux23.v ./zerodetect.v ./alu.v ./alucontrol.v ./regfile.v ./datapath.v ./controller.v ./mips.v ./ram.v ./tb_mips.v -top tb_mips -log mips.log 
+s5(22Apr2026:13:23:10):  xrun -timescale 1ns/10ps -access +rwc ./flop.v ./flopen.v ./flopenr.v ./mux2.v ./mux4.v ./mux23.v ./zerodetect.v ./alu.v ./alucontrol.v ./regfile.v ./datapath.v ./controller.v ./mips.v ./ram.v ./tb_mips.v -top tb_mips -log mips.log 
+s6(22Apr2026:13:23:21):  xrun -timescale 1ns/10ps -access +rwc ./flop.v ./flopen.v ./flopenr.v ./mux2.v ./mux4.v ./mux23.v ./zerodetect.v ./alu.v ./alucontrol.v ./regfile.v ./datapath.v ./controller.v ./mips.v ./ram.v ./tb_mips.v -top tb_mips -log mips.log 
+s7(22Apr2026:14:46:37):  xrun -timescale 1ns/10ps -access +rwc ./flop.v ./flopen.v ./flopenr.v ./mux2.v ./mux4.v ./mux23.v ./zerodetect.v ./alu.v ./alucontrol.v ./regfile.v ./datapath.v ./controller.v ./mips.v ./ram.v ./tb_mips.v -top tb_mips -log mips.log 
+s8(22Apr2026:14:46:57):  xrun -timescale 1ns/10ps -access +rwc ./flop.v ./flopen.v ./flopenr.v ./mux2.v ./mux4.v ./mux23.v ./zerodetect.v ./alu.v ./alucontrol.v ./regfile.v ./datapath.v ./controller.v ./mips.v ./ram.v ./tb_mips.v -top tb_mips -log mips.log 
+s9(22Apr2026:14:52:09):  xrun -timescale 1ns/10ps -access +rwc ./flop.v ./flopen.v ./flopenr.v ./mux2.v ./mux4.v ./mux23.v ./zerodetect.v ./alu.v ./alucontrol.v ./regfile.v ./datapath.v ./controller.v ./mips.v ./ram.v ./tb_mips.v -top tb_mips -log mips.log 
+s10(22Apr2026:15:57:29):  xrun -timescale 1ns/10ps -access +rwc ./flop.v ./flopen.v ./flopenr.v ./mux2.v ./mux4.v ./mux23.v ./zerodetect.v ./alu.v ./alucontrol.v ./regfile.v ./datapath.v ./controller.v ./mips.v ./ram.v ./tb_mips.v -top tb_mips -log mips.log 
+s11(22Apr2026:16:02:35):  xrun -timescale 1ns/10ps -access +rwc ./flop.v ./flopen.v ./flopenr.v ./mux2.v ./mux4.v ./mux23.v ./zerodetect.v ./alu.v ./alucontrol.v ./regfile.v ./datapath.v ./controller.v ./mips.v ./ram.v ./tb_mips.v -top tb_mips -log mips.log 
+s12(22Apr2026:16:50:28):  xrun -timescale 1ns/10ps -access +rwc ./flop.v ./flopen.v ./flopenr.v ./mux2.v ./mux4.v ./mux23.v ./zerodetect.v ./alu.v ./alucontrol.v ./regfile.v ./datapath.v ./controller.v ./mips.v ./ram.v ./tb_mips.v -top tb_mips -log mips.log 
